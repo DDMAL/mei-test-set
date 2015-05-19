@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-16" ?>
+<mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
+<meiHead>
+	<fileDesc>
+		<titleStmt>
+			<title/>
+			<respStmt>
+				<persName/>
+			</respStmt>
+		</titleStmt>
+		<pubStmt>
+			<availability>
+				<useRestrict>Copyright © </useRestrict>
+			</availability>
+		</pubStmt>
+	</fileDesc>
+	<encodingDesc>
+		<appInfo>
+			<application version="7" xml:id="sibelius7">
+				<name>Sibelius</name>
+			</application>
+		</appInfo>
+	</encodingDesc>
+	<workDesc>
+		<work>
+			<titleStmt>
+				<title/>
+				<respStmt/>
+			</titleStmt>
+		</work>
+	</workDesc>
+</meiHead>
+<music>
+	<body>
+		<mdiv>
+			<score>
+				<scoreDef meter.count="4" meter.unit="4" page.botmar="12.7mm" page.height="297mm" page.leftmar="12.7mm" page.rightmar="12.7mm" page.topmar="12.7mm" page.width="210mm" ppq="256">
+					<staffGrp>
+						<staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1" xml:id="sd1"/>
+					</staffGrp>
+				</scoreDef>
+				<section>
+					<pb n="1"/>
+					<measure label="1" n="1">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n0v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n42v1b1s1"/>
+								</beam>
+								<tuplet num="3" num.format="count" numbase="2">
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n85v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n128v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n170v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n213v1b1s1"/>
+								</tuplet>
+								<beam>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n256v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n298v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n341v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n426v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n469v1b1s1"/>
+								</beam>
+								<tuplet bracket.visible="false" num="3" num.format="count" numbase="2">
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n384v1b1s1"/>
+								</tuplet>
+								<beam>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n512v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n554v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n597v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n682v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n725v1b1s1"/>
+								</beam>
+								<tuplet num="6" num.format="count" numbase="4">
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n640v1b1s1"/>
+								</tuplet>
+								<rest dur="4" dur.ges="256p" xml:id="p1r768v1b1s1"/>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="2">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n0v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n21v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n42v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n64v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n106v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n128v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n149v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n192v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n213v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n234v1b2s1"/>
+								</beam>
+								<tuplet num="3" num.format="count" numbase="2">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n85v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n170v1b2s1"/>
+								</tuplet>
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n256v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n277v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n298v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n320v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n341v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n362v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n405v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n426v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n448v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n469v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n490v1b2s1"/>
+								</beam>
+								<tuplet bracket.visible="false" num="6" num.format="count" numbase="4">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n384v1b2s1"/>
+								</tuplet>
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n512v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n533v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n554v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n576v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n597v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n618v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n661v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n682v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n704v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n725v1b2s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n746v1b2s1"/>
+								</beam>
+								<tuplet num="12" num.format="count" numbase="8">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n640v1b2s1"/>
+								</tuplet>
+								<rest dur="4" dur.ges="256p" xml:id="p1r768v1b2s1"/>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="3">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n0v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n25v1b3s1"/>
+								</beam>
+								<tuplet num="5" num.format="count" numbase="4">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n51v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n76v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n102v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n128v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n153v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n179v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n204v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n230v1b3s1"/>
+								</tuplet>
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n256v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n281v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n307v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n332v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n358v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n409v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n435v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n460v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n486v1b3s1"/>
+								</beam>
+								<tuplet bracket.visible="false" num="5" num.format="count" numbase="4">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n384v1b3s1"/>
+								</tuplet>
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n512v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n537v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n563v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n588v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n614v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n665v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n691v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n716v1b3s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n742v1b3s1"/>
+								</beam>
+								<tuplet num="10" num.format="count" numbase="8">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n640v1b3s1"/>
+								</tuplet>
+								<rest dur="4" dur.ges="256p" xml:id="p1r768v1b3s1"/>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="4" right="end">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n0v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n18v1b4s1"/>
+								</beam>
+								<tuplet num="7" num.format="count" numbase="4">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n36v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n54v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n73v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n91v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n109v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n128v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n146v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n164v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n182v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n201v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n219v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n237v1b4s1"/>
+								</tuplet>
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n256v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n274v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n292v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n310v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n329v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n347v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n365v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n402v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n420v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n438v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n457v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n475v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n493v1b4s1"/>
+								</beam>
+								<tuplet bracket.visible="false" num="7" num.format="count" numbase="4">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n384v1b4s1"/>
+								</tuplet>
+								<beam>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n512v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n530v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n548v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n566v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n585v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n603v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n621v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n658v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n676v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n694v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n713v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n731v1b4s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n749v1b4s1"/>
+								</beam>
+								<tuplet num="14" num.format="count" numbase="8">
+									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n640v1b4s1"/>
+								</tuplet>
+								<rest dur="4" dur.ges="256p" xml:id="p1r768v1b4s1"/>
+							</layer>
+						</staff>
+					</measure>
+				</section>
+			</score>
+		</mdiv>
+	</body>
+</music>
+</mei>

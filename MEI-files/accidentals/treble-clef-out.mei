@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-16" ?>
+<mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
+<meiHead>
+	<fileDesc>
+		<titleStmt>
+			<title/>
+			<respStmt>
+				<persName/>
+			</respStmt>
+		</titleStmt>
+		<pubStmt>
+			<availability>
+				<useRestrict>Copyright © </useRestrict>
+			</availability>
+		</pubStmt>
+	</fileDesc>
+	<encodingDesc>
+		<appInfo>
+			<application version="7" xml:id="sibelius7">
+				<name>Sibelius</name>
+			</application>
+		</appInfo>
+	</encodingDesc>
+	<workDesc>
+		<work>
+			<titleStmt>
+				<title/>
+				<respStmt/>
+			</titleStmt>
+		</work>
+	</workDesc>
+</meiHead>
+<music>
+	<body>
+		<mdiv>
+			<score>
+				<scoreDef meter.count="4" meter.unit="4" page.botmar="12.7mm" page.height="297mm" page.leftmar="12.7mm" page.rightmar="12.7mm" page.topmar="12.7mm" page.width="210mm" ppq="256">
+					<staffGrp>
+						<staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1" xml:id="sd1"/>
+					</staffGrp>
+				</scoreDef>
+				<section>
+					<pb n="1"/>
+					<measure label="1" n="1" right="dbl">
+						<staff n="1">
+							<layer n="1">
+								<note dur="1" dur.ges="1024p" oct="3" pname="g" xml:id="p1cgd3n0v1b1s1"/>
+							</layer>
+						</staff>
+					</measure>
+					<scoreDef key.sig="7s"/>
+					<measure n="2" right="dbl">
+						<staff n="1">
+							<layer n="1">
+								<rest dur="1" dur.ges="1024p" xml:id="p1r0v1b2s1"/>
+							</layer>
+						</staff>
+					</measure>
+					<scoreDef key.sig="0"/>
+					<measure n="3" right="dbl">
+						<staff n="1">
+							<layer n="1">
+								<mRest/>
+							</layer>
+						</staff>
+					</measure>
+					<scoreDef key.sig="7f"/>
+					<measure n="4">
+						<staff n="1">
+							<layer n="1">
+								<mRest/>
+							</layer>
+						</staff>
+					</measure>
+				</section>
+			</score>
+		</mdiv>
+	</body>
+</music>
+</mei>
