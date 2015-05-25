@@ -51,6 +51,12 @@
 									<note dur="2" dur.ges="512p" oct="5" pname="f" xml:id="p2cfd5n0v1b1s1">
 										<accid accid="s"/>
 									</note>
+									<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n0v2b1s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="2" dur.ges="512p" oct="4" pname="b" xml:id="p2cbd4n0v2b1s1">
+										<accid accid="s"/>
+									</note>
 								</chord>
 								<chord dur="2" dur.ges="512p" xml:id="c512v1b1s1">
 									<note dur="2" dur.ges="512p" oct="4" pname="d" xml:id="p1cdd4n512v1b1s1">
@@ -59,18 +65,6 @@
 									<note dur="2" dur.ges="512p" oct="5" pname="f" xml:id="p2cfd5n512v1b1s1">
 										<accid accid="s" func="caution"/>
 									</note>
-								</chord>
-							</layer>
-							<layer n="2">
-								<chord dur="2" dur.ges="512p" xml:id="c0v2b1s1">
-									<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n0v2b1s1">
-										<accid accid="s"/>
-									</note>
-									<note dur="2" dur.ges="512p" oct="4" pname="b" xml:id="p2cbd4n0v2b1s1">
-										<accid accid="s"/>
-									</note>
-								</chord>
-								<chord dur="2" dur.ges="512p" xml:id="c512v2b1s1">
 									<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n512v2b1s1">
 										<accid accid="s" func="caution"/>
 									</note>
@@ -84,33 +78,39 @@
 					<measure n="2" right="end">
 						<staff n="1">
 							<layer n="1">
-								<note dur="4" dur.ges="256p" oct="5" pname="c" xml:id="p1ccd5n0v1b2s1">
-									<accid accid="s"/>
-								</note>
-								<note dur="4" dur.ges="256p" oct="5" pname="d" xml:id="p1cdd5n256v1b2s1"/>
-								<note dur="4" dur.ges="256p" oct="4" pname="b" xml:id="p1cbd4n512v1b2s1">
-									<accid accid="f"/>
-								</note>
-								<beam>
-									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n768v1b2s1"/>
-									<note dur="8" dur.ges="128p" oct="4" pname="b" xml:id="p1cbd4n896v1b2s1">
-										<accid accid="f" func="caution"/>
-									</note>
-								</beam>
-							</layer>
-							<layer n="2">
-								<note dur="4" dur.ges="256p" oct="4" pname="b" xml:id="p1cbd4n0v2b2s1">
-									<accid accid="f"/>
-								</note>
-								<note dur="4" dur.ges="256p" oct="5" pname="c" xml:id="p1ccd5n256v2b2s1">
-									<accid accid="s" func="caution"/>
-								</note>
-								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n512v2b2s1"/>
-								<beam>
-									<note dur="8" dur.ges="128p" oct="5" pname="d" xml:id="p1cdd5n768v2b2s1">
+								<chord dur="4" dur.ges="256p">
+									<note dur="4" dur.ges="256p" oct="5" pname="c" xml:id="p1ccd5n0v1b2s1">
 										<accid accid="s"/>
 									</note>
-									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n896v2b2s1"/>
+									<note dur="4" dur.ges="256p" oct="4" pname="b" xml:id="p1cbd4n0v2b2s1">
+										<accid accid="f"/>
+									</note>
+								</chord>
+								<chord dur="4" dur.ges="256p">
+									<note dur="4" dur.ges="256p" oct="5" pname="d" xml:id="p1cdd5n256v1b2s1"/>
+									<note dur="4" dur.ges="256p" oct="5" pname="c" xml:id="p1ccd5n256v2b2s1">
+										<accid accid="s" func="caution"/>
+									</note>
+								</chord>
+								<chord dur="4" dur.ges="256p">
+									<note dur="4" dur.ges="256p" oct="4" pname="b" xml:id="p1cbd4n512v1b2s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n512v2b2s1"/>
+								</chord>
+								<beam>
+									<chord dur="8" dur.ges="128p">
+										<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n768v1b2s1"/>
+										<note dur="8" dur.ges="128p" oct="5" pname="d" xml:id="p1cdd5n768v2b2s1">
+											<accid accid="s"/>
+										</note>
+									</chord>
+									<chord dur="8" dur.ges="128p">
+										<note dur="8" dur.ges="128p" oct="4" pname="b" xml:id="p1cbd4n896v1b2s1">
+											<accid accid="f" func="caution"/>
+										</note>
+										<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n896v2b2s1"/>
+									</chord>
 								</beam>
 							</layer>
 						</staff>

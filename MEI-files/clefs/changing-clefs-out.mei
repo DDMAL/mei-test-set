@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
 <meiHead>
 	<fileDesc>
@@ -47,14 +47,14 @@
 								<beam>
 									<note dur="16" dur.ges="64p" oct="4" pname="d" xml:id="p1cdd4n0v1b1s1"/>
 									<note dur="16" dur.ges="64p" oct="4" pname="f" xml:id="p1cfd4n64v1b1s1"/>
+									<clef line="4" shape="F"/>
 									<note dur="16" dur.ges="64p" oct="3" pname="g" xml:id="p1cgd3n128v1b1s1"/>
 									<note dur="16" dur.ges="64p" oct="3" pname="e" xml:id="p1ced3n192v1b1s1"/>
 									<note dur="8" dur.ges="128p" oct="3" pname="b" xml:id="p1cbd3n256v1b1s1"/>
-									<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n640v1b1s1"/>
 								</beam>
-								<clef line="4" shape="F"/>
 								<clef line="2" shape="G"/>
 								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n384v1b1s1"/>
+								<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n640v1b1s1"/>
 								<clef line="4" shape="F"/>
 								<beam>
 									<note dur="16" dur.ges="64p" oct="3" pname="b" xml:id="p1cbd3n768v1b1s1"/>

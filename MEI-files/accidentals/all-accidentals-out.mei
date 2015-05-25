@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
 <meiHead>
 	<fileDesc>
@@ -154,24 +154,24 @@
 										<accid accid="f"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1ccd4n256v1b4s1">
-										<accid accid="ss"/>
+										<accid accid="ds"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="4" pname="d" xml:id="p1cdd4n384v1b4s1">
-										<accid accid="ss"/>
+										<accid accid="ds"/>
 									</note>
 								</beam>
 								<beam>
 									<note dur="8" dur.ges="128p" oct="4" pname="e" xml:id="p1ced4n512v1b4s1">
-										<accid accid="ss"/>
+										<accid accid="ds"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n640v1b4s1">
-										<accid accid="ss"/>
+										<accid accid="ds"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="4" pname="g" xml:id="p1cgd4n768v1b4s1">
-										<accid accid="ss"/>
+										<accid accid="ds"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="4" pname="a" xml:id="p1cad4n896v1b4s1">
-										<accid accid="n"/>
+										<accid accid="ds"/>
 									</note>
 								</beam>
 							</layer>
@@ -205,7 +205,7 @@
 										<accid accid="ds"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1ccd4n896v1b5s1">
-										<accid accid="df"/>
+										<accid accid="ff"/>
 									</note>
 								</beam>
 							</layer>

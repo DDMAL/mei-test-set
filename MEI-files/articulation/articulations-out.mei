@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
 <meiHead>
 	<fileDesc>
@@ -44,10 +44,10 @@
 					<measure label="1" n="1">
 						<staff n="1">
 							<layer n="1">
-								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n0v1b1s1"/>
-								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n256v1b1s1"/>
-								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n512v1b1s1"/>
-								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n768v1b1s1"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n0v1b1s1" artic="marc"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n256v1b1s1" artic="acc"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n512v1b1s1" artic="ten"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n768v1b1s1" artic="marc-stacc"/>
 							</layer>
 						</staff>
 					</measure>

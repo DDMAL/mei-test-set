@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
 <meiHead>
 	<fileDesc>
@@ -46,15 +46,15 @@
 							<layer n="1">
 								<chord dur="2" dur.ges="512p" xml:id="c0v1b1s1">
 									<note dur="2" dur.ges="512p" oct="4" pname="f" xml:id="p1cfd4n0v1b1s1"/>
-									<note dur="2" dur.ges="512p" oct="4" pname="f" xml:id="p2cfd4n0v1b1s1"/>
+									<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p2cfd4n0v1b1s1"/>
 								</chord>
 								<chord dur="4" dur.ges="256p" xml:id="c512v1b1s1">
 									<note dur="4" dur.ges="256p" oct="5" pname="d" xml:id="p1cdd5n512v1b1s1"/>
-									<note dur="4" dur.ges="256p" oct="5" pname="d" xml:id="p2cdd5n512v1b1s1"/>
+									<note dur="4" dur.ges="256p" oct="5" pname="c" xml:id="p2cdd5n512v1b1s1"/>
 								</chord>
 								<chord dur="4" dur.ges="256p" xml:id="c768v1b1s1">
 									<note dur="4" dur.ges="256p" oct="4" pname="a" xml:id="p1cad4n768v1b1s1"/>
-									<note dur="4" dur.ges="256p" oct="4" pname="a" xml:id="p2cad4n768v1b1s1"/>
+									<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p2cad4n768v1b1s1"/>
 								</chord>
 							</layer>
 						</staff>

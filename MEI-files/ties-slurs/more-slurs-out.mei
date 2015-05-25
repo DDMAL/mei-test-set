@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
 <meiHead>
 	<fileDesc>
@@ -56,7 +56,7 @@
 								</beam>
 							</layer>
 						</staff>
-						<slur dur.ges="1472p" layer="1" staff="1" tstamp="1"/>
+						<slur dur.ges="1472p" layer="1" staff="1" tstamp="0.5" tstamp2="0m+4.5"/>
 					</measure>
 					<measure n="2">
 						<staff n="1">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
 <meiHead>
 	<fileDesc>
@@ -46,7 +46,7 @@
 							<layer n="1">
 								<chord dur="4" dur.ges="256p" xml:id="c0v1b1s1">
 									<note dur="4" dur.ges="256p" oct="4" pname="f" tie="i" xml:id="p1cfd4n0v1b1s1"/>
-									<note dur="4" dur.ges="256p" oct="5" pname="c" tie="m" xml:id="p2ccd5n0v1b1s1"/>
+									<note dur="4" dur.ges="256p" oct="5" pname="c" xml:id="p2ccd5n0v1b1s1"/>
 								</chord>
 								<chord dur="4" dur.ges="256p" xml:id="c256v1b1s1">
 									<note dur="4" dur.ges="256p" oct="4" pname="f" tie="t" xml:id="p1cfd4n256v1b1s1"/>

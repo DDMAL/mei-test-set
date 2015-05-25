@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
 <meiHead>
 	<fileDesc>
@@ -48,20 +48,16 @@
 						<staff n="1">
 							<layer n="1">
 								<space dots="1" dur="4" dur.ges="384p" xml:id="p1r0v1b1s1"/>
-								<space dur="8" dur.ges="128p" xml:id="p1r384v1b1s1"/>
-								<space dur="8" dur.ges="128p" vo="-11.5938mm" xml:id="p1r512v1b1s1"/>
-								<space dur="8" dur.ges="128p" xml:id="p1r640v1b1s1"/>
+								<space dots="1" dur="4" dur.ges="384p" xml:id="p1r640v1b1s1"/>
 							</layer>
 						</staff>
 						<staff n="2">
 							<layer n="1">
-								<space dur="8" dur.ges="128p" xml:id="p1r0v1b1s2"/>
-								<space dur="8" dur.ges="128p" xml:id="p1r128v1b1s2"/>
-								<space dur="8" dur.ges="128p" xml:id="p1r256v1b1s2"/>
+								<space dots="1" dur="4" dur.ges="384p" xml:id="p1r0v1b1s2"/>
 								<beam>
-									<note dur="8" dur.ges="128p" oct="3" pname="f" tie="i" xml:id="p1cfd3n384v1b1s2"/>
-									<note dur="8" dur.ges="128p" oct="3" pname="a" tie="m" xml:id="p1cad3n512v1b1s2"/>
-									<note dur="8" dur.ges="128p" oct="4" pname="c" tie="m" xml:id="p1ccd4n640v1b1s2"/>
+									<note dur="8" dur.ges="128p" oct="3" pname="f" tie="i" stem.dir="up" xml:id="p1cfd3n384v1b1s2"/>
+									<note dur="8" dur.ges="128p" oct="3" pname="a" tie="m" stem.dir="up" xml:id="p1cad3n512v1b1s2"/>
+									<note dur="8" dur.ges="128p" oct="4" pname="c" tie="m" stem.dir="down" staff="1" xml:id="p1ccd4n640v1b1s2"/>
 								</beam>
 							</layer>
 							<layer n="2">
@@ -81,9 +77,6 @@
 					<measure n="2" right="end">
 						<staff n="1">
 							<layer n="1">
-								<note dots="1" dur="2" dur.ges="768p" oct="4" pname="c" xml:id="p1ccd4n0v1b2s1"/>
-							</layer>
-							<layer n="2">
 								<beam>
 									<note dur="8" dur.ges="128p" oct="4" pname="e" tie="i" xml:id="p1ced4n0v2b2s1"/>
 									<note dur="8" dur.ges="128p" oct="4" pname="g" tie="m" xml:id="p1cgd4n128v2b2s1"/>
@@ -94,6 +87,9 @@
 									<note dots="1" dur="4" dur.ges="384p" oct="4" pname="g" xml:id="p2cgd4n384v2b2s1"/>
 									<note dots="1" dur="4" dur.ges="384p" oct="4" pname="b" xml:id="p3cbd4n384v2b2s1"/>
 								</chord>
+							</layer>
+							<layer n="2">
+								<note dots="1" dur="2" dur.ges="768p" oct="4" pname="c" xml:id="p1ccd4n0v1b2s1"/>
 							</layer>
 						</staff>
 						<staff n="2">

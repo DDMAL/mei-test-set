@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-16" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
 <meiHead>
 	<fileDesc>
@@ -49,24 +49,24 @@
 									<note dur="32" dur.ges="32p" oct="3" pname="e" xml:id="p1ced3n32v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="3" pname="f" xml:id="p1cfd3n64v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="3" pname="g" xml:id="p1cgd3n96v1b1s1"/>
+									<clef line="2" shape="G"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="c" xml:id="p1ccd4n128v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="4" pname="e" xml:id="p1ced4n160v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="4" pname="f" xml:id="p1cfd4n192v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n224v1b1s1"/>
 								</beam>
-								<clef line="2" shape="G"/>
-								<note dur="32" dur.ges="32p" oct="4" pname="c" xml:id="p1ccd4n128v1b1s1"/>
 								<clef line="4" shape="F"/>
 								<beam>
 									<note dur="32" dur.ges="32p" oct="3" pname="c" xml:id="p1ccd3n256v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="3" pname="e" xml:id="p1ced3n288v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="3" pname="f" xml:id="p1cfd3n320v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="3" pname="g" xml:id="p1cgd3n352v1b1s1"/>
+									<note dur="32" dur.ges="32p" oct="4" pname="c" xml:id="p1ccd4n384v1b1s1"/>
+									<clef line="2" shape="G"/>
 									<note dur="32" dur.ges="32p" oct="4" pname="e" xml:id="p1ced4n416v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="4" pname="f" xml:id="p1cfd4n448v1b1s1"/>
 									<note dur="32" dur.ges="32p" oct="4" pname="g" xml:id="p1cgd4n480v1b1s1"/>
 								</beam>
-								<note dur="32" dur.ges="32p" oct="4" pname="c" xml:id="p1ccd4n384v1b1s1"/>
-								<clef line="2" shape="G"/>
 							</layer>
 						</staff>
 					</measure>
