@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../odd/mei2vexflow.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../odd/mei2vexflow.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mei meiversion="2013" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" xmlns:mei="http://www.music-encoding.org/ns/mei">
+	<meiHead>
+		<fileDesc>
+			<titleStmt>
+				<title/>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music>
+		<body>
+			<mdiv>
+				<score>
+					<scoreDef>
+						<staffGrp>
+							<staffDef n="1" label="Voice" clef.line="2" clef.shape="G" clef.dis="8" clef.dis.place="below" meter.count="6" meter.unit="8" lines="5"/>
+						</staffGrp>
+					</scoreDef>
+					<section>
+						<measure n="1">
+							<staff n="1">
+								<layer>
+									<note xml:id="e01-0" pname="c" oct="3" dur="8"/>
+									<note xml:id="e01-1" pname="d" oct="3" dur="8"/>
+									<note xml:id="e02-0" pname="e" oct="3" dur="8"/>
+									<note xml:id="e02-1" pname="f" oct="3" dur="8"/>
+									<note xml:id="e03-0" pname="g" oct="3" dur="8"/>
+									<note xml:id="e03-1" pname="a" oct="3" dur="8"/>
+									<note xml:id="e04-0" pname="b" oct="3" dur="8"/>
+									<note xml:id="e04-1" pname="c" oct="4" dur="8"/>
+									<note xml:id="e04-2" pname="d" oct="4" dur="8"/>
+									<note xml:id="e04-3" pname="e" oct="4" dur="8"/>
+									<note xml:id="e04-4" pname="f" oct="4" dur="8"/>
+									<note xml:id="e04-5" pname="g" oct="4" dur="8"/>
+									<note xml:id="e04-6" pname="a" oct="4" dur="8"/>
+									<note xml:id="e04-7" pname="b" oct="4" dur="8"/>
+									<note xml:id="e04-8" pname="c" oct="5" dur="8"/>
+								</layer>
+							</staff>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>

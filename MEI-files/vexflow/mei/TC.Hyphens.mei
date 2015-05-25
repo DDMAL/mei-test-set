@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../odd/mei2vexflow.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../odd/mei2vexflow.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mei meiversion="2013" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns="http://www.music-encoding.org/ns/mei" xmlns:mei="http://www.music-encoding.org/ns/mei">
+	<meiHead>
+		<fileDesc>
+			<titleStmt>
+				<title>MeiToVexFlow Dynamics Test Case</title>
+			</titleStmt>
+			<pubStmt>
+				<respStmt>
+					<resp>Prepared by</resp>
+					<persName>Alexander Erhard</persName>
+				</respStmt>
+			</pubStmt>
+		</fileDesc>
+	</meiHead>
+	<music>
+		<body>
+			<mdiv>
+				<score>
+					<scoreDef page.width="1200" page.scale="80%">
+						<staffGrp symbol="none">
+							<staffDef n="1" lines="5" clef.line="2" clef.shape="G" meter.count="4" meter.unit="4" meter.rend="invis" key.pname="c" key.mode="major"/>
+						</staffGrp>
+					</scoreDef>
+					<section>
+						<measure n="0" width="320" unit="px" right="dbl">
+							<staff n="1">
+								<layer>
+									<note xml:id="n02" pname="c" oct="5" dur="4" dots="1" accid="n">
+										<syl wordpos="t">mer</syl>
+									</note>
+									<note xml:id="n03" pname="c" oct="5" dur="8">
+										<syl>wir</syl>
+									</note>
+									<note xml:id="n04" pname="c" oct="5" dur="8" ho="1">
+										<syl wordpos="i">schlach</syl>
+									</note>
+									<note xml:id="n05" pname="c" oct="5" dur="8" ho="1">
+										<syl wordpos="t">ten</syl>
+									</note>
+									<note xml:id="n06" pname="c" oct="5" dur="8">
+										<syl>dir</syl>
+									</note>
+									<note xml:id="n07" pname="c" oct="5" dur="8">
+										<syl>die</syl>
+									</note>
+								</layer>
+							</staff>
+						</measure>
+						<scoreDef>
+							<staffGrp symbol="none">
+								<staffDef n="1" clef.line="2" clef.shape="G" meter.count="6" meter.unit="4" lines="5"/>
+							</staffGrp>
+						</scoreDef>
+						<measure n="1" unit="px">
+							<staff n="1">
+								<layer>
+									<note xml:id="nb08" pname="c" oct="5" dur="1" accid="s">
+										<syl wordpos="i">Hun</syl>
+										<verse n="verse_2">
+											<syl wordpos="i">Se</syl>
+										</verse>
+									</note>
+									<note xml:id="nb10" pname="a" oct="4" dur="8" accid="n">
+										<syl wordpos="t">de,</syl>
+										<verse n="verse_2">
+											<syl wordpos="t">cond</syl>
+										</verse>
+									</note>
+									<note xml:id="nb11" pname="a" oct="4" dur="8">
+										<syl>die</syl>
+										<verse n="verse_2">
+											<syl wordpos="i">ver</syl>
+										</verse>
+									</note>
+									<note xml:id="nb12" pname="a" oct="4" dur="8">
+										<syl>dir</syl>
+									</note>
+									<note xml:id="nb13" pname="a" oct="4" dur="8">
+										<syl>die</syl>
+										<verse n="verse_3">
+											<syl>third</syl>
+										</verse>
+									</note>
+								</layer>
+							</staff>
+						</measure>
+						<measure n="2" unit="px">
+							<staff n="1">
+								<layer>
+									<note xml:id="n14" pname="c" oct="5" dur="1" accid="s">
+										<verse n="1">
+											<syl wordpos="i">Hun</syl>
+										</verse>
+										<verse n="verse_2">
+											<syl wordpos="t">se</syl>
+										</verse>
+										<verse n="verse_3">
+											<syl wordpos="i">ver</syl>
+										</verse>
+									</note>
+									<note xml:id="n16" pname="a" oct="4" dur="8" accid="n">
+										<syl wordpos="t">de,</syl>
+										<verse n="verse_3">
+											<syl wordpos="t">se</syl>
+										</verse>
+									</note>
+									<note xml:id="n17" pname="a" oct="4" dur="8">
+										<syl>die</syl>
+									</note>
+									<note xml:id="n18" pname="a" oct="4" dur="8">
+										<syl>dir</syl>
+									</note>
+									<note xml:id="n19" pname="a" oct="4" dur="8">
+										<syl>die</syl>
+									</note>
+								</layer>
+							</staff>
+						</measure>
+						<measure n="3">
+							<staff n="1">
+								<layer>
+									<note xml:id="n20" pname="b" oct="4" dur="4" dots="1">
+										<syl wordpos="i">Fü</syl>
+									</note>
+									<note xml:id="n21" pname="b" oct="4" dur="8">
+										<syl wordpos="t">ße</syl>
+									</note>
+									<note xml:id="n22" pname="b" oct="4" dur="2">
+										<syl wordpos="i">leck</syl>
+									</note>
+									<note xml:id="n24" pname="a" accid="f" oct="4" dur="8">
+										<syl wordpos="t">ten</syl>
+									</note>
+									<rest xml:id="r25" dur="8"/>
+									<note xml:id="n26" pname="a" oct="4" dur="8"> 
+										<syl>die</syl>
+									</note>
+									<note xml:id="n27" pname="a" oct="4" dur="8"> 
+										<syl wordpos="i">ge</syl>
+										<verse n="verse_2">
+											<syl wordpos="i">ver</syl>
+										</verse>
+									</note>
+								</layer>
+							</staff>
+						</measure>
+						<sb/>
+						<measure n="4" width="340">
+							<staff n="1">
+								<layer>
+									<note xml:id="n28" pname="c" accid="s" oct="5" dur="4" dots="1">
+									</note>
+									<note xml:id="n29" pname="a" accid="n" oct="4" dur="8">
+									</note>
+									<note xml:id="n30" pname="e" accid="n" oct="5" dur="2">
+										<syl wordpos="t">jagt,</syl>
+										<verse n="verse_2">
+											<syl wordpos="t">se</syl>
+										</verse>
+									</note>
+									<note xml:id="nc32" pname="a" oct="4" dur="8">
+										<syl wordpos="i">de</syl>
+									</note>
+									<note xml:id="nc33" pname="b" accid="n" oct="4" dur="8">
+										<syl wordpos="t">nen</syl>
+									</note>
+									<note xml:id="nc34" pname="c" accid="s" oct="5" dur="8">
+										<syl>du</syl>
+									</note>
+									<note xml:id="nc35" pname="e" accid="n" oct="5" dur="8">
+										<syl>die</syl>
+									</note>
+								</layer>
+							</staff>
+							<dir startid="nc32" place="above" type="pitch">a</dir>
+							<dir startid="nc33" place="above" type="pitch">h</dir>
+							<dir startid="nc34" place="above" type="pitch">cis</dir>
+							<dir startid="nc35" place="above" type="pitch">e</dir>
+						</measure>
+						<measure n="5" right="dbl">
+							<staff n="1">
+								<layer>
+									<note xml:id="n08" pname="c" oct="5" dur="1" accid="s">
+										<syl wordpos="i">Hun</syl>
+									</note>
+									<note xml:id="n10" pname="a" oct="4" dur="8" accid="n">
+										<syl wordpos="t">de,</syl>
+									</note>
+									<note xml:id="n11" pname="a" oct="4" dur="8">
+										<syl>die</syl>
+									</note>
+									<note xml:id="n12" pname="a" oct="4" dur="8">
+										<syl>dir</syl>
+									</note>
+									<note xml:id="n13" pname="a" oct="4" dur="8">
+										<syl>die</syl>
+									</note>
+								</layer>
+							</staff>
+						</measure>
+						<scoreDef>
+							<staffGrp>
+								<staffDef n="1" clef.line="2" clef.shape="G" meter.count="4" meter.unit="4" meter.sym="cut"/>
+							</staffGrp>
+						</scoreDef>
+						<measure n="6">
+							<staff n="1">
+								<layer>
+									<note xml:id="n030" pname="g" accid="s" oct="5" dur="8">
+										<syl wordpos="i">Bis</syl>
+									</note>
+									<note xml:id="n31" pname="a" accid="s" oct="4" dur="8">
+										<syl wordpos="t">sen</syl>
+									</note>
+									<note xml:id="n032" pname="e" accid="s" oct="5" dur="2">
+										<syl wordpos="i">hin</syl>
+									</note>
+									<note xml:id="n033" pname="f" accid="s" oct="4" dur="4">
+										<syl wordpos="m">ge</syl>
+										<verse n="verse_2">
+											<syl wordpos="i">co</syl>
+										</verse>
+									</note>
+								</layer>
+							</staff>
+						</measure>
+						<measure n="7" width="120">
+							<staff n="1">
+								<layer>
+									<note xml:id="asd" dur="1" pname="f" accid="s" oct="5">
+										<syl wordpos="m">wor</syl>
+										<verse n="verse_2">
+											<syl wordpos="m">mi</syl>
+										</verse>
+									</note>
+								</layer>
+							</staff>
+						</measure>
+						<measure n="8" width="120">
+							<staff n="1">
+								<layer>
+									<note xml:id="asdf" dur="1" pname="e" accid="s" oct="5">
+									</note>
+								</layer>
+							</staff>
+						</measure>
+						<measure n="9" right="invis" width="70">
+							<staff n="1">
+								<layer>
+									<space dur="1"></space>
+								</layer>
+							</staff>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>
