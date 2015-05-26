@@ -83,7 +83,7 @@
 								</beam>
 								<beam>
 									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n384v1b2s1">
-										<accid accid="ds"/>
+										<accid accid="x"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="5" pname="d" xml:id="p1cdd5n512v1b2s1">
 										<accid accid="s"/>
