@@ -14,20 +14,20 @@
 		<body>
 			<mdiv>
 				<score>
-					<mei:scoreDef key.pname="c" key.mode="major">
+					<scoreDef key.pname="c" key.mode="major">
 						<staffGrp>
 							<staffGrp barthru="false">
 								<staffDef n="1" label="Supremus" clef.line="2" clef.shape="G" meter.count="4" meter.unit="4" lines="5"/>
 							</staffGrp>
 						</staffGrp>
-					</mei:scoreDef>
+					</scoreDef>
 					<section>
-						<mei:measure n="1">
+						<measure n="1">
 							<staff n="1">
 								<layer>
 								</layer>
 							</staff>
-						</mei:measure>
+						</measure>
 					</section>
 				</score>
 			</mdiv>
