@@ -14,7 +14,7 @@
 		<body>
 			<mdiv>
 				<score>
-					<mei:scoreDef key.pname="c" key.mode="major">
+					<scoreDef key.pname="c" key.mode="major">
 						<staffGrp>
 							<staffGrp barthru="false">
 								<staffDef n="1" label="Supremus" clef.line="2" clef.shape="G" meter.count="4" meter.unit="4" lines="5"/>
@@ -23,9 +23,9 @@
 								<staffDef n="4" label="Bassus" clef.line="4" clef.shape="F" meter.count="4" meter.unit="4" lines="5"/>
 							</staffGrp>
 						</staffGrp>
-					</mei:scoreDef>
+					</scoreDef>
 					<section>
-						<mei:measure n="1">
+						<measure n="1">
 							<staff n="1">
 								<layer>
 									<note xml:id="tc01-v1e01" pname="a" oct="4" dur="1">
@@ -101,7 +101,7 @@
 									<rest xml:id="tc01-e04" dur="1"></rest>
 								</layer>
 							</staff>
-						</mei:measure>
+						</measure>
 					</section>
 				</score>
 			</mdiv>

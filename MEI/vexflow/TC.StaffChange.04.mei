@@ -16,7 +16,7 @@
                 <score>
                     <scoreDef>
                         <staffGrp>
-                            <staffDef n="1" lines="5" clef.line="2" clef.shape="G" meter.count="4" meter.unit="4" clef.visible="false" key.sig="1s" meter.rend="false"/>
+                            <staffDef n="1" lines="5" clef.line="2" clef.shape="G" meter.count="4" meter.unit="4" clef.visible="false" key.sig="1s" meter.rend="invis"/>
                         </staffGrp>
                     </scoreDef>
                     <section>
