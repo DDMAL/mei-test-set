@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vexflow - Slurs and ties</title>
+    <script src="verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h1>Vexflow - Slurs and ties</h1>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI)
+        {
+
+            var fileName = "MEI/vexflow/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
+
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "TC.Slurs.Bezier.mei"
+            );
+
+        pictureExample(
+            "TC.Slurs.mei"
+            );
+
+        pictureExample(
+            "TC.Slurs.TStamps.mei"
+            );
+
+        pictureExample(
+            "TC.Slurs.Tstamps.NoIDs.mei"
+            );
+
+		pictureExample(
+            "TC.Ties.02.mei"
+            );
+
+        pictureExample(
+            "TC.Ties.mei"
+            );
+
+        pictureExample(
+            "TC.Ties.Staves.mei" 
+            );
+
+        pictureExample(
+            "TC.Ties.TStamps.mei" 
+            );
+            
+       
+    </script>
+    </div>
+
+
+</body>
+</html>
