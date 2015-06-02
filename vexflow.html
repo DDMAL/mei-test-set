@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="" src="verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h1>Vexflow</h1>
+    <div id="output"/>
+    <script type="text/javascript">
+
+        function pictureExample(myMEI)
+        {
+
+            var fileName = "MEI/vexflow/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
+
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "Bartok-WeddingSong-altered.mei"
+            );
+
+        pictureExample(
+            "Bartok-WeddingSong.mei"
+            );
+
+        pictureExample(
+            "Demo.BachCPrelude.mei"
+            );
+
+        pictureExample(
+            "Demo.Hairpins.Ravel.M1-4.mei"
+            );
+
+        pictureExample(
+            "Demo.Hairpins.Ravel.M2.mei"
+            );
+
+        pictureExample(
+            "Demo.StaffDefChanges.mei"
+            );
+
+        pictureExample(
+            "Demo.StaveConnectors.mei"
+            );
+
+        pictureExample(
+            "MultiStaveSystemBreak.mei"
+            );
+
+        pictureExample(
+            "TC.BarLines.mei"
+            );
+
+        pictureExample(
+            "TC.Beams.mei"
+            );
+
+        pictureExample(
+            "TC.CanonicalMEI.01.mei"
+            );
+
+        pictureExample(
+            "TC.CanonicalMEI.02.mei"
+            );
+
+        pictureExample(
+            "TC.CanonicalMEI.02.mei"
+            );
+
+        pictureExample(
+            "TC.dir.01.mei"
+            );
+
+        pictureExample(
+            "TC.dir.02.mei"
+            );
+
+        pictureExample(
+            "TC.Dynamics.mei"
+            );
+
+        pictureExample(
+            "TC.Fermatas.mei"
+            );
+
+        pictureExample(
+            "TC.Hairpins.mei"
+            );
+
+        pictureExample(
+            "TC.Hyphens.mei"
+            );
+
+        pictureExample(
+            "TC.Hyphens.Verses.mei"
+            );
+
+        pictureExample(
+            "TC.id2tstamp.mei"
+            );
+
+        pictureExample(
+            "TC.KeySpec.01.mei"
+            );
+
+        pictureExample(
+            "TC.KeySpec.02.mei"
+            );
+
+        pictureExample(
+            "TC.KeySpec.03.mei"
+            );
+
+        pictureExample(
+            "TC.KeySpec.04.mei"
+            );
+
+        pictureExample(
+            "TC.MeterChange.mei"
+            );
+
+        pictureExample(
+            "TC.MissingAttribute.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.01.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.02.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.03.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.04.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.05.mei"
+            );
+
+        pictureExample(
+            "TC.One-measure.mei"
+            );
+
+        pictureExample(
+            "TC.PageLayout.mei"
+            );
+
+        pictureExample(
+            "TC.PageLayoutAutoWidths.mei"
+            );
+
+        pictureExample(
+            "TC.PlainStaff.mei"
+            );
+
+        pictureExample(
+            "TC.Prokofiev.mei"
+            );
+
+        pictureExample(
+            "TC.Prokofiev.pref.mei"
+            );
+
+        pictureExample(
+            "TC.Slice.mei"
+            );
+
+        pictureExample(
+            "TC.Slurs.Bezier.mei"
+            );
+
+        pictureExample(
+            "TC.Slurs.mei"
+            );
+
+        pictureExample(
+            "TC.Slurs.TStamps.mei"
+            );
+
+        pictureExample(
+            "TC.Slurs.Tstamps.NoIDs.02.mei"
+            );
+
+        pictureExample(
+            "TC.Space.mei"
+            );
+
+        pictureExample(
+            "TC.StaffChange.01.mei" 
+            );
+
+        pictureExample(
+            "TC.StaffChange.02.mei" 
+            );
+
+        pictureExample(
+            "TC.StaffChange.03.mei" 
+            );
+
+        pictureExample(
+            "TC.StaffChange.04.mei" 
+            );
+
+        pictureExample(
+            "TC.StaveVoices.01.mei" 
+            );
+
+        pictureExample(
+            "TC.StaveVoices.02.mei" 
+            );
+
+        pictureExample(
+            "TC.StaveVoices.03.mei" 
+            );
+
+        pictureExample(
+            "TC.SystemBreak.01.mei" 
+            );
+
+        pictureExample(
+            "TC.SystemBreak.02.mei" 
+            );
+
+        pictureExample(
+            "TC.SystemBreak.03.mei" 
+            );
+
+        pictureExample(
+            "TC.SystemBreak.mei"
+            );
+
+        pictureExample(
+            "TC.Ties.02.mei"
+            );
+
+        pictureExample(
+            "TC.Ties.mei"
+            );
+
+        pictureExample(
+            "TC.Ties.Staves.mei" 
+            );
+
+        pictureExample(
+            "TC.Ties.TStamps.mei" 
+            );
+
+        pictureExample(
+            "TC.tstamp2id.mei"
+            );
+
+        pictureExample(
+            "TC.Tuplets.mei"
+            );
+
+        pictureExample(
+            "TC.Variants.mei" 
+            );
+
+        pictureExample(
+            "TC.VexClef.01.mei" 
+            );
+
+        pictureExample(
+            "TC.VexClef.02.mei" 
+            );
+
+        pictureExample(
+            "TC.VexClef.03.mei" 
+            );
+
+        pictureExample(
+            "TC.VexClef.04.mei" 
+            );
+
+        pictureExample(
+            "TC.VexClef.05.mei" 
+            );
+
+        pictureExample(
+            "TC.VexClef.06.mei" 
+            );
+
+        pictureExample(
+            "TC.VexClef.07.mei"
+            );
+
+        pictureExample(
+            "VF.Stave.Tempo.mei"
+            );
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>

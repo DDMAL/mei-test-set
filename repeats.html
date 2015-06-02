@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="" src="verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h1>Repeats</h1>
+    <div id="output"/>
+    <script type="text/javascript">
+
+        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        {
+
+            var fileName = "MEI/repeats/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "simple-repeat.mei", 
+            "Simple repeat", 
+            "Should correctly display a repeated section",
+            "<img src='sibs/repeats/simple-repeat.png' alt='simple repeat'/>"
+            );
+
+        pictureExample(
+            "coda.mei", 
+            "Coda", 
+            "Should display a coda",
+            "<img src='sibs/repeats/coda.png' alt='coda'/>"
+            );
+
+        pictureExample(
+            "da-capo.mei", 
+            "Da capo", 
+            "Should display a da capo",
+            "<img src='sibs/repeats/da-capo.png' alt='da capo'/>"
+            );
+        
+        pictureExample(
+            "dal-segno.mei", 
+            "Dal segno", 
+            "Should display a dal segno",
+            "<img src='sibs/repeats/dal-segno.png' alt='dal segno'/>"
+            );
+
+        pictureExample(
+            "mid-bar-repeat.mei", 
+            "Mid-bar repeats", 
+            "Should display mid-bar repeats",
+            "<img src='sibs/repeats/mid-bar-repeats.png' alt='mid bar repeats'/>"
+            );
+
+        pictureExample(
+            "repeat-with-endings.mei", 
+            "Repeats with endings", 
+            "Should display a phrase with 2 repeat endings",
+            "<img src='sibs/repeats/repeat-with-endings.png' alt='repeat with endings'/>"
+            );
+
+        pictureExample(
+            "3-repeats.mei", 
+            "3 repeats", 
+            "Should display a phrase with 3 repeat endings",
+            "<img src='sibs/repeats/3-repeats.png' alt='3 repeats'/>"
+            );
+
+        pictureExample(
+            "3-repeats-2.mei", 
+            "3 repeats (2)", 
+            "Should display a phrase with 3 repeat endings",
+            "<img src='sibs/repeats/3-repeats-2.png' alt='3 repeats 2'/>"
+            );
+
+        pictureExample(
+            "repeated-bars.mei", 
+            "Repeated bars", 
+            "Should display individual bars being repeated",
+            "<img src='sibs/repeats/repeated-bars.png' alt='repeated bars'/>"
+            );
+
+        pictureExample(
+            "second-time-difference.mei", 
+            "Second time difference", 
+            "Should display a repeated phrase, in which there is a difference in the second time",
+            "<img src='sibs/repeats/second-time-difference.png' alt='second time difference'/>"
+            );
+
+        pictureExample(
+            "changes-after-repeats.mei", 
+            "Changes after repeats", 
+            "Should show correct positioning for meter, clef or key changes that happen after the repeat",
+            "<img src='sibs/repeats/changes-after-repeats.png' alt='changes after repeats'/>"
+            );
+
+        pictureExample(
+            "repeats-positioning.mei", 
+            "Repeats positioning", 
+            "Should display the correct positioning of repeats in relation to clefs, time and key signatures",
+            "<img src='sibs/repeats/repeats-positioning.png' alt='repeats positioning'/>"
+            );
+
+
+    </script>
+
+
+</body>
+</html>

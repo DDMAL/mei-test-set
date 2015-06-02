@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="" src="verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h1>Chords</h1>
+    <div id="output"/>
+    <script type="text/javascript">
+
+        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        {
+
+            var fileName = "MEI/chords/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+        
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+
+        pictureExample(
+            "chord-test.mei", 
+            "Chord test", 
+            "Should display all 3 notes of each chord",
+            "<img src='sibs/chords/chord-test.png' alt='chord test'/>"
+            );
+
+        pictureExample(
+            "cluster-chords.mei", 
+            "Cluster chords", 
+            "Should correctly display note head placement in cluster chords",
+            "<img src='sibs/chords/cluster-chords.png' alt='cluster chords'/>"
+            );
+
+        pictureExample(
+            "cluster-chords-2.mei", 
+            "Cluster chords 2", 
+            "Should correctly display note head placement in cluster chords",
+            "<img src='sibs/chords/cluster-chords-2.png' alt='cluster chords 2'/>"
+            );
+
+        pictureExample(
+            "cluster-chords-3.mei", 
+            "Cluster chords 3", 
+            "Should correctly display note head placement in cluster chords",
+            "<img src='sibs/chords/cluster-chords-3.png' alt='cluster chords 3'/>"
+            );
+
+        pictureExample(
+            "cluster-chords-stem-directions.mei", 
+            "Cluster chords stem directions", 
+            "Should correctly display note head placement in cluster chords, when in two parts",
+            "<img src='sibs/chords/cluster-chords-stem-directions.png' alt='cluster chords stem directions'/>"
+            );
+
+        pictureExample(
+            "cluster-chords-whole-notes.mei", 
+            "Cluster chords whole notes", 
+            "Should correctly display note head placement in cluster chords made of only whole notes",
+            "<img src='sibs/chords/cluster-chords-whole-notes.png' alt='cluster chords whole notes'/>"
+            );
+
+        pictureExample(
+            "dotted.mei", 
+            "Dotted", 
+            "Should show the correct note head and dot placement",
+            "<img src='sibs/chords/dotted.png' alt='dotted'/>"
+            );
+
+        pictureExample(
+            "dotted-2.mei", 
+            "Dotted 2", 
+            "Should show the correct note head and dot placement when they are close together in two parts",
+            "<img src='sibs/chords/dotted-2.png' alt='dotted 2'/>"
+            );
+
+        pictureExample(
+            "dotted-3.mei", 
+            "Dotted 3", 
+            "Should show the correct note head and dot placement when they are close together in two parts",
+            "<img src='sibs/chords/dotted-3.png' alt='dotted 3'/>"
+            );
+
+        pictureExample(
+            "dotted-4.mei", 
+            "Dotted 4", 
+            "Should show the correct note head and dot placement when they are close together in two parts",
+            "<img src='sibs/chords/dotted-4.png' alt='dotted 4'/>"
+            );
+
+        pictureExample(
+            "dotted-5.mei", 
+            "Dotted 5", 
+            "Should show the correct note head and dot placement when they are close together in two parts",
+            "<img src='sibs/chords/dotted-5.png' alt='dotted 5'/>"
+            );
+
+        pictureExample(
+            "dotted-2-voiced.mei", 
+            "Dotted 2-voiced", 
+            "Should show the correct placement of notes and dots when the notes cross in two parts",
+            "<img src='sibs/chords/dotted-2-voiced.png' alt='dotted 2 voiced'/>"
+            );
+
+        pictureExample(
+            "dotted-unison.mei", 
+            "Dotted unison", 
+            "Should show the correct note head and dot placement when two parts share the same notes",
+            "<img src='sibs/chords/dotted-unison.png' alt='dotted unison'/>"
+            );
+
+        pictureExample(
+            "shared-note-heads.mei", 
+            "Shared note heads", 
+            "Should show the correct stem direction when two parts share note heads, but not rhythms",
+            "<img src='sibs/chords/shared-note-heads.png' alt='shared note heads'/>"
+            );
+
+        pictureExample(
+            "stem-directions.mei", 
+            "Stem directions", 
+            "Should display the correct stem direction in extreme cases",
+            "<img src='sibs/chords/stem-directions.png' alt='stem directions'/>"
+            );
+
+        pictureExample(
+            "stem-directions-2.mei", 
+            "Stem directions 2", 
+            "Should display the correct stem direction in extreme cases",
+            "<img src='sibs/chords/stem-directions-2.png' alt='stem directions 2'/>"
+            );
+
+        pictureExample(
+            "crossing-stems.mei", 
+            "Crossing stems", 
+            "Should correctly display the stem placement when two parts cross",
+            "<img src='sibs/chords/crossing-stems.png' alt='crossing stems'/>"
+            );
+
+        pictureExample(
+            "crossing-stems-2.mei", 
+            "Crossing stems 2", 
+            "Should correctly display the stem placement when two parts cross in different rhythms",
+            "<img src='sibs/chords/crossing-stems-2.png' alt='crossing stems 2'/>"
+            );
+
+        pictureExample(
+            "crossing-whole-notes.mei", 
+            "Crossing whole notes", 
+            "Should correctly display the note head placement when two parts cross",
+            "<img src='sibs/chords/crossing-whole-notes.png' alt='crossing whole notes'/>"
+            );
+
+        pictureExample(
+            "unisons.mei", 
+            "Unisons", 
+            "Should display correct two note heads on one stem",
+            "<img src='sibs/chords/unisons.png' alt='unisons'/>"
+            );
+
+        pictureExample(
+            "unisons-2.mei", 
+            "Unisons 2", 
+            "Should display correct note and stem placement for shared note heads in two parts, with various different rhythms",
+            "<img src='sibs/chords/unisons-2.png' alt='unisons 2'/>"
+            );
+
+        pictureExample(
+            "unisons-3.mei", 
+            "Unisons 3", 
+            "Should display correct note and stem placement for shared note heads in two parts, with various different rhythms",
+            "<img src='sibs/chords/unisons-3.png' alt='unisons 3'/>"
+            );
+
+        pictureExample(
+            "unisons-4.mei", 
+            "Unisons 4", 
+            "Should display correct note and stem placement for shared note heads in two parts, with various different rhythms",
+            "<img src='sibs/chords/unisons-4.png' alt='unisons 4'/>"
+            );
+
+        pictureExample(
+            "unisons-5.mei", 
+            "Unisons 5", 
+            "Should display correct note and stem placement for shared note heads in two parts, with various different rhythms",
+            "<img src='sibs/chords/unisons-5.png' alt='unisons 5'/>"
+            );
+
+        pictureExample(
+            "unisons-accidentals-chords.mei", 
+            "Unisons accidentals chords", 
+            "Should display the correct note head and accidentals placement in cluster chords, especially when the two parts share a note",
+            "<img src='sibs/chords/unisons-accidentals-chords.png' alt='unisons accidentals chords'/>"
+            );
+
+        pictureExample(
+            "unisons-accidentals.mei", 
+            "Unisons accidentals", 
+            "Should display the correct number of accidentals and note heads when there are altered unison chords",
+            "<img src='sibs/chords/unisons-accidentals.png' alt='unisons accidentals'/>"
+            );
+
+
+
+
+    </script>
+
+
+</body>
+</html>

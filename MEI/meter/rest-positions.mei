@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
+<meiHead>
+	<fileDesc>
+		<titleStmt>
+			<title/>
+			<respStmt>
+				<persName/>
+			</respStmt>
+		</titleStmt>
+		<pubStmt>
+			<availability>
+				<useRestrict>Copyright © </useRestrict>
+			</availability>
+		</pubStmt>
+	</fileDesc>
+	<encodingDesc>
+		<appInfo>
+			<application version="7" xml:id="sibelius7">
+				<name>Sibelius</name>
+			</application>
+		</appInfo>
+	</encodingDesc>
+	<workDesc>
+		<work>
+			<titleStmt>
+				<title/>
+				<respStmt/>
+			</titleStmt>
+		</work>
+	</workDesc>
+</meiHead>
+<music>
+	<body>
+		<mdiv>
+			<score>
+				<scoreDef meter.count="4" meter.unit="4" page.botmar="12.7mm" page.height="297mm" page.leftmar="12.7mm" page.rightmar="12.7mm" page.topmar="12.7mm" page.width="210mm" ppq="256">
+					<staffGrp>
+						<staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1" xml:id="sd1"/>
+						<staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="2" xml:id="sd2"/>
+					</staffGrp>
+				</scoreDef>
+				<section>
+					<measure label="1" n="1">
+						<staff n="1">
+							<layer n="1">
+								<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n0v1b1s1"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n512v1b1s1"/>
+								<beam>
+									<note dots="1" dur="8" dur.ges="192p" oct="4" pname="g" xml:id="p1cgd4n768v1b1s1"/>
+									<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n960v1b1s1"/>
+								</beam>
+							</layer>
+						</staff>
+						<staff n="2">
+							<layer n="1">
+								<rest dur="2" dur.ges="512p" xml:id="p1r0v1b1s2"/>
+								<rest dur="4" dur.ges="256p" xml:id="p1r512v1b1s2"/>
+								<rest dots="1" dur="8" dur.ges="192p" xml:id="p1r768v1b1s2"/>
+								<note dur="16" dur.ges="64p" oct="4" pname="g" xml:id="p1cgd4n960v1b1s2"/>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="2">
+						<staff n="1">
+							<layer n="1">
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n0v1b2s1"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n256v1b2s1"/>
+								<beam>
+									<note dur="8" dur.ges="128p" oct="4" pname="g" xml:id="p1cgd4n512v1b2s1"/>
+									<note dur="8" dur.ges="128p" oct="4" pname="g" xml:id="p1cgd4n640v1b2s1"/>
+								</beam>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n768v1b2s1"/>
+							</layer>
+						</staff>
+						<staff n="2">
+							<layer n="1">
+								<rest dur="4" dur.ges="256p" xml:id="p1r0v1b2s2"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n256v1b2s2"/>
+								<rest dur="8" dur.ges="128p" xml:id="p1r512v1b2s2"/>
+								<note dur="8" dur.ges="128p" oct="4" pname="g" xml:id="p1cgd4n640v1b2s2"/>
+								<rest dur="4" dur.ges="256p" xml:id="p1r768v1b2s2"/>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="3">
+						<staff n="1">
+							<layer n="1">
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n0v1b3s1"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n256v1b3s1"/>
+								<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n512v1b3s1"/>
+							</layer>
+						</staff>
+						<staff n="2">
+							<layer n="1">
+								<rest dur="2" dur.ges="512p" xml:id="p1r0v1b3s2"/>
+								<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n512v1b3s2"/>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="4" right="end">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="16" dur.ges="64p" grace="acc" ho="-8.3672mm" oct="5" ornam="A" pname="c" xml:id="p1ccd5n0g7200153v1b4s1"/>
+									<note dur="16" dur.ges="64p" grace="acc" ho="-5.7422mm" oct="4" ornam="A" pname="b" xml:id="p1cbd4n0g7200105v1b4s1"/>
+									<note dur="16" dur.ges="64p" grace="acc" ho="-3.1172mm" oct="4" ornam="A" pname="a" xml:id="p1cad4n0g720057v1b4s1"/>
+									<note dur="16" dur.ges="64p" grace="acc" ho="-8.3672mm" oct="5" ornam="A" pname="c" xml:id="p1ccd5n512g8400153v1b4s1"/>
+									<note dur="16" dur.ges="64p" grace="acc" ho="-5.7422mm" oct="4" ornam="A" pname="b" xml:id="p1cbd4n512g8400105v1b4s1"/>
+									<note dur="16" dur.ges="64p" grace="acc" ho="-3.1172mm" oct="4" ornam="A" pname="a" xml:id="p1cad4n512g840057v1b4s1"/>
+								</beam>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n0v1b4s1"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n256v1b4s1"/>
+								<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n512v1b4s1"/>
+							</layer>
+						</staff>
+						<staff n="2">
+							<layer n="1">
+								<rest dur="4" dur.ges="256p" xml:id="p1r0v1b4s2"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n256v1b4s2"/>
+								<rest dur="4" dur.ges="256p" xml:id="p1r512v1b4s2"/>
+								<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n768v1b4s2"/>
+							</layer>
+						</staff>
+						<slur dur.ges="0p" layer="1" staff="1" tstamp="1"/>
+						<slur dur.ges="0p" layer="1" staff="1" tstamp="3"/>
+					</measure>
+				</section>
+			</score>
+		</mdiv>
+	</body>
+</music>
+</mei>

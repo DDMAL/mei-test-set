@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="" src="verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h1>Trills</h1>
+    <div id="output"/>
+    <script type="text/javascript">
+
+        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        {
+
+            var fileName = "MEI/trills/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+        
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "trills.mei", 
+            "Trills", 
+            "Should display examples of trills",
+            "<img src='sibs/trills/trills.png' alt='trills'/>"
+            );
+
+        pictureExample(
+            "multiple-voiced-trill.mei", 
+            "Multiple voices", 
+            "Should display trills in multiple voices",
+            "<img src='sibs/trills/multiple-voiced-trill.png' alt='multiple voiced trill'/>"
+            );
+
+        pictureExample(
+            "trills-accidentals.mei", 
+            "Accidentals", 
+            "Should display correct placement of accidentals in trilled notes",
+            "<img src='sibs/trills/trills-accidentals.png' alt='trills accidentals'/>"
+            );
+
+        pictureExample(
+            "note-change.mei", 
+            "Note change", 
+            "Should display note changes in the trilled note",
+            "<img src='sibs/trills/note-change.png' alt='note change'/>"
+            );
+
+        pictureExample(
+            "trill-length.mei", 
+            "Length", 
+            "Should display correct trill-length as specified",
+            "<img src='sibs/trills/trill-length.png' alt='trill length'/>"
+            );
+
+        pictureExample(
+            "trill-speeds.mei", 
+            "Speeds", 
+            "Should display changes in trill speed as specified",
+            "<img src='sibs/trills/trill-speeds.png' alt='trill speeds'/>"
+            );
+
+        pictureExample(
+            "trills-with-grace-notes.mei", 
+            "Grace notes", 
+            "Should correctly display grace notes with trills",
+            "<img src='sibs/trills/trills-with-grace-notes.png' alt='trills with grace notes'/>"
+            );
+
+
+
+    </script>
+
+
+</body>
+</html>
