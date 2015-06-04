@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meter</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>MEI-test-set - Meter</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        {
+
+            var fileName = "MEI/meter/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+        
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+
+        pictureExample(
+            "all-groupings.mei", 
+            "All groupings", 
+            "Should display most of the meters and all their possible rhythmical groupings",
+            "<img src='sibs/meter/all-groupings.png' alt='all groupings'/>"
+            );
+
+        pictureExample(
+            "beaming-over-beats.mei", 
+            "Beaming over beats", 
+            "Should show beams over each entire beat of each bar",
+            "<img src='sibs/meter/beamings-over-beats.png' alt='beaming over beats'/>"
+            );
+
+        pictureExample(
+            "beamings.mei", 
+            "Beamings", 
+            "Should correctly display various beaming options and possibilities",
+            "<img src='sibs/meter/beamings.png' alt='beamings'/>"
+            );
+
+        pictureExample(
+            "beams-over-rests.mei", 
+            "Beams over rests", 
+            "Should display various possibilities for beaming over rests or groups of rests",
+            "<img src='sibs/meter/beams-over-rests.png' alt='beams over rests'/>"
+            );
+
+        pictureExample(
+            "beat-division.mei", 
+            "Beat division", 
+            "Should show correct beat divisions for unusual rhythms",
+            "<img src='sibs/meter/beat-division.png' alt='beat division'/>"
+            );
+
+        pictureExample(
+            "beat-division-2.mei", 
+            "Beat division 2", 
+            "Should show correct beat divisions for unusual rhythms",
+            "<img src='sibs/meter/beat-division-2.png' alt='beat division 2'/>"
+            );
+
+        pictureExample(
+            "changing-metres.mei", 
+            "Changing meters", 
+            "Should show changing meters while keeping rhythms the same, or changing rhythmical stress without changing the meter",
+            "<img src='sibs/meter/changing-metres.png' alt='changing meters'/>"
+            );
+
+        pictureExample(
+            "compound-beats.mei", 
+            "Compound beats", 
+            "Should display correct beat divisions for rhythms in compound meters",
+            "<img src='sibs/meter/compound-beats.png' alt='compound beats'/>"
+            );
+
+        pictureExample(
+            "dotted-notes.mei", 
+            "Dotted notes", 
+            "Should correctly display different varations of dotted rhythms",
+            "<img src='sibs/meter/dotted-notes.png' alt='dotted notes'/>"
+            );
+
+        pictureExample(
+            "feathered-beams.mei", 
+            "Feathered beams", 
+            "Should display feathered beams",
+            "<img src='sibs/meter/feathered-beams.png' alt='feathered beams'/>"
+            );
+
+        pictureExample(
+            "fermata-parts.mei", 
+            "Fermata parts", 
+            "Should display correct fermata positioning for multiple parts",
+            "<img src='sibs/meter/fermata-parts.png' alt='fermata parts'/>"
+            );
+
+        pictureExample(
+            "fermata-positioning.mei", 
+            "Fermata positioning", 
+            "Should display correct fermata positioning for various different cases",
+            "<img src='sibs/meter/fermata-positioning.png' alt='fermata positioning'/>"
+            );
+
+        pictureExample(
+            "fermatas.mei", 
+            "Fermata", 
+            "Positioning of fermatas should be correct in these simple cases",
+            "<img src='sibs/meter/fermata.png' alt='fermata'/>"
+            );
+
+        pictureExample(
+            "measure-rests.mei", 
+            "Measure rests", 
+            "Full measure rests should show up as specified",
+            "<img src='sibs/meter/measure-rests.png' alt='measure rests'/>"
+            );
+
+        pictureExample(
+            "meter-changes.mei", 
+            "Meter changes", 
+            "Should show correct beaming for different meters",
+            "<img src='sibs/meter/meter-change.png' alt='meter changes'/>"
+            );
+
+        pictureExample(
+            "metric-modulation.mei", 
+            "Metric modulation", 
+            "Metric modulation notation should be correctly positioned over bar lines",
+            "<img src='sibs/meter/metric-modulation.png' alt='metric modulation'/>"
+            );
+
+        pictureExample(
+            "more-beaming.mei", 
+            "More beaming", 
+            "Beaming groups should be correct according to the meter",
+            "<img src='sibs/meter/more-beaming.png' alt='more beaming'/>"
+            );
+
+        pictureExample(
+            "more-beaming-2.mei", 
+            "More beaming 2", 
+            "Beaming groups should be correct according to the meter",
+            "<img src='sibs/meter/more-beaming-2.png' alt='more beaming 2'/>"
+            );
+
+        pictureExample(
+            "more-beaming-3.mei", 
+            "More beaming 3", 
+            "Beaming groups should be correct according to the meter",
+            "<img src='sibs/meter/more-beaming-3.png' alt='more beaming 3'/>"
+            );
+
+        pictureExample(
+            "more-beaming-4.mei", 
+            "More beaming 4", 
+            "Beaming groups should be correct according to the meter",
+            "<img src='sibs/meter/more-beaming-4.png' alt='more beaming 4'/>"
+            );
+
+        pictureExample(
+            "more-beaming-5.mei",
+            "More beaming 5", 
+            "Beaming groups should be correct according to the meter",
+            "<img src='sibs/meter/more-beaming-5.png' alt='more beaming 5'/>"
+            );
+
+        pictureExample(
+            "multimeasure-rests.mei", 
+            "Multimeasure rests", 
+            "Should show notation for multimeasure rests",
+            "<img src='sibs/meter/multimeasure-rests.png' alt='multimeasure rests'/>"
+            );
+
+        pictureExample(
+            "new-rhythm.mei", 
+            "New rhythm", 
+            "Notes in brackets or beamed across bar lines should be rhythmically linked, despite the meter",
+            "<img src='sibs/meter/new-rhythm.png' alt='new rhythm'/>"
+            );
+
+        pictureExample(
+            "note-head-denominator.mei", 
+            "Note head denominator", 
+            "Should display a note head as the denominator of the time signature",
+            "<img src='sibs/meter/notehead-denominator.png' alt='notehead denominator'/>"
+            );
+
+        pictureExample(
+            "old-measure-groups.mei", 
+            "Old measure groups", 
+            "Should show both old and new versions of grouping rests in bars",
+            "<img src='sibs/meter/old-measure-groups.png' alt='old measure groups'/>"
+            );
+
+        pictureExample(
+            "parentheses.mei", 
+            "Parentheses", 
+            "Should display secondary time signatures in parentheses",
+            "<img src='sibs/meter/parentheses.png' alt='parentheses'/>"
+            );
+
+        pictureExample(
+            "polymeter.mei", 
+            "Polymeter", 
+            "Should display different meters for each part, and have correct line up of bar lines between parts",
+            "<img src='sibs/meter/polyrhythm.png' alt='polymeter'/>"
+            );
+
+        pictureExample(
+            "quadruple-dotted.mei", 
+            "Quadruple dotted", 
+            "Should display different ways of notating quadruple dotted rhythms",
+            "<img src='sibs/meter/quadruple-dotted.png' alt='quadruple dotted'/>"
+            );
+
+        pictureExample(
+            "rest-groupings.mei", 
+            "Rest groupings", 
+            "Should display different ways of grouping rests in bars",
+            "<img src='sibs/meter/rest-groupings.png' alt='rest groupings'/>"
+            );
+
+        pictureExample(
+            "rest-groupings-2.mei", 
+            "Rest groupings 2", 
+            "Should display different ways of grouping rests in bars",
+            "<img src='sibs/meter/rest-groupings-2.png' alt='rest groupings 2'/>"
+            );
+
+        pictureExample(
+            "rest-groupings-3.mei", 
+            "Rest groupings 3", 
+            "Should display different ways of grouping rests in bars",
+            "<img src='sibs/meter/rest-groupings-3.png' alt='rest groupings 3'/>"
+            );
+
+        pictureExample(
+            "rest-positions.mei", 
+            "Rest positions", 
+            "Rest positioning should be correctly lined up with notes",
+            "<img src='sibs/meter/rest-positions.png' alt='rest positions'/>"
+            );
+
+        pictureExample(
+            "scale-beaming.mei", 
+            "Scale beaming", 
+            "Beaming can be adjusted for musical phrases",
+            "<img src='sibs/meter/scale-beaming.png' alt='scale beaming'/>"
+            );
+
+        pictureExample(
+            "structural-beaming.mei", 
+            "Structural beaming", 
+            "Beaming groups should be correct according to the meter",
+            "<img src='sibs/meter/structural-beaming.png' alt='structural beaming'/>"
+            );
+
+        pictureExample(
+            "sustaining-across-beats.mei", 
+            "Sustaining across beats", 
+            "Should display the correct way of notating sustained notes within different meters",
+            "<img src='sibs/meter/sustaining-across-beats.png' alt='sustaining across beats'/>"
+            );
+
+        pictureExample(
+            "syncopation.mei", 
+            "Syncopation", 
+            "Should display ways of notating syncopation in various meters",
+            "<img src='sibs/meter/syncopations.png' alt='syncopations'/>"
+            );
+
+        pictureExample(
+            "tempo-indications.mei", 
+            "Tempo alterations", 
+            "Should display various tempo alterations within a phrase",
+            "<img src='sibs/meter/tempo-alterations.png' alt='tempo alterations'/>"
+            );
+
+        pictureExample(
+            "tempo-alterations-2.mei", 
+            "Tempo alterations 2", 
+            "Should display various tempo alterations within a phrase",
+            "<img src='sibs/meter/tempo-alterations-2.png' alt='tempo alterations'/>"
+            );
+
+        pictureExample(
+            "tempo-alterations.mei", 
+            "Tempo alterations 3", 
+            "Should display various tempo alterations within a phrase",
+            "<img src='sibs/meter/tempo-alterations-3.png' alt='tempo alterations 3'/>"
+            );
+
+        pictureExample(
+            "variable-stress.mei", 
+            "Variable stress", 
+            "Should display ways of notating stresses on other beats than the usual",
+            "<img src='sibs/meter/variable-stress.png' alt='variable stress'/>"
+            );
+
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

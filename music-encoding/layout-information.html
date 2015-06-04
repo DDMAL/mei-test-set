@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout information</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>Layout information</h2>
+<h3>Layout_information.mei</h3>
+
+    <div id="output">
+    <script type="text/javascript">
+
+        var fileName = "MEI/Layout_information.mei";
+
+        var vrvToolkit = new verovio.toolkit();
+        vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.onload = function(args)
+        {
+ 
+            var svg = vrvToolkit.renderData(xhr.responseText, "");
+            document.getElementById("output").innerHTML += svg + "<hr/>";
+
+        }
+      
+        xhr.open("GET", fileName);
+        xhr.send();
+
+
+
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

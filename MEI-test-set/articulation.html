@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Articulation</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>MEI-test-set - Articulation</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        {
+
+            var fileName = "MEI/articulation/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+        
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "articulations.mei", 
+            "Articulations", 
+            "Should show various articulations on each note",
+            "<img src='sibs/articulation/articulations.png' alt='articulations'/>"
+            );
+
+        pictureExample(
+            "stacc-up-and-down.mei", 
+            "Staccato up and down", 
+            "Should show the correct placement for staccato above and below the notes",
+            "<img src='sibs/articulation/stacc-up-and-down.png' alt='staccato up and down'/>"
+            );
+
+        pictureExample(
+            "accents-up-and-down.mei", 
+            "Accents up and down", 
+            "Should correctly show accents above and below the notes, where relevant",
+            "<img src='sibs/articulation/accents-up-and-down.png' alt='accents up and down'/>"
+            );
+
+        pictureExample(
+            "artic-on-whole.mei", 
+            "Articulation on whole notes", 
+            "Should correctly display articulation on each of the whole notes",
+            "<img src='sibs/articulation/artic-on-whole.png' alt='artic on whole'/>"
+            );
+
+        pictureExample(
+            "multiple-articulations.mei", 
+            "Multiple articulations", 
+            "Should correctly display the placement for multiple articulations on one note",
+            "<img src='sibs/articulation/multiple-articulations.png' alt='multiple articulations'/>"
+            );
+
+        pictureExample(
+            "artic-with-slurs.mei", 
+            "Articulation with slurs", 
+            "Should display the correct placement of articulation and slurs",
+            "<img src='sibs/articulation/artic-with-slurs.png' alt='artic with slurs'/>"
+            );
+
+        pictureExample(
+            "staccato-simile.mei", 
+            "Staccato simile", 
+            "Should correctly show the use of the word simile with staccato notes",
+            "<img src='sibs/articulation/staccato-simile.png' alt='staccato simile'/>"
+            );
+
+        pictureExample(
+            "dotted-and-staccato.mei", 
+            "Dotted and staccato", 
+            "Should show a recognizable difference between rhythmically dotted notes and staccato rhythm",
+            "<img src='sibs/articulation/dotted-and-staccato.png' alt='dotted and staccato'/>"
+            );
+
+        pictureExample(
+            "multiple-dots.mei", 
+            "Multiple dots", 
+            "Should show a recognizable difference between rhythmically dotted notes and staccato rhythm, when there are multiple dots",
+            "<img src='sibs/articulation/multiple-dots.png' alt='multiple dots'/>"
+            );
+
+        pictureExample(
+            "ledger-lines.mei", 
+            "Ledger lines", 
+            "Should show the correct placement for articulation when dealing with ledger lines ",
+            "<img src='sibs/articulation/ledger-lines.png' alt='ledger lines'/>"
+            );
+
+        pictureExample(
+            "two-parts-articulation.mei", 
+            "Two parts articulation", 
+            "Should show the correct placement for articulation in two separate parts",
+            "<img src='sibs/articulation/two-parts-articulation.png' alt='two parts articulation'/>"
+            );
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vexflow - staves</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>Vexflow - staves</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI)
+        {
+
+            var fileName = "MEI/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
+
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "TC.PlainStaff.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.01.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.02.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.03.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.04.mei"
+            );
+
+        pictureExample(
+            "TC.MultiStave.05.mei"
+            );
+
+        pictureExample(
+            "Demo.StaveConnectors.mei"
+            );
+
+        pictureExample(
+            "MultiStaveSystemBreak.mei"
+            );
+
+        pictureExample(
+            "TC.Slice.mei"
+            );
+
+        pictureExample(
+            "TC.StaffChange.01.mei" 
+            );
+
+        pictureExample(
+            "TC.StaffChange.02.mei" 
+            );
+
+        pictureExample(
+            "TC.StaffChange.03.mei" 
+            );
+
+        pictureExample(
+            "TC.StaffChange.04.mei" 
+            );
+
+        pictureExample(
+            "TC.StaveVoices.01.mei" 
+            );
+
+        pictureExample(
+            "TC.StaveVoices.02.mei" 
+            );
+
+        pictureExample(
+            "TC.StaveVoices.03.mei" 
+            );
+
+        pictureExample(
+            "VF.Stave.Tempo.mei"
+            );
+
+
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

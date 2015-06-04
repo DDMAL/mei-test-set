@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
+<meiHead>
+	<fileDesc>
+		<titleStmt>
+			<title/>
+			<respStmt>
+				<persName/>
+			</respStmt>
+		</titleStmt>
+		<pubStmt>
+			<availability>
+				<useRestrict>Copyright © </useRestrict>
+			</availability>
+		</pubStmt>
+	</fileDesc>
+	<encodingDesc>
+		<appInfo>
+			<application version="7" xml:id="sibelius7">
+				<name>Sibelius</name>
+			</application>
+		</appInfo>
+	</encodingDesc>
+	<workDesc>
+		<work>
+			<titleStmt>
+				<title/>
+				<respStmt/>
+			</titleStmt>
+		</work>
+	</workDesc>
+</meiHead>
+<music>
+	<body>
+		<mdiv>
+			<score>
+				<scoreDef meter.count="4" meter.unit="4" page.botmar="12.7mm" page.height="297mm" page.leftmar="12.7mm" page.rightmar="12.7mm" page.topmar="12.7mm" page.width="210mm" ppq="256">
+					<staffGrp>
+						<staffGrp n="1" symbol="brace">
+							<staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Piano" lines="5" n="1" xml:id="sd1"/>
+							<staffDef clef.line="4" clef.shape="F" key.mode="major" key.sig="0" label="Piano" lines="5" n="2" xml:id="sd2"/>
+						</staffGrp>
+					</staffGrp>
+				</scoreDef>
+				<section>
+					<pb n="1"/>
+					<measure label="1" n="1">
+						<staff n="1">
+							<layer n="1">
+								<chord dur="2" dur.ges="512p" xml:id="c0v1b1s1">
+									<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n0v1b1s1"/>
+									<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p2cgd4n0v1b1s1"/>
+									<note dur="2" dur.ges="512p" oct="5" pname="c" xml:id="p3ccd5n0v1b1s1"/>
+								</chord>
+								<chord dur="2" dur.ges="512p" xml:id="c512v1b1s1">
+									<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n512v1b1s1"/>
+									<note dur="2" dur.ges="512p" oct="4" pname="a" xml:id="p2cad4n512v1b1s1"/>
+									<note dur="2" dur.ges="512p" oct="5" pname="c" xml:id="p3ccd5n512v1b1s1"/>
+								</chord>
+							</layer>
+						</staff>
+						<staff n="2">
+							<layer n="1">
+								<chord dur="2" dur.ges="512p" xml:id="c0v1b1s2">
+									<note dur="2" dur.ges="512p" oct="3" pname="c" xml:id="p1ccd3n0v1b1s2"/>
+									<note dur="2" dur.ges="512p" oct="3" pname="g" xml:id="p2cgd3n0v1b1s2"/>
+									<note dur="2" dur.ges="512p" oct="4" pname="c" xml:id="p3ccd4n0v1b1s2"/>
+								</chord>
+								<chord dur="2" dur.ges="512p" xml:id="c512v1b1s2">
+									<note dur="2" dur.ges="512p" oct="2" pname="a" xml:id="p1cad2n512v1b1s2"/>
+									<note dur="2" dur.ges="512p" oct="3" pname="e" xml:id="p2ced3n512v1b1s2"/>
+									<note dur="2" dur.ges="512p" oct="3" pname="a" xml:id="p3cad3n512v1b1s2"/>
+								</chord>
+							</layer>
+						</staff>
+						<dynam ho="-7.3828mm" staff="1" tstamp="1" vo="8.0938mm">mf</dynam>
+						<dynam ho="-5.1953mm" staff="1" tstamp="1" vo="-8.75mm">p</dynam>
+						<hairpin dur.ges="10p" form="cres" staff="1" tstamp="1"/>
+						<dynam ho="-6.7266mm" staff="2" tstamp="1" vo="-10.9375mm">mf</dynam>
+						<hairpin dur.ges="10p" form="cres" staff="2" tstamp="1" vo="2.625mm"/>
+					</measure>
+					<measure n="2" right="end">
+						<staff n="1">
+							<layer n="1">
+								<chord dur="2" dur.ges="512p" xml:id="c0v1b2s1">
+									<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n0v1b2s1"/>
+									<note dur="2" dur.ges="512p" oct="4" pname="a" xml:id="p2cad4n0v1b2s1"/>
+									<note dur="2" dur.ges="512p" oct="5" pname="c" xml:id="p3ccd5n0v1b2s1"/>
+								</chord>
+								<chord dur="2" dur.ges="512p" xml:id="c512v1b2s1">
+									<note dur="2" dur.ges="512p" oct="4" pname="d" xml:id="p1cdd4n512v1b2s1"/>
+									<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p2cgd4n512v1b2s1"/>
+									<note dur="2" dur.ges="512p" oct="4" pname="b" xml:id="p3cbd4n512v1b2s1"/>
+								</chord>
+							</layer>
+						</staff>
+						<staff n="2">
+							<layer n="1">
+								<chord dur="2" dur.ges="512p" xml:id="c0v1b2s2">
+									<note dur="2" dur.ges="512p" oct="2" pname="f" xml:id="p1cfd2n0v1b2s2"/>
+									<note dur="2" dur.ges="512p" oct="3" pname="c" xml:id="p2ccd3n0v1b2s2"/>
+									<note dur="2" dur.ges="512p" oct="3" pname="f" xml:id="p3cfd3n0v1b2s2"/>
+								</chord>
+								<chord dur="2" dur.ges="512p" xml:id="c512v1b2s2">
+									<note dur="2" dur.ges="512p" oct="2" pname="g" xml:id="p1cgd2n512v1b2s2"/>
+									<note dur="2" dur.ges="512p" oct="3" pname="d" xml:id="p2cdd3n512v1b2s2"/>
+									<note dur="2" dur.ges="512p" oct="3" pname="f" xml:id="p3cfd3n512v1b2s2"/>
+								</chord>
+							</layer>
+						</staff>
+						<dynam ho="-1.0391mm" staff="1" tstamp="2.6836" vo="5.6875mm">pp</dynam>
+						<dynam ho="-0.0547mm" staff="2" tstamp="2.6523" vo="-7.4375mm">p</dynam>
+					</measure>
+				</section>
+			</score>
+		</mdiv>
+	</body>
+</music>
+</mei>

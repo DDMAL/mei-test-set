@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music structure</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>Music structure</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI)
+        {
+
+            var fileName = "MEI/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
+        
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "group_element.mei"
+            );
+
+        pictureExample(
+            "multiple_sectionsI.mei"
+            );
+
+        pictureExample(
+            "multiple_sectionsII.mei"
+            );
+
+        pictureExample(
+            "Das_Veilchen_artic_element.mei"
+            );
+
+        pictureExample(
+            "Opera.mei"
+            );
+
+        pictureExample(
+            "part_element.mei"
+            );
+
+        pictureExample(
+            "Tschaikovsky_No.5_op.64.mei"
+            );
+
+        pictureExample(
+            "Vivaldi_multiple_mdivs.mei"
+            );
+
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

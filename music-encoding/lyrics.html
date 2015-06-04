@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lyrics</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>Lyrics</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI)
+        {
+
+            var fileName = "MEI/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
+        
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "attribute_syl.mei"
+            );
+
+        pictureExample(
+            "element_syl.mei"
+            );
+
+        pictureExample(
+            "lyrics.mei"
+            );
+
+        pictureExample(
+            "multiple_verses.mei"
+            );
+
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Short examples</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>Short examples</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI, myTitle)
+        {
+
+            var fileName = "MEI/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myTitle + "</h3>" + "<p>" + myMEI + "</p>" + svg + "<hr/>";
+        
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "break.mei",
+            "beam-break"
+            );
+
+        pictureExample(
+            "grace.mei",
+            "beam-grace"
+            );
+
+        pictureExample(
+            "secondary.mei",
+            "beam-secondary"
+            );
+
+        pictureExample(
+            "artic.mei",
+            "chord-artic"
+            );
+
+        pictureExample(
+            "bidur.mei",
+            "chord-bidur"
+            );
+
+        pictureExample(
+            "chord-seconds.mei",
+            "chord-seconds"
+            );
+
+        pictureExample(
+            "lhrh.mei",
+            "layer-lhrh"
+            );
+
+        pictureExample(
+            "lhrh2.mei",
+            "layer-lhrh2"
+            );
+
+        pictureExample(
+            "lhrh3.mei",
+            "layer-lhrh3"
+            );
+
+        pictureExample(
+            "lhrh4.mei",
+            "layer-lhrh4"
+            );
+
+        pictureExample(
+            "x3staff.mei",
+            "layer-x3staff"
+            );
+
+        pictureExample(
+            "xchord.mei",
+            "layer-xchord"
+            );
+
+        pictureExample(
+            "caution.mei",
+            "note-caution"
+            );
+
+        pictureExample(
+            "fturn.mei",
+            "Ornament-fturn"
+            );
+
+        pictureExample(
+            "trill.mei",
+            "Ornament-trill"
+            );
+
+        pictureExample(
+            "fractup.mei",
+            "rhythm-fractup"
+            );
+
+        pictureExample(
+            "keytime.mei",
+            "staff-keytime"
+            );
+
+        pictureExample(
+            "finger.mei",
+            "tie-finger"
+            );
+
+        pictureExample(
+            "finger2.mei",
+            "tie-finger2"
+            );
+
+        pictureExample(
+            "ambig.mei",
+            "tuplet-ambig"
+            );
+
+        pictureExample(
+            "ambig2.mei",
+            "tuplet-ambig2"
+            );
+
+        pictureExample(
+            "nested.mei",
+            "tuplet-nested"
+            );
+
+
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arpeggios</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>MEI-test-set - Arpeggios</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        {
+
+            var fileName = "MEI/arpeggios/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+        
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+        pictureExample(
+            "arpeggios.mei", 
+            "Arpeggios", 
+            "Should show arpeggios on each note, their placement with accidentals, and upwards and downwards arrows",
+            "<img src='sibs/arpeggios/arpeggios.png' alt='arpeggios'/>"
+            );
+
+        pictureExample(
+            "broken-arpegg.mei", 
+            "Broken arpeggios", 
+            "Should show each hand of the piano playing arpeggios separately",
+            "<img src='sibs/arpeggios/broken-arpegg.png' alt='broken arpeggios'/>"
+            );
+
+        pictureExample(
+            "dynamics.mei", 
+            "Dynamics", 
+            "Should display dynamic changes throughout the arpeggio itself, e.g. from up to down",
+            "<img src='sibs/arpeggios/dynamics.png' alt='dynamics'/>"
+            );
+
+        pictureExample(
+            "over-staves.mei", 
+            "Over staves", 
+            "Should display sustained arpeggios that go over the staves",
+            "<img src='sibs/arpeggios/over-staves.png' alt='over staves'/>"
+            );
+
+        pictureExample(
+            "stop-start-arpegg.mei", 
+            "Stop-start arpeggios", 
+            "Should display the notation for stopping and starting arpeggios",
+            "<img src='sibs/arpeggios/stop-start-arpegg.png' alt='stop start arpegg'/>"
+            );
+
+        pictureExample(
+            "written-out.mei", 
+            "Written out", 
+            "Should show written out arpeggios, both with normal notes and with grace notes",
+            "<img src='sibs/arpeggios/written-out.png' alt='written out'/>"
+            );
+        
+        pictureExample(
+            "vib-changes.mei", 
+            "Vib changes", 
+            "Should show vibrato size change over long note",
+            "<img src='sibs/arpeggios/vib-changes.png' alt='vib changes'/>"
+            );
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

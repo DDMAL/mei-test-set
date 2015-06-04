@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
+<meiHead>
+	<fileDesc>
+		<titleStmt>
+			<title/>
+			<respStmt>
+				<persName/>
+			</respStmt>
+		</titleStmt>
+		<pubStmt>
+			<availability>
+				<useRestrict>Copyright © </useRestrict>
+			</availability>
+		</pubStmt>
+	</fileDesc>
+	<encodingDesc>
+		<appInfo>
+			<application version="7" xml:id="sibelius7">
+				<name>Sibelius</name>
+			</application>
+		</appInfo>
+	</encodingDesc>
+	<workDesc>
+		<work>
+			<titleStmt>
+				<title/>
+				<respStmt/>
+			</titleStmt>
+		</work>
+	</workDesc>
+</meiHead>
+<music>
+	<body>
+		<mdiv>
+			<score>
+				<scoreDef meter.count="4" meter.unit="4" page.botmar="12.7mm" page.height="297mm" page.leftmar="12.7mm" page.rightmar="12.7mm" page.topmar="12.7mm" page.width="210mm" ppq="256">
+					<staffGrp>
+						<staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1" xml:id="sd1"/>
+					</staffGrp>
+				</scoreDef>
+				<section>
+					<pb n="1"/>
+					<measure label="1" n="1">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1ccd4n0v1b1s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="d" xml:id="p1cdd4n128v1b1s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="e" xml:id="p1ced4n256v1b1s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n384v1b1s1">
+										<accid accid="s"/>
+									</note>
+								</beam>
+								<beam>
+									<note dur="8" dur.ges="128p" oct="4" pname="g" xml:id="p1cgd4n512v1b1s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="a" xml:id="p1cad4n640v1b1s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="b" xml:id="p1cbd4n768v1b1s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n896v1b1s1">
+										<accid accid="s"/>
+									</note>
+								</beam>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="2">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="8" dur.ges="128p" oct="5" pname="d" xml:id="p1cdd5n0v1b2s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="e" xml:id="p1ced5n128v1b2s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="f" xml:id="p1cfd5n256v1b2s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="g" xml:id="p1cgd5n384v1b2s1">
+										<accid accid="s"/>
+									</note>
+								</beam>
+								<beam>
+									<note dur="8" dur.ges="128p" oct="5" pname="a" xml:id="p1cad5n512v1b2s1">
+										<accid accid="s"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1ccd4n640v1b2s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="d" xml:id="p1cdd4n768v1b2s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="e" xml:id="p1ced4n896v1b2s1">
+										<accid accid="f"/>
+									</note>
+								</beam>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="3">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n0v1b3s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="g" xml:id="p1cgd4n128v1b3s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="a" xml:id="p1cad4n256v1b3s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="b" xml:id="p1cbd4n384v1b3s1">
+										<accid accid="f"/>
+									</note>
+								</beam>
+								<beam>
+									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n512v1b3s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="d" xml:id="p1cdd5n640v1b3s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="e" xml:id="p1ced5n768v1b3s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="f" xml:id="p1cfd5n896v1b3s1">
+										<accid accid="f"/>
+									</note>
+								</beam>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="4">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="8" dur.ges="128p" oct="5" pname="g" xml:id="p1cgd5n0v1b4s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="a" xml:id="p1cad5n128v1b4s1">
+										<accid accid="f"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1ccd4n256v1b4s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="d" xml:id="p1cdd4n384v1b4s1">
+										<accid accid="x"/>
+									</note>
+								</beam>
+								<beam>
+									<note dur="8" dur.ges="128p" oct="4" pname="e" xml:id="p1ced4n512v1b4s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n640v1b4s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="g" xml:id="p1cgd4n768v1b4s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="a" xml:id="p1cad4n896v1b4s1">
+										<accid accid="x"/>
+									</note>
+								</beam>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="5">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="8" dur.ges="128p" oct="4" pname="b" xml:id="p1cbd4n0v1b5s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n128v1b5s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="d" xml:id="p1cdd5n256v1b5s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="e" xml:id="p1ced5n384v1b5s1">
+										<accid accid="x"/>
+									</note>
+								</beam>
+								<beam>
+									<note dur="8" dur.ges="128p" oct="5" pname="f" xml:id="p1cfd5n512v1b5s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="g" xml:id="p1cgd5n640v1b5s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="a" xml:id="p1cad5n768v1b5s1">
+										<accid accid="x"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1ccd4n896v1b5s1">
+										<accid accid="ff"/>
+									</note>
+								</beam>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="6">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="8" dur.ges="128p" oct="4" pname="d" xml:id="p1cdd4n0v1b6s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="e" xml:id="p1ced4n128v1b6s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n256v1b6s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="g" xml:id="p1cgd4n384v1b6s1">
+										<accid accid="ff"/>
+									</note>
+								</beam>
+								<beam>
+									<note dur="8" dur.ges="128p" oct="4" pname="a" xml:id="p1cad4n512v1b6s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="4" pname="b" xml:id="p1cbd4n640v1b6s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n768v1b6s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="d" xml:id="p1cdd5n896v1b6s1">
+										<accid accid="ff"/>
+									</note>
+								</beam>
+							</layer>
+						</staff>
+					</measure>
+					<measure n="7" right="end">
+						<staff n="1">
+							<layer n="1">
+								<beam>
+									<note dur="8" dur.ges="128p" oct="5" pname="e" xml:id="p1ced5n0v1b7s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="f" xml:id="p1cfd5n128v1b7s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="g" xml:id="p1cgd5n256v1b7s1">
+										<accid accid="ff"/>
+									</note>
+									<note dur="8" dur.ges="128p" oct="5" pname="a" xml:id="p1cad5n384v1b7s1">
+										<accid accid="ff"/>
+									</note>
+								</beam>
+								<rest dur="8" dur.ges="128p" xml:id="p1r512v1b7s1"/>
+								<rest dur="8" dur.ges="128p" xml:id="p1r640v1b7s1"/>
+								<rest dur="4" dur.ges="256p" xml:id="p1r768v1b7s1"/>
+							</layer>
+						</staff>
+					</measure>
+				</section>
+			</score>
+		</mdiv>
+	</body>
+</music>
+</mei>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vexflow - Extras</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>Vexflow - Extras</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        function pictureExample(myMEI)
+        {
+
+            var fileName = "MEI/" + myMEI;
+
+            var vrvToolkit = new verovio.toolkit();
+            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.onload = function(args)
+            {
+ 
+                var svg = vrvToolkit.renderData(xhr.responseText, "");
+                document.getElementById("output").innerHTML += "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
+
+            }
+      
+            xhr.open("GET", fileName);
+            xhr.send();
+        }
+
+
+        pictureExample(
+            "Demo.StaffDefChanges.mei"
+            );
+
+        pictureExample(
+            "TC.BarLines.mei"
+            );
+
+        pictureExample(
+            "TC.Beams.mei"
+            );
+
+        pictureExample(
+            "TC.Fermatas.mei"
+            );
+
+        pictureExample(
+            "TC.Hyphens.mei"
+            );
+
+        pictureExample(
+            "TC.Hyphens.Verses.mei"
+            );
+
+        pictureExample(
+            "TC.id2tstamp.mei"
+            );
+
+        pictureExample(
+            "TC.MeterChange.mei"
+            );
+
+        pictureExample(
+            "TC.MissingAttribute.mei"
+            );
+
+        pictureExample(
+            "TC.One-measure.mei"
+            );
+
+        pictureExample(
+            "TC.Space.mei"
+            );
+
+        pictureExample(
+            "TC.tstamp2id.mei"
+            );
+
+        pictureExample(
+            "TC.Tuplets.mei"
+            );
+
+        pictureExample(
+            "TC.Variants.mei" 
+            );
+
+
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>

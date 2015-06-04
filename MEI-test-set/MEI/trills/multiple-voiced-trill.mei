@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
+<meiHead>
+	<fileDesc>
+		<titleStmt>
+			<title/>
+			<respStmt>
+				<persName/>
+			</respStmt>
+		</titleStmt>
+		<pubStmt>
+			<availability>
+				<useRestrict>Copyright © </useRestrict>
+			</availability>
+		</pubStmt>
+	</fileDesc>
+	<encodingDesc>
+		<appInfo>
+			<application version="7" xml:id="sibelius7">
+				<name>Sibelius</name>
+			</application>
+		</appInfo>
+	</encodingDesc>
+	<workDesc>
+		<work>
+			<titleStmt>
+				<title/>
+				<respStmt/>
+			</titleStmt>
+		</work>
+	</workDesc>
+</meiHead>
+<music>
+	<body>
+		<mdiv>
+			<score>
+				<scoreDef meter.count="4" meter.unit="4" page.botmar="12.7mm" page.height="297mm" page.leftmar="12.7mm" page.rightmar="12.7mm" page.topmar="12.7mm" page.width="210mm" ppq="256">
+					<staffGrp>
+						<staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1" xml:id="sd1"/>
+					</staffGrp>
+				</scoreDef>
+				<section>
+					<pb n="1"/>
+					<measure label="1" n="1">
+						<staff n="1">
+							<layer n="1">
+								<note dur="2" dur.ges="512p" oct="5" pname="a" xml:id="p1cad5n0v1b1s1"/>
+								<note dur="2" dur.ges="512p" oct="5" pname="g" xml:id="p1cgd5n512v1b1s1"/>
+							</layer>
+							<layer n="2">
+								<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n0v2b1s1"/>
+								<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n512v2b1s1"/>
+							</layer>
+						</staff>
+						<hairpin dur.ges="512p" form="cres" staff="1" tstamp="1" vo="16.1875mm"/>
+						<trill dur.ges="512p" staff="1" tstamp="1" vo="12.25mm"/>
+						<trill dur.ges="512p" staff="1" tstamp="1"/>
+						<trill dur.ges="511p" staff="1" tstamp="3" vo="11.8125mm"/>
+						<trill dur.ges="511p" staff="1" tstamp="3"/>
+					</measure>
+					<measure n="2">
+						<staff n="1">
+							<layer n="1">
+								<note dur="2" dur.ges="512p" oct="5" pname="f" xml:id="p1cfd5n0v1b2s1"/>
+								<note dur="2" dur.ges="512p" oct="5" pname="e" xml:id="p1ced5n512v1b2s1"/>
+							</layer>
+							<layer n="2">
+								<note dur="2" dur.ges="512p" oct="4" pname="f" xml:id="p1cfd4n0v2b2s1"/>
+								<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n512v2b2s1"/>
+							</layer>
+						</staff>
+						<trill dur.ges="512p" staff="1" tstamp="1" vo="12.25mm"/>
+						<trill dur.ges="512p" staff="1" tstamp="3"/>
+					</measure>
+					<measure n="3" right="end">
+						<staff n="1">
+							<layer n="1">
+								<chord dur="2" dur.ges="512p" xml:id="c0v1b3s1">
+									<note dur="2" dur.ges="512p" oct="4" pname="b" xml:id="p1cbd4n0v1b3s1"/>
+									<note dur="2" dur.ges="512p" oct="5" pname="f" xml:id="p2cfd5n0v1b3s1"/>
+								</chord>
+								<rest dur="2" dur.ges="512p" xml:id="p1r512v1b3s1"/>
+							</layer>
+							<layer n="2">
+								<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n0v2b3s1"/>
+								<rest dur="2" dur.ges="512p" xml:id="p1r512v2b3s1"/>
+							</layer>
+						</staff>
+						<trill dur.ges="512p" staff="1" tstamp="1" vo="10.2812mm"/>
+						<trill dur.ges="512p" staff="1" tstamp="1" vo="13.7812mm"/>
+					</measure>
+				</section>
+			</score>
+		</mdiv>
+	</body>
+</music>
+</mei>

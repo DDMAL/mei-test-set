@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Praetorius - Puer Nobis Nascitur</title>
+    <script src="../verovio-toolkit.js"></script>
+</head>
+<body>
+
+<h2>Praetorius - Puer Nobis Nascitur</h2>
+    <div id="output">
+    <script type="text/javascript">
+
+        var fileName = "MEI/Praetorius_PuerNobisNascitur.mei";
+
+        var vrvToolkit = new verovio.toolkit();
+        vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
+
+        var xhr = new XMLHttpRequest();
+
+        xhr.onload = function(args)
+        {
+ 
+            var svg = vrvToolkit.renderData(xhr.responseText, "");
+            document.getElementById("output").innerHTML += svg + "<hr/>";
+
+        }
+      
+        xhr.open("GET", fileName);
+        xhr.send();
+
+
+
+
+
+    </script>
+    </div>
+
+
+</body>
+</html>
