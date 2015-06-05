@@ -15,20 +15,30 @@
         var vrvToolkit = new verovio.toolkit();
         vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
 
+        var n;
+        var x = 1;
+
         var xhr = new XMLHttpRequest();
 
         xhr.onload = function(args)
         {
- 
-            var svg = vrvToolkit.renderData(xhr.responseText, "");
-            document.getElementById("output").innerHTML += svg + "<hr/>";
 
+            vrvToolkit.loadData(xhr.responseText);
+            n = vrvToolkit.getPageCount();
+
+            while (x <= n)
+            {
+
+                var svg = vrvToolkit.renderPage(x, "");
+                document.getElementById("output").innerHTML += svg + "<hr/>";
+                x += 1;
+            }
+
+            document.getElementById("output").innerHTML += "<hr noshade/>";
         }
-      
-        xhr.open("GET", fileName);
-        xhr.send();
 
-
+            xhr.open("GET", fileName);
+            xhr.send();
 
 
 
