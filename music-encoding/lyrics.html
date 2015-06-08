@@ -18,24 +18,18 @@
             var vrvToolkit = new verovio.toolkit();
             vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
 
-            var n;
-            var x = 1;
-
             var xhr = new XMLHttpRequest();
 
             xhr.onload = function(args)
             {
-                document.getElementById("output").innerHTML += "<h3>" + myMEI + "</h3>";
 
                 vrvToolkit.loadData(xhr.responseText);
-                n = vrvToolkit.getPageCount();
+                var n = vrvToolkit.getPageCount();
 
-                while (x <= n)
+                for (var x = 1; x <= n; x++)
                 {
-
                     var svg = vrvToolkit.renderPage(x, "");
                     document.getElementById("output").innerHTML += svg + "<hr/>";
-                    x += 1;
                 }
 
                 document.getElementById("output").innerHTML += "<hr noshade/>";
