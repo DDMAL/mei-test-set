@@ -44,54 +44,35 @@
 					<measure label="1" n="1">
 						<staff n="1">
 							<layer n="1">
-								<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n0v1b1s1"/>
-								<note dur="2" dur.ges="512p" oct="4" pname="f" xml:id="p1cfd4n512v1b1s1"/>
+								<mRest/>
 							</layer>
 						</staff>
 					</measure>
 					<measure n="2">
 						<staff n="1">
 							<layer n="1">
-								<note dur="2" dur.ges="512p" oct="5" pname="c" xml:id="p1ccd5n0v1b2s1"/>
-								<note dur="2" dur.ges="512p" oct="5" pname="f" xml:id="p1cfd5n512v1b2s1"/>
-							</layer>
-							<layer n="2">
-								<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n0v2b2s1"/>
-								<note dur="2" dur.ges="512p" oct="3" pname="b" xml:id="p1cbd3n512v2b2s1"/>
+								<mRest/>
 							</layer>
 						</staff>
 					</measure>
 					<measure n="3">
 						<staff n="1">
 							<layer n="1">
-								<note dur="2" dur.ges="512p" oct="4" pname="e" xml:id="p1ced4n0v1b3s1"/>
-								<note dur="2" dur.ges="512p" oct="4" pname="g" xml:id="p1cgd4n512v1b3s1"/>
+								<mRest/>
 							</layer>
 						</staff>
-						<slur dur.ges="1408p" layer="1" staff="1" tstamp="1"/>
 					</measure>
 					<measure n="4">
 						<staff n="1">
 							<layer n="1">
-								<note dots="1" dur="4" dur.ges="384p" oct="4" pname="e" xml:id="p1ced4n0v1b4s1"/>
-								<note dots="1" dur="4" dur.ges="384p" oct="4" pname="g" xml:id="p1cgd4n384v1b4s1"/>
-								<beam>
-									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n768v1b4s1"/>
-									<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n896v1b4s1"/>
-								</beam>
+								<mRest/>
 							</layer>
 						</staff>
-						<slur dur.ges="384p" layer="1" staff="1" tstamp="4"/>
 					</measure>
 					<measure n="5" right="end">
 						<staff n="1">
 							<layer n="1">
-								<beam>
-									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ccd5n0v1b5s1"/>
-									<note dur="8" dur.ges="128p" oct="4" pname="f" xml:id="p1cfd4n128v1b5s1"/>
-								</beam>
-								<rest dur="4" dur.ges="256p" xml:id="p1r256v1b5s1"/>
-								<rest dur="2" dur.ges="512p" xml:id="p1r512v1b5s1"/>
+								<mRest/>
 							</layer>
 						</staff>
 					</measure>
