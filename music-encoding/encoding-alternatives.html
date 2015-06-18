@@ -30,7 +30,7 @@
                 for (var x = 1; x <= n; x++)
                 {
                     var svg = vrvToolkit.renderPage(x, "");
-                    document.getElementById("output").innerHTML += svg + "<hr/>";
+                    document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + svg + "<hr/>";
                 }
 
                 document.getElementById("output").innerHTML += "<hr noshade/>";

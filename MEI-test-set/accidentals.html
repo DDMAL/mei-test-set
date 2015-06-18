@@ -23,7 +23,7 @@
             xhr.onload = function(args)
             {
                 var svg = vrvToolkit.renderData(xhr.responseText, "");
-                document.getElementById("output").innerHTML += "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+                document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
 
         
             }
@@ -37,7 +37,7 @@
             "all-accidentals.mei",
             "All Accidentals",
             "Should display accidentals on all the notes",
-            "<img src='sibs/accidentals/all-accidentals.png' alt='all accidentals'/>" 
+            "<img src='sibs/accidentals/all-accidentals.png' alt='all accidentals'/>"
         );
 
         pictureExample(
