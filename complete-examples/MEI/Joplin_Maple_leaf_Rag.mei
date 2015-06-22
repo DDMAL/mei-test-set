@@ -1693,7 +1693,6 @@
                              startid="#d1053044e14692"
                              endid="#d1053044e15147"/>
                      </measure>
-                     <sb/>
                      <pb/>
                      <!-- start of page 2 -->
                      <measure n="22" xml:id="d1053044e14716">
@@ -3001,7 +3000,6 @@
                            </layer>
                         </staff>
                      </measure>
-                     <sb/>
                      <pb/>
                      <measure n="42" xml:id="d1053044e24249">
                         <staff n="1">
@@ -4539,7 +4537,6 @@
                              endid="#d1053044e32195"/>
                      </measure>
                      <!-- hier weitermachen! außerdem die sections nochmal überprüfen! -->
-                     <sb/>
                      <pb/>
                      <measure n="62" xml:id="d1053044e32519">
                         <staff n="1">
@@ -6254,6 +6251,7 @@
                            </layer>
                         </staff>
                      </measure>
+                     <sb/>
                   </ending>
                </section>
             </score>
