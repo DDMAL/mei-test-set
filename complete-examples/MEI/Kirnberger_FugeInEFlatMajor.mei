@@ -2780,8 +2780,6 @@
                               stem.dir="down" accid.ges="f"/>
                         </layer>
                      </staff>
-                     <tie tstamp="1.031" staff="1 2" curvedir="below" startid="#d1e11084"
-                        endid="#d1e11102"/>
                   </measure>
                   <measure n="63" xml:id="d1e11269">
                      <staff n="1">
