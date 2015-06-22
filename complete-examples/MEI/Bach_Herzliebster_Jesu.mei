@@ -760,7 +760,6 @@
                      </staff>
                      <staff n="3">
                         <layer n="1">
-                           <clef line="4" shape="F"/>
                            <note xml:id="d1e1525" pname="d" oct="4" dur="4" dur.ges="2p"/>
                            <note xml:id="d1e1537"
                                  pname="c"
@@ -769,8 +768,8 @@
                                  dur.ges="2p"
                                  accid.ges="s"/>
                            <note xml:id="d1e1551"
-                                 pname="d"
-                                 oct="4"
+                                 pname="a"
+                                 oct="3"
                                  dur="4"
                                  fermata="above"
                                  dur.ges="2p"/>
@@ -968,6 +967,8 @@
                                     dur="8"
                                     dur.ges="1p"
                                     accid="n"/>
+                            </beam>
+                            <beam>
                               <note xml:id="d1e2120" pname="b" oct="3" dur="8" dur.ges="1p"/>
                               <note xml:id="d1e2134" pname="a" oct="3" dur="8" dur.ges="1p"/>
                            </beam>
@@ -979,6 +980,8 @@
                                     dur="8"
                                     dur.ges="1p"
                                     accid.ges="s"/>
+                           </beam>
+                           <beam>
                               <note xml:id="d1e2178" pname="e" oct="3" dur="8" dur.ges="1p"/>
                               <note xml:id="d1e2192"
                                     pname="d"
