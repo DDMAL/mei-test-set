@@ -10,6 +10,7 @@
             <title>Golliwog's Cake-walk</title>
             <title type="subtitle">an electronic transcription</title>
             <respStmt>
+
                <persName role="creator"
                          authURI="http://d-nb.info/gnd/"
                          dbkey="118524186"
@@ -296,8 +297,8 @@
                                key.mode="major"/>
                      <staffDef n="2"
                                lines="5"
-                               clef.line="2"
-                               clef.shape="G"
+                               clef.line="4"
+                               clef.shape="F"
                                ppq="24"
                                key.sig="3f"
                                key.mode="major"/>
@@ -364,6 +365,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <note xml:id="d1e233"
                                     pname="b"
@@ -519,7 +521,6 @@
                            staff="2"
                            tstamp2="0m+1.25"/>
                   </measure>
-                  <staffDef n="2" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="3" xml:id="d1e532" width="161">
                      <staff n="1">
                         <layer n="1">
@@ -563,6 +564,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <rest xml:id="d1e653" dur="16"/>
                            <beam>
                               <note xml:id="d1e664"
@@ -614,6 +616,7 @@
                   <measure n="4" xml:id="d1e751" width="159">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <rest xml:id="d1e759" dur="16"/>
                            <beam>
                               <note xml:id="d1e774"
@@ -738,6 +741,7 @@
                         </layer>
                      </staff>
                   </measure>
+                  <sb/>
                   <measure n="6" xml:id="d1e1080" width="147">
                      <staff n="1">
                         <layer n="1">
@@ -834,7 +838,6 @@
                      <dynam tstamp="1.5" place="below" staff="1">p</dynam>
                      <dynam tstamp="2.5" place="above" staff="1">f</dynam>
                   </measure>
-                  <sb/>
                   <scoreDef spacing.system="114"/>
                   <measure n="7" xml:id="d1e1408" width="217">
                      <staff n="1">
@@ -1108,6 +1111,7 @@
                   <measure n="10" xml:id="d1e2302" width="123">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <note xml:id="d1e2316"
                                     pname="b"
@@ -1234,6 +1238,7 @@
                            staff="1"
                            tstamp2="0m+1.25"/>
                   </measure>
+                  <sb/>
                   <measure n="11" xml:id="d1e2710" width="126">
                      <staff n="1">
                         <layer n="1">
@@ -1541,12 +1546,11 @@
                               endto="-12"
                               tstamp2="1m+1.25"/>
                   </measure>
-                  <sb/>
                   <scoreDef spacing.system="114"/>
-                  <staffDef n="1" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="14" xml:id="d1e3559" width="228">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <beam>
                               <note xml:id="d1e3577"
                                     pname="b"
@@ -1782,6 +1786,7 @@
                               opening="0"
                               tstamp2="0m+3"/>
                   </measure>
+                  <sb/>
                   <measure n="16" xml:id="d1e4168" width="125">
                      <staff n="1">
                         <layer n="1">
@@ -1978,10 +1983,10 @@
                         </layer>
                      </staff>
                   </measure>
-                  <staffDef n="1" lines="5" clef.line="2" clef.shape="G"/>
                   <measure n="18" xml:id="d1e4590" width="124">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <note xml:id="d1e4598"
                                     pname="b"
@@ -2351,8 +2356,8 @@
                            tstamp2="0m+2.5"/>
                      <dynam tstamp="2.5" place="below" staff="1">sf</dynam>
                   </measure>
-                  <sb/>
                   <scoreDef spacing.system="114"/>
+                  <sb/>
                   <measure n="21" xml:id="d1e5657" width="253">
                      <staff n="1">
                         <layer n="1">
@@ -2829,7 +2834,6 @@
                            tstamp2="0m+2"/>
                   </measure>
                   <pb n="2"/>
-                  <staffDef n="2" lines="5" clef.line="2" clef.shape="G"/>
                   <measure n="26" xml:id="d1e7034" width="250">
                      <staff n="1">
                         <layer n="1">
@@ -2873,6 +2877,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <chord xml:id="d943e1"
                                      dur="8"
@@ -3212,7 +3217,6 @@
                            staff="2"
                            tstamp2="0m+2.5"/>
                   </measure>
-                  <staffDef n="2" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="30" xml:id="d1e8430" width="125">
                      <staff n="1">
                         <layer n="1">
@@ -3233,6 +3237,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <beam>
                               <note xml:id="d1e8515"
                                     pname="b"
@@ -3301,6 +3306,7 @@
                           startid="#d1e8485"
                           endid="#d1e8667"/>
                   </measure>
+                  <sb/>
                   <measure n="31" xml:id="d1e8624" width="125">
                      <staff n="1">
                         <layer n="1">
@@ -3438,11 +3444,10 @@
                            staff="2"
                            tstamp2="0m+1.25"/>
                   </measure>
-                  <pb n="3"/>
-                  <staffDef n="1" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="33" xml:id="d1e8971" width="264">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <rest xml:id="d1e8980" dur="16"/>
                            <beam>
                               <note xml:id="d1e8996"
@@ -3559,11 +3564,10 @@
                            tstamp2="0m+2"/>
                      <dynam tstamp="2.5" place="below" staff="1">ff</dynam>
                   </measure>
-                  <staffDef n="1" lines="5" clef.line="2" clef.shape="G"/>
-                  <staffDef n="2" lines="5" clef.line="2" clef.shape="G"/>
                   <measure n="34" xml:id="d1e9259" width="142">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <chord xml:id="d1252e1" dur="16" dur.ges="6p" stem.dir="up">
                                  <note xml:id="d1e9277" pname="c" oct="4" stem.y="0"/>
@@ -3604,6 +3608,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <chord xml:id="d1282e1"
                                      dur="8"
@@ -3746,6 +3751,7 @@
                         </layer>
                      </staff>
                   </measure>
+                  <sb/>
                   <measure n="36" xml:id="d1e9943" width="118">
                      <staff n="1">
                         <layer n="1">
@@ -4192,9 +4198,6 @@
                         </layer>
                      </staff>
                   </measure>
-                  <sb/>
-                  <scoreDef spacing.system="114"/>
-                  <staffDef n="2" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="40" xml:id="d1e11264" width="283">
                      <staff n="1">
                         <layer n="1">
@@ -4250,6 +4253,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <rest xml:id="d1e11434" dur="16"/>
                            <beam>
                               <note xml:id="d1e11444"
@@ -4317,6 +4321,7 @@
                            tstamp2="0m+1.75"/>
                      <dynam tstamp="2.5" place="below" staff="1">ff</dynam>
                   </measure>
+                  <sb/>
                   <measure n="41" xml:id="d1e11579" width="133">
                      <staff n="1">
                         <layer n="1">
@@ -4620,9 +4625,8 @@
                            tstamp2="0m+2"/>
                   </measure>
                </section>
+               <sb/>
                <section>
-                  <sb/>
-                  <scoreDef key.sig="6f" key.mode="major" spacing.system="114"/>
                   <measure n="47" xml:id="d1e12529" width="267">
                      <staff n="1">
                         <layer n="1">
@@ -5180,7 +5184,6 @@
                            staff="1"
                            tstamp2="0m+2"/>
                   </measure>
-                  <sb/>
                   <scoreDef spacing.system="114"/>
                   <measure n="53" xml:id="d1e13886" width="220">
                      <staff n="1">
@@ -5222,6 +5225,7 @@
                         </layer>
                      </staff>
                   </measure>
+                  <pb n="3"/>
                   <measure n="54" xml:id="d1e13986" width="127">
                      <staff n="1">
                         <layer n="1">
@@ -5732,10 +5736,11 @@
                            staff="1"
                            tstamp2="0m+2.5"/>
                   </measure>
-                  <pb n="4"/>
+                  <sb/>
                   <measure n="59" xml:id="d1e15188" width="249">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <rest xml:id="d1e15191" dur="8"/>
                            <note xml:id="d1e15201"
                                  grace="unacc"
@@ -6211,6 +6216,7 @@
                            staff="1"
                            tstamp2="0m+2.5"/>
                   </measure>
+                  <sb/>
                   <measure n="64" xml:id="d1e16361" width="227">
                      <staff n="1">
                         <layer n="1">
@@ -6358,7 +6364,6 @@
                            staff="1"
                            tstamp2="0m+2.5"/>
                   </measure>
-                  <pb n="5"/>
                   <measure n="65" xml:id="d1e16759" width="206">
                      <staff n="1">
                         <layer n="1">
@@ -6779,6 +6784,7 @@
                            staff="1"
                            tstamp2="0m+2.5"/>
                   </measure>
+                  <sb/>
                   <measure n="69" xml:id="d1e17843" width="88">
                      <staff n="1">
                         <layer n="1">
@@ -7026,7 +7032,6 @@
                            staff="2"
                            tstamp2="1m+2.5"/>
                   </measure>
-                  <sb/>
                   <scoreDef spacing.system="114"/>
                   <measure n="72" xml:id="d1e18371" width="274">
                      <staff n="1">
@@ -7279,6 +7284,7 @@
                           startid="#d1e18795"
                           endid="#d1e18938"/>
                   </measure>
+                  <sb/>
                   <measure n="74" xml:id="d1e18841" width="130">
                      <staff n="1">
                         <layer n="1">
@@ -7673,7 +7679,6 @@
                               opening="1.5"
                               tstamp2="0m+3"/>
                   </measure>
-                  <sb/>
                   <scoreDef spacing.system="114"/>
                   <measure n="78" xml:id="d1e19737" width="325">
                      <staff n="1">
@@ -7863,6 +7868,7 @@
                            staff="1"
                            tstamp2="0m+2.5"/>
                   </measure>
+                  <pb n="4"/>
                   <measure n="79" xml:id="d1e20245" width="95">
                      <staff n="1">
                         <layer n="1">
@@ -7975,7 +7981,6 @@
                      </staff>
                      <dynam tstamp="1.5" place="below" staff="1">ff</dynam>
                   </measure>
-                  <staffDef n="2" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="81" xml:id="d1e20463" width="124">
                      <staff n="1">
                         <layer n="1">
@@ -8053,6 +8058,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <rest xml:id="d1e20648" dur="8" vo="6"/>
                            <chord xml:id="d2730e1"
                                   dur="4"
@@ -8293,6 +8299,7 @@
                           startid="#d1e21042"
                           endid="#d1e21206"/>
                   </measure>
+                  <sb/>
                   <measure n="84" xml:id="d1e21157" width="136">
                      <staff n="1">
                         <layer n="1">
@@ -8387,7 +8394,6 @@
                           startid="#d1e21206"
                           endid="#d1e21690"/>
                   </measure>
-                  <sb/>
                   <scoreDef spacing.system="114"/>
                   <measure n="85" xml:id="d1e21345" width="239">
                      <staff n="1">
@@ -8785,6 +8791,7 @@
                           startid="#d1e22160"
                           endid="#d1e22353"/>
                   </measure>
+                  <sb/>
                   <measure n="89" xml:id="d1e22183" right="dbl" width="127">
                      <staff n="1">
                         <layer n="1">
@@ -9003,7 +9010,6 @@
                            staff="1"
                            tstamp2="0m+1.25"/>
                   </measure>
-                  <pb n="6"/>
                   <measure n="92" xml:id="d1e22651" width="243">
                      <staff n="1">
                         <layer n="1">
@@ -9115,6 +9121,7 @@
                            tstamp2="0m+2.5"/>
                      <arpeg tstamp="2.5" plist="#d1e22743 #d1e22768" staff="1" layer="1"/>
                   </measure>
+                  <sb/>
                   <measure n="93" xml:id="d1e22953" width="130">
                      <staff n="1">
                         <layer n="1">
@@ -9185,10 +9192,10 @@
                               endto="-12"
                               tstamp2="1m+1.25"/>
                   </measure>
-                  <staffDef n="1" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="94" xml:id="d1e23145" width="140">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <beam>
                               <note xml:id="d1e23159"
                                     pname="b"
@@ -9621,10 +9628,11 @@
                         </layer>
                      </staff>
                   </measure>
-                  <staffDef n="1" lines="5" clef.line="2" clef.shape="G"/>
+                  <sb/>
                   <measure n="98" xml:id="d1e24165" width="123">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <note xml:id="d1e24173"
                                     pname="b"
@@ -9743,7 +9751,6 @@
                      </staff>
                      <dynam tstamp="1" place="above" staff="2">f</dynam>
                   </measure>
-                  <pb n="7"/>
                   <measure n="99" xml:id="d1e24560" width="383">
                      <staff n="1">
                         <layer n="1">
@@ -10053,8 +10060,7 @@
                               opening="0"
                               tstamp2="0m+3"/>
                   </measure>
-                  <sb/>
-                  <scoreDef spacing.system="114"/>
+                  <pb n="5"/>
                   <measure n="102" xml:id="d1e25422" width="277">
                      <staff n="1">
                         <layer n="1">
@@ -10469,7 +10475,6 @@
                            staff="2"
                            tstamp2="0m+2"/>
                   </measure>
-                  <staffDef n="2" lines="5" clef.line="2" clef.shape="G"/>
                   <measure n="106" xml:id="d1e26611" width="168">
                      <staff n="1">
                         <layer n="1">
@@ -10513,6 +10518,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <chord xml:id="d3548e1"
                                      dur="8"
@@ -10589,6 +10595,7 @@
                            staff="1"
                            tstamp2="0m+2.5"/>
                   </measure>
+                  <sb/>
                   <measure n="107" xml:id="d1e27007" width="152">
                      <staff n="1">
                         <layer n="1">
@@ -10675,7 +10682,6 @@
                         </layer>
                      </staff>
                   </measure>
-                  <sb/>
                   <scoreDef spacing.system="114"/>
                   <measure n="108" xml:id="d1e27288" width="215">
                      <staff n="1">
@@ -10872,8 +10878,6 @@
                            staff="2"
                            tstamp2="0m+2.5"/>
                   </measure>
-                  <staffDef n="1" lines="5" clef.line="4" clef.shape="F"/>
-                  <staffDef n="2" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="110" xml:id="d1e28010" width="187">
                      <staff n="1">
                         <layer n="1">
@@ -10900,6 +10904,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <beam>
                               <note xml:id="d1e28103"
                                     pname="b"
@@ -11082,9 +11087,11 @@
                            staff="2"
                            tstamp2="0m+1.25"/>
                   </measure>
+                  <sb/>
                   <measure n="112" xml:id="d1e28414" width="124">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <note xml:id="d1e28427"
                                  pname="b"
                                  oct="3"
@@ -11293,13 +11300,10 @@
                      <dynam tstamp="2" place="below" staff="1">sf</dynam>
                      <dynam tstamp="2" place="above" staff="2">f</dynam>
                   </measure>
-                  <sb/>
-                  <scoreDef spacing.system="114"/>
-                  <staffDef n="1" lines="5" clef.line="2" clef.shape="G"/>
-                  <staffDef n="2" lines="5" clef.line="2" clef.shape="G"/>
                   <measure n="114" xml:id="d1e28945" width="229">
                      <staff n="1">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <chord xml:id="d3873e1" dur="16" dur.ges="6p" stem.dir="up">
                                  <note xml:id="d1e28968" pname="c" oct="4" stem.y="0"/>
@@ -11340,6 +11344,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="2" shape="G"/>
                            <beam>
                               <chord xml:id="d3903e1"
                                      dur="8"
@@ -11599,6 +11604,7 @@
                            staff="1"
                            tstamp2="1m+1"/>
                   </measure>
+                  <sb/>
                   <measure n="117" xml:id="d1e30008" width="120">
                      <staff n="1">
                         <layer n="1">
@@ -11958,7 +11964,6 @@
                            staff="2"
                            tstamp2="0m+2"/>
                   </measure>
-                  <staffDef n="2" lines="5" clef.line="4" clef.shape="F"/>
                   <measure n="120" xml:id="d1e30953" width="171">
                      <staff n="1">
                         <layer n="1">
@@ -12014,6 +12019,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
+                          <clef line="4" shape="F"/>
                            <rest xml:id="d1e31135" dur="16"/>
                            <beam>
                               <note xml:id="d1e31145"
@@ -12088,7 +12094,6 @@
                            tstamp2="0m+1.75"/>
                      <dynam tstamp="2.5" place="below" staff="1">ff</dynam>
                   </measure>
-                  <pb n="8"/>
                   <measure n="121" xml:id="d1e31280" width="213">
                      <staff n="1">
                         <layer n="1">
@@ -12183,6 +12188,7 @@
                         </layer>
                      </staff>
                   </measure>
+                  <sb/>
                   <measure n="123" xml:id="d1e31594" width="126">
                      <staff n="1">
                         <layer n="1">
