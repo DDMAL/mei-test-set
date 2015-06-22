@@ -242,7 +242,7 @@
                   <staffGrp>
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2"/>
                      <staffDef n="2" lines="5" clef.shape="G" clef.line="2"/>
-                     <staffDef n="3" lines="5" clef.shape="C" clef.line="4"/>
+                     <staffDef n="3" lines="5" clef.shape="G" clef.line="2"/>
                      <staffDef n="4" lines="5" clef.shape="F" clef.line="4"/>
                   </staffGrp>
                </scoreDef>
@@ -753,6 +753,7 @@
                            tstamp2="0m+1.5"/>
                      <trill tstamp="1" place="above" staff="3" startid="#d668619e1093"/>
                   </measure>
+                  <sb/>
                   <measure n="6" xml:id="d668619e1250">
                      <staff n="1">
                         <layer n="1">
@@ -1292,6 +1293,7 @@
                            staff="3"
                            tstamp2="0m+1.5"/>
                   </measure>
+                  <pb n="2"/>
                   <measure n="10" xml:id="d668619e2457">
                      <staff n="1">
                         <layer n="1">
@@ -2053,6 +2055,7 @@
                            staff="3"
                            tstamp2="0m+3.5"/>
                   </measure>
+                  <sb/>
                   <measure n="15" xml:id="d668619e4108">
                      <staff n="1">
                         <layer n="1">
@@ -2673,6 +2676,7 @@
                      </staff>
                      <trill tstamp="2" place="above" staff="3" startid="#d668619e5484"/>
                   </measure>
+                  <sb/>
                   <measure n="20" xml:id="d668619e5650">
                      <staff n="1">
                         <layer n="1">
@@ -3378,6 +3382,7 @@
                            staff="3"
                            tstamp2="0m+3.5"/>
                   </measure>
+                  <pb n="3"/>
                   <measure n="25" xml:id="d668619e7176">
                      <staff n="1">
                         <layer n="1">
@@ -3948,6 +3953,7 @@
                            staff="3"
                            tstamp2="0m+1.5"/>
                   </measure>
+                  <sb/>
                   <measure n="29" xml:id="d668619e8463">
                      <staff n="1">
                         <layer n="1">
@@ -4625,6 +4631,7 @@
                            staff="3"
                            tstamp2="0m+1.5"/>
                   </measure>
+                  <sb/>
                   <measure n="34" xml:id="d668619e9953">
                      <staff n="1">
                         <layer n="1">
@@ -5215,6 +5222,7 @@
                            staff="3"
                            tstamp2="0m+3.75"/>
                   </measure>
+                  <pb n="4"/>
                   <measure n="39" xml:id="d668619e11281">
                      <staff n="1">
                         <layer n="1">
@@ -5986,6 +5994,7 @@
                            staff="1"
                            tstamp2="0m+2.5"/>
                   </measure>
+                  <sb/>
                   <measure n="44" xml:id="d668619e12951">
                      <staff n="1">
                         <layer n="1">
@@ -6556,6 +6565,7 @@
                            staff="4"
                            tstamp2="0m+1.5"/>
                   </measure>
+                  <sb/>
                   <measure n="49" xml:id="d668619e14252">
                      <staff n="1">
                         <layer n="1">
@@ -7126,6 +7136,7 @@
                            staff="3"
                            tstamp2="0m+1.5"/>
                   </measure>
+                  <pb n="5"/>
                   <measure n="54" xml:id="d668619e15538">
                      <staff n="1">
                         <layer n="1">
@@ -7707,6 +7718,7 @@
                            staff="3"
                            tstamp2="0m+3.5"/>
                   </measure>
+                  <sb/>
                   <measure n="59" xml:id="d668619e16848">
                      <staff n="1">
                         <layer n="1">
@@ -8462,6 +8474,7 @@
                           startid="#d668619e18407"
                           endid="#d668619e18772"/>
                   </measure>
+                  <sb/>
                   <measure n="64" xml:id="d668619e18426">
                      <staff n="1">
                         <layer n="1">
@@ -8687,6 +8700,7 @@
                      </staff>
                      <trill tstamp="1" place="above" staff="3" startid="#d668619e18844"/>
                   </measure>
+                  <sb/>
                </section>
             </score>
          </mdiv>
