@@ -484,6 +484,11 @@
                            <rest xml:id="m0_s6_e1" dur="4"/>
                         </layer>
                      </staff>
+                     <staff n="7">
+                        <layer n="1">
+                           <rest dur="4"/>
+                        </layer>
+                     </staff>
                      <slur startid="#m0_s2_e1" endid="#m0_s2_e2" curvedir="above"/>
                   </measure>
                   <measure n="1" xml:id="m1">
