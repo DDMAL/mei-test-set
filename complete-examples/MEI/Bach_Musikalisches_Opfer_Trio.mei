@@ -353,12 +353,14 @@
                      </staff>
                      <staff n="3">
                         <layer>
+                          <beam>
                            <note pname="e" oct="3" dur="8" xml:id="m2_s3_e1"/>
                            <note pname="e" oct="3" dur="8"/>
                            <note pname="e" oct="3" dur="8" accid="n"/>
                            <note pname="e" oct="3" dur="8"/>
                            <note pname="e" oct="3" dur="8"/>
                            <note pname="e" oct="3" dur="8" xml:id="m2_s3_e6"/>
+                         </beam>
                         </layer>
                      </staff>
                      <slur staff="2" startid="#m2_s2_e2" endid="#m2_s2_e7" curvedir="below"/>
@@ -1893,14 +1895,14 @@
                         </layer>
                      </staff>
                      <trill staff="2" tstamp="2" place="above" startid="#m29_s2_e4"/>
-                     <slur staff="1"
-                           curvedir="above"
-                           startid="#m29_s1_e1"
-                           endid="#m31_s1_e1"/>
                      <harm staff="3" place="below" tstamp="2">
                         <stack>4<lb/>2</stack>
                      </harm>
                      <harm staff="3" place="below" tstamp="3" extender="true"/>
+                     <tie startid="m29_s1_e1"
+                          endid="m31_s1_e1"
+                          staff="1"
+                          curvedir="above"/>
                   </measure>
                   <measure n="31" xml:id="m31">
                      <staff n="1">
@@ -1988,16 +1990,16 @@
                            </beam>
                         </layer>
                      </staff>
-                     <slur staff="1"
-                           curvedir="above"
-                           startid="#m32_s1_e1"
-                           endid="#m32_s1_e1"/>
                      <slur staff="2"
                            curvedir="above"
                            endid="#m32_s2_e1"
                            startid="#m33_s2_e2"/>
                      <harm staff="3" tstamp="1" place="below">7</harm>
                      <harm staff="3" tstamp="2" place="below">7♭</harm>
+                     <tie startid="m32_s1_e1"
+                          endid="m33_s1_e1"
+                          staff="1"
+                          curvedir="above"/>
                   </measure>
                   <measure n="33" xml:id="m33">
                      <staff n="1">
@@ -2042,10 +2044,6 @@
                            <note pname="c" oct="3" dur="8"/>
                         </layer>
                      </staff>
-                     <slur staff="1"
-                           startid="#m34_s1_e2"
-                           curvedir="above"
-                           endid="#m33_s1_e1"/>
                      <slur staff="1"
                            startid="#m33_s1_e2"
                            curvedir="above"
@@ -2119,7 +2117,7 @@
                            curvedir="above"/>
                      <slur staff="2"
                            startid="#m34_s2_e2"
-                           endid="#m34_s1_e4"
+                           endid="#m34_s2_e4"
                            curvedir="below"/>
                      <slur staff="2"
                            startid="#m34_s2_e6"
