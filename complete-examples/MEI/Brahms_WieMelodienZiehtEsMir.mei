@@ -667,6 +667,11 @@
                            </note>
                         </layer>
                      </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="1"/>
+                        </layer>
+                     </staff>
                      <staff n="3">
                         <layer n="1">
                            <beam>
@@ -768,6 +773,11 @@
                                  <syl>den</syl>
                               </verse>
                            </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="1"/>
                         </layer>
                      </staff>
                      <staff n="3">
@@ -875,7 +885,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <space xml:id="d1e1325" dur.ges="4p"/>
+                           <space xml:id="d1e1325" dur.ges="2"/>
                            <clef shape="G" line="2"/>
                            <rest xml:id="d1e1373" dur="8"/>
                            <chord xml:id="d150e1" dur="8" dur.ges="1p" stem.dir="up">
@@ -1692,7 +1702,8 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <space dur.ges="6p"/>
+                           <space dur="2"/>
+                           <space dur="4"/>
                            <rest xml:id="d1e3734" dur="8" vo="2"/>
                            <note xml:id="d1e3749"
                                  pname="g"
@@ -1780,8 +1791,8 @@
                                     stem.dir="up"
                                     accid.ges="s"/>
                            </beam>
-                           <rest xml:id="d1e3833" dur="8"/>
-                           <rest xml:id="d1e3844" dur="4"/>
+                           <space xml:id="d1e3833" dur="8"/>
+                           <space xml:id="d1e3844" dur="4"/>
                         </layer>
                      </staff>
                      <slur tstamp="1"
@@ -2166,6 +2177,11 @@
                            </note>
                         </layer>
                      </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="1"/>
+                        </layer>
+                     </staff>
                      <staff n="3">
                         <layer n="1">
                            <beam>
@@ -2281,6 +2297,16 @@
                            </note>
                         </layer>
                      </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="4"/>
+                           <space dur="8"/>
+                           <rest dur="8"/>
+                           <space dur="4"/>
+                           <space dur="8"/>
+                           <rest dur="8"/>
+                        </layer>
+                     </staff>
                      <staff n="3">
                         <layer n="1">
                            <beam>
@@ -2311,7 +2337,7 @@
                                        staff="2"/>
                               </chord>
                            </beam>
-                           <rest dur="8"/>
+                           <space dur="8"/>
                            <beam>
                               <note xml:id="d1e5275"
                                     pname="d"
@@ -2334,7 +2360,7 @@
                                  </note>
                               </chord>
                            </beam>
-                           <rest dur="8"/>
+                           <space dur="8"/>
                         </layer>
                      </staff>
                   </measure>

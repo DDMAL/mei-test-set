@@ -5745,7 +5745,12 @@
                            staff="4"
                            tstamp2="0m+1"/>
                   </measure>
-                  <measure n="55" xml:id="d6409e27494"><!-- staff1??????????? -->
+                  <measure n="55" xml:id="d6409e27494">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
                      <staff n="2">
                         <layer n="1">
                            <beam>
@@ -5803,6 +5808,11 @@
                      <trill tstamp="2" place="above" staff="4" startid="#d6409e27566"/>
                   </measure>
                   <measure n="56" xml:id="d6409e27773"><!-- staff 1???? -->
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
                      <staff n="2">
                         <layer n="1">
                            <beam>
@@ -6298,6 +6308,11 @@
                           endid="#d6409e30097"/>
                   </measure>
                   <measure n="63" xml:id="d6409e30031">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
                      <staff n="2">
                         <layer n="1">
                            <note xml:id="d6409e30039" pname="g" oct="5" dur="8"/>
@@ -8968,20 +8983,25 @@
                   <measure n="103" xml:id="d6409e40134">
                      <staff n="1">
                         <layer n="1">
-                           <rest xml:id="d6409e40136" dur="1"/>
+                           <mRest/>
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <rest xml:id="d6409e40145" dur="1"/>
+                           <rest xml:id="d6409e40136" dur="1"/>
                         </layer>
                      </staff>
                      <staff n="3">
                         <layer n="1">
-                           <rest xml:id="d6409e40160" dur="1"/>
+                           <rest xml:id="d6409e40145" dur="1"/>
                         </layer>
                      </staff>
                      <staff n="4">
+                        <layer n="1">
+                           <rest xml:id="d6409e40160" dur="1"/>
+                        </layer>
+                     </staff>
+                     <staff n="5">
                         <layer n="1">
                            <beam>
                               <note xml:id="d6409e40169" pname="g" oct="5" dur="16"/>
@@ -8998,7 +9018,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <staff n="5">
+                     <staff n="6">
                         <layer n="1">
                            <rest xml:id="d6409e40270" dur="8"/>
                            <beam>
@@ -9007,19 +9027,18 @@
                            </beam>
                         </layer>
                      </staff>
-                     <staff n="6">
+                     <staff n="7">
                         <layer n="1">
                            <note xml:id="d6409e40307" pname="g" oct="4" dur="4"/>
                            <rest xml:id="d6409e40319" dur="8"/>
                         </layer>
                      </staff>
-                     <staff n="7">
+                     <staff n="8">
                         <layer n="1">
                            <note xml:id="d6409e40328" pname="g" oct="2" dur="4"/>
                            <rest xml:id="d6409e40340" dur="8"/>
                         </layer>
                      </staff>
-                     <!-- missing staff n="8" -->
                   </measure>
                   <sb/>
                   <measure n="104" xml:id="d6409e40348">
@@ -9268,6 +9287,11 @@
                            tstamp2="0m+1.5"/>
                   </measure>
                   <measure n="108" xml:id="d6409e41205">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
                      <staff n="2">
                         <layer n="1">
                            <beam>
@@ -9335,6 +9359,11 @@
                            tstamp2="0m+1.5"/>
                   </measure>
                   <measure n="109" xml:id="d6409e41405"><!-- missing staff 1 -->
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
                      <staff n="2">
                         <layer n="1">
                            <note xml:id="d6409e41413"
@@ -9579,7 +9608,27 @@
                            endid="#d6409e42074"
                            tstamp2="0m+1.5"/>
                   </measure>
-                  <measure n="113" xml:id="d6409e42126"><!-- missing staff 1-4 -->
+                  <measure n="113" xml:id="d6409e42126">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
                      <staff n="5">
                         <layer n="1">
                            <note xml:id="d6409e42152"
