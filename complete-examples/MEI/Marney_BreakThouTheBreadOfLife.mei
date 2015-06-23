@@ -740,7 +740,7 @@
                            </chord>
                         </layer>
                      </staff>
-                     <staff n="2">
+                     <staff n="3">
                         <layer>
                            <beam>
                               <note xml:id="d494825e1707" pname="g" oct="2" dur="8"/>
