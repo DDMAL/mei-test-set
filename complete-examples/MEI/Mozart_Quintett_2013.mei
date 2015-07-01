@@ -520,6 +520,7 @@
                      <slur tstamp="3" curvedir="above" startid="#d1e1257" endid="#d1e1476" staff="1"
                         tstamp2="1m+2"/>
                   </measure>
+                  <sb/>
                   <measure n="6" xml:id="d1e1440">
                      <staff n="1">
                         <layer n="1">
@@ -628,7 +629,6 @@
                      <slur tstamp="3" curvedir="above" startid="#d1e1735" endid="#d1e1965" staff="2"
                         tstamp2="1m+2"/>
                   </measure>
-                  <sb/>
                   <measure n="8" xml:id="d1e1844">
                      <staff n="1">
                         <layer n="1">
@@ -865,6 +865,7 @@
                      </staff>
                   </measure>
                </section>
+               <sb/>
                <section>
                   <measure xml:id="d1e2734">
                      <staff n="1">
@@ -1154,6 +1155,7 @@
                         tstamp2="0m+2"/>
                      <slur tstamp="3" curvedir="below" endid="#d1e3780" staff="2" tstamp2="1m+1"/>
                   </measure>
+                  <sb/>
                </section>
             </score>
          </mdiv>
