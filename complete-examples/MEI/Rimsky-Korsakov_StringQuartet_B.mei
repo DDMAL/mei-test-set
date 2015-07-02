@@ -263,7 +263,7 @@
                      </title>
                      <rend halign="right">Rimsky-Korsakow</rend>
                   </pgHead>
-                  <staffGrp>
+                  <staffGrp barthru="true">
                      <staffDef n="1"
                                xml:id="P1"
                                label="Violine 1"
@@ -277,13 +277,17 @@
                                xml:id="P2"
                                label="Violine 2"
                                label.abbr="Vl.2"
-                               lines="5"/>
+                               lines="5"
+                               clef.line="2"
+                               clef.shape="G"/>
                      <staffDef n="3"
                                xml:id="P3"
                                label="Bratsche"
                                label.abbr="Br."
-                               lines="5"/>
-                     <staffDef n="4" xml:id="P4" label="Cello" label.abbr="Vc." lines="5"/>
+                               lines="5"
+                               clef.line="3"
+                               clef.shape="C"/>
+                     <staffDef n="4" xml:id="P4" label="Cello" label.abbr="Vc." lines="5" clef.shape="F" clef.line="4"/>
                   </staffGrp>
                </scoreDef>
                <section>
@@ -955,6 +959,7 @@
                            <note xml:id="m12_s4_e2" pname="a" oct="2" dur="4" stem.dir="up"/>
                            <note xml:id="m12_s4_e3"
                                  pname="a"
+                                 oct="2"
                                  accid="f"
                                  dur="4"
                                  stem.dir="up"/>
@@ -1005,6 +1010,7 @@
                                  pname="c"
                                  accid="f"
                                  dur="4"
+                                 oct="4"
                                  stem.dir="up"/>
                         </layer>
                      </staff>
@@ -1246,7 +1252,7 @@
                                  dur="2"
                                  dots="1"
                                  stem.dir="up"/>
-                           <note xml:id="m16_s4_e2" pname="f" oct="2" dur="2" stem.dir="up"/>
+                           <note xml:id="m16_s4_e2" pname="f" oct="2" dur="4" stem.dir="up"/>
                         </layer>
                      </staff>
                      <hairpin tstamp="1"
@@ -1292,6 +1298,7 @@
                                  pname="e"
                                  accid="n"
                                  dur="4"
+                                 oct="4"
                                  stem.dir="up"/>
                         </layer>
                      </staff>
@@ -1435,7 +1442,7 @@
                      </staff>
                      <staff n="4">
                         <layer n="1">
-                           <note xml:id="m19_s4_e1" pname="d" oct="2" dur="1"/>
+                           <note xml:id="m19_s4_e1" pname="d" oct="3" dur="1"/>
                         </layer>
                      </staff>
                      <dir tstamp="1" place="below" staff="1"> cresc. </dir>
@@ -1481,7 +1488,7 @@
                         <layer n="1">
                            <note xml:id="m20_s4_e1"
                                  pname="d"
-                                 oct="2"
+                                 oct="3"
                                  dur="2"
                                  dots="1"
                                  stem.dir="down"/>
@@ -1489,7 +1496,7 @@
                                  pname="d"
                                  accid="f"
                                  dur="4"
-                                 oct="2"
+                                 oct="3"
                                  stem.dir="down"/>
                         </layer>
                      </staff>
@@ -1537,7 +1544,7 @@
                      </staff>
                      <staff n="4">
                         <layer n="1">
-                           <note xml:id="m21_s4_e1" pname="c" oct="2" dur="1"/>
+                           <note xml:id="m21_s4_e1" pname="c" oct="3" dur="1"/>
                         </layer>
                      </staff>
                      <dynam tstamp="1" place="below" staff="1">f</dynam>
@@ -2205,13 +2212,14 @@
                            </beam>
                            <beam>
                               <note xml:id="m32_s3_e5"
-                                    pname="g"
+                                    pname="e"
                                     accid="n"
+                                    dur="8"
                                     oct="4"
                                     stem.dir="down"/>
-                              <note xml:id="m32_s3_e6" pname="g" oct="4" stem.dir="down"/>
-                              <note xml:id="m32_s3_e7" pname="g" oct="4" stem.dir="down"/>
-                              <note xml:id="m32_s3_e8" pname="g" oct="4" stem.dir="down"/>
+                              <note xml:id="m32_s3_e6" dur="8" accid.ges="n" pname="e" oct="4" stem.dir="down"/>
+                              <note xml:id="m32_s3_e7" dur="8" accid.ges="n" pname="e" oct="4" stem.dir="down"/>
+                              <note xml:id="m32_s3_e8" dur="8" accid.ges="n" pname="e" oct="4" stem.dir="down"/>
                            </beam>
                         </layer>
                      </staff>
@@ -2736,7 +2744,7 @@
                      <dir tstamp="1" place="below" staff="2">cresc.</dir>
                      <dir tstamp="1" place="below" staff="4">cresc.</dir>
                   </measure>
-                  <sb/>
+                  <pb/>
                   <measure n="38">
                      <staff n="1">
                         <layer n="1">
