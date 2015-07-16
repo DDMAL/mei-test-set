@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
         {
 
             var fileName = "MEI/trills/" + myMEI;
@@ -25,6 +25,11 @@
  
                 var svg = vrvToolkit.renderData(xhr.responseText, "");
                 document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+                if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
 
         
             }
@@ -79,7 +84,8 @@
             "trills-with-grace-notes.mei", 
             "Grace notes", 
             "Should correctly display grace notes with trills",
-            "<img src='sibs/trills/trills-with-grace-notes.png' alt='trills with grace notes'/>"
+            "<img src='sibs/trills/trills-with-grace-notes.png' alt='trills with grace notes'/>",
+            "True"
             );
 
 

@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
         {
 
             var fileName = "MEI/grace-notes/" + myMEI;
@@ -25,6 +25,11 @@
  
             var svg = vrvToolkit.renderData(xhr.responseText, "");
             document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+            if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
 
         
             }
@@ -93,7 +98,8 @@
             "two-voices-grace-notes.mei", 
             "Two voices grace notes", 
             "Grace notes in two layers should be rhythmically aligned",
-            "<img src='sibs/grace-notes/two-voice-grace-notes.png' alt='two voices'/>"
+            "<img src='sibs/grace-notes/two-voice-grace-notes.png' alt='two voices'/>",
+            "True"
             );
 
 

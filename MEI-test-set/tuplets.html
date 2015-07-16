@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
         {
 
             var fileName = "MEI/tuplets/" + myMEI;
@@ -25,6 +25,11 @@
  
                 var svg = vrvToolkit.renderData(xhr.responseText, "");
                 document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+                if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
 
             }
       
@@ -141,7 +146,8 @@
             "tuplets-articulation-2-parts.mei", 
             "Tuplets articulation 2 parts", 
             "Should display correct placement for tuplets with articulations",
-            "<img src='sibs/tuplets/tuplets-articulation-2.png' alt='tuplets articulation 2'/>"
+            "<img src='sibs/tuplets/tuplets-articulation-2.png' alt='tuplets articulation 2'/>",
+            "True"
             );
 
 

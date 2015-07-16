@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
         {
 
             var fileName = "MEI/meter/" + myMEI;
@@ -25,6 +25,11 @@
  
                 var svg = vrvToolkit.renderData(xhr.responseText, "");
                 document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+                if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
 
         
             }
@@ -311,7 +316,8 @@
             "variable-stress.mei", 
             "Variable stress", 
             "Should display ways of notating stresses on other beats than the usual",
-            "<img src='sibs/meter/variable-stress.png' alt='variable stress'/>"
+            "<img src='sibs/meter/variable-stress.png' alt='variable stress'/>",
+            "True"
             );
 
 

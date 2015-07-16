@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
         {
 
             var fileName = "MEI/dynamics/" + myMEI;
@@ -25,6 +25,11 @@
  
                 var svg = vrvToolkit.renderData(xhr.responseText, "");
                 document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+                if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
 
         
             }
@@ -94,7 +99,8 @@
             "two-part-with-text.mei", 
             "Two parts with text", 
             "Should show correct dynamic placement in two parts, when there is text present",
-            "<img src='sibs/dynamics/two-parts-with-text.png' alt='two parts with text'/>"
+            "<img src='sibs/dynamics/two-parts-with-text.png' alt='two parts with text'/>",
+            "True"
             );
 
     </script>

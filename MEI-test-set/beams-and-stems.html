@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
         {
 
             var fileName = "MEI/beams-and-stems/" + myMEI;
@@ -25,6 +25,11 @@
  
                 var svg = vrvToolkit.renderData(xhr.responseText, "");
                 document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
+
+                if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
 
         
             }
@@ -79,7 +84,8 @@
             "stems-through-bar.mei", 
             "Beams through bar", 
             "Should display the beam through the whole bar",
-            "<img src='sibs/beams-and-stems/beams-through-bar.png' alt='beams through bar'/>"
+            "<img src='sibs/beams-and-stems/beams-through-bar.png' alt='beams through bar'/>",
+            "True"
             );
 
 

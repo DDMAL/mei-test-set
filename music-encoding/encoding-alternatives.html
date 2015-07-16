@@ -31,9 +31,13 @@
                 {
                     var svg = vrvToolkit.renderPage(x, "");
                     document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + svg + "<hr/>";
+
+                    if (x == n)
+                    {
+                        document.getElementById("output").innerHTML += "<hr noshade/><center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                    }
                 }
 
-                document.getElementById("output").innerHTML += "<hr noshade/>";
             }
 
             xhr.open("GET", fileName);

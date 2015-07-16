@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI)
+        function pictureExample(myMEI, last)
         {
 
             var fileName = "MEI/" + myMEI;
@@ -25,6 +25,11 @@
  
                 var svg = vrvToolkit.renderData(xhr.responseText, "");
                 document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
+
+                if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
 
             }
       
@@ -53,7 +58,8 @@
             );
 
         pictureExample(
-            "TC.PageLayoutAutoWidths.mei"
+            "TC.PageLayoutAutoWidths.mei",
+            "True"
             );
 
 

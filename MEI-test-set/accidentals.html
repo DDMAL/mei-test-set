@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI, myTitle, myTest, myOrig)
+        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
         {   
 
             var fileName = "MEI/accidentals/" + myMEI;
@@ -25,7 +25,10 @@
                 var svg = vrvToolkit.renderData(xhr.responseText, "");
                 document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
 
-        
+                if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
             }
       
             xhr.open("GET", fileName);
@@ -163,9 +166,9 @@
             "unconventional-key-sig.mei",
             "Unconventional key signature",
             "Should show a key signature with a flat and a sharp",
-            "<img src='sibs/accidentals/unconventional-key-sig.png' alt='Unconventional key signature'/>"
+            "<img src='sibs/accidentals/unconventional-key-sig.png' alt='Unconventional key signature'/>",
+            "True"
             );
-
 
 
     </script>

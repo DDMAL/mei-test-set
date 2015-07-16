@@ -10,7 +10,7 @@
     <div id="output">
     <script type="text/javascript">
 
-        function pictureExample(myMEI, myTitle)
+        function pictureExample(myMEI, myTitle, last)
         {
 
             var fileName = "MEI/" + myMEI;
@@ -30,9 +30,18 @@
                 {
                     var svg = vrvToolkit.renderPage(x, "");
                     document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + svg + "<hr/>";
+
+                    if (x == n)
+                    {
+                        document.getElementById("output").innerHTML += "<hr noshade/>";
+                    }
                 }
 
-                document.getElementById("output").innerHTML += "<hr noshade/>";
+                if (last == "True")
+                {
+                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
+                }
+
             }
 
             xhr.open("GET", fileName);
@@ -146,7 +155,8 @@
 
         pictureExample(
             "nested.mei",
-            "tuplet-nested"
+            "tuplet-nested",
+            "True"
             );
 
 
