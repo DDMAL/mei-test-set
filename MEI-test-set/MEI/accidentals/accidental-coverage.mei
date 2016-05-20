@@ -263,13 +263,13 @@
 									</note>
 								</beam>
 								<beam>
-									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1ced5n0v1b7s1a">
+									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1ced5n0v1b7s1a">
 										<accid accid="1qs"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1cfd5n128v1b7s1a">
 										<accid accid="1qs"/>
 									</note>
-									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1cgd5n256v1b7s1a">
+									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1cgd5n256v1b7s1a">
 										<accid accid="3qs"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1cad5n384v1b7s1a">
