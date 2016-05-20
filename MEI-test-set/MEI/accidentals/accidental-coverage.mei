@@ -154,10 +154,10 @@
 										<accid accid="xs"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="4" pname="c" xml:id="p1ccd4n256v1b4s1">
-										<accid accid="ss"/>
+										<accid accid="sx"/>
 									</note>
 									<note dur="8" dur.ges="128p" oct="5" pname="c" xml:id="p1cdd4n384v1b4s1">
-										<accid accid="ss"/>
+										<accid accid="sx"/>
 									</note>
 								</beam>
 								<beam>
