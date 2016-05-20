@@ -63,6 +63,28 @@
 							</layer>
 						</staff>
 					</measure>
+					<measure n="2">
+						<staff n="1">
+							<layer n="1">
+								<chord dur="4" dur.ges="256p" xml:id="c0v1b1s1" >
+									<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p1cgd4n0v1b1s1a"/>
+									<note dur="4" dur.ges="256p" oct="5" pname="c" xml:id="p2ccd5n0v1b1s1a"/>
+								</chord>
+								<chord dur="4" dur.ges="256p" xml:id="c1v1b1s1" stem.dir="down">
+									<note dur="4" dur.ges="256p" oct="4" pname="g" xml:id="p3cgd4n0v1b1s1a"/>
+									<note dur="4" dur.ges="256p" oct="5" pname="c" xml:id="p4ccd5n0v1b1s1a"/>
+								</chord>
+								<chord dur="4" dur.ges="256p" xml:id="c2v1b1s1" >
+									<note dur="4" dur.ges="256p" oct="4" pname="a" xml:id="p5cgd4n0v1b1s1a"/>
+									<note dur="4" dur.ges="256p" oct="5" pname="d" xml:id="p6ccd5n0v1b1s1a"/>
+								</chord>
+								<chord dur="4" dur.ges="256p" xml:id="c3v1b1s1" stem.dir="up">
+									<note dur="4" dur.ges="256p" oct="4" pname="a" xml:id="p7cgd4n0v1b1s1a"/>
+									<note dur="4" dur.ges="256p" oct="5" pname="d" xml:id="p8ccd5n0v1b1s1a"/>
+								</chord>
+							</layer>
+						</staff>
+					</measure>
 					<measure n="2" right="end">
 						<staff n="1">
 							<layer n="1">
