@@ -158,7 +158,7 @@ runTests = function(path)
                     var shouldBeImg = document.createElement("img");
                     var basename = keys[i].split(".")[0];
                     var imgname = basename + ".png";
-                    shouldBeImg.setAttribute('src', '/' + testLocation[0] + "/imgs/" + testLocation[1] + "/" + imgname);
+                    shouldBeImg.setAttribute('src', '../' + testLocation[0] + "/imgs/" + testLocation[1] + "/" + imgname);
                     testDiv.appendChild(shouldBeImg);
                     outputDiv.appendChild(testDiv);
 
