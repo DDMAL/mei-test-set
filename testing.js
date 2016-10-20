@@ -167,7 +167,7 @@ runTests = function(path)
                 }
 
                 var testLocation = path.split(":");
-                fetchTest.open("GET", "/" + testLocation[0] + "/MEI/" + testLocation[1] + "/" + keys[i]);
+                fetchTest.open("GET", "../" + testLocation[0] + "/MEI/" + testLocation[1] + "/" + keys[i]);
                 fetchTest.send();
             })(i);
         }
