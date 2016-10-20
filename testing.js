@@ -182,6 +182,6 @@ runTests = function(path)
         _runTests(path, testData);
 
     }
-    tests.open("GET", "/tests.json");
+    tests.open("GET", "../tests.json");
     tests.send();
 };
