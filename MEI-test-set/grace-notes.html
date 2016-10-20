@@ -2,111 +2,16 @@
 <html>
 <head>
     <title>Grace notes</title>
-    <script src="http://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+    <script src="/verovio-toolkit.js" defer></script>
+    <script src="/testing.js" defer></script>
 </head>
 <body>
-
-<h2>MEI-test-set - Grace notes</h2>
-    <div id="output">
+    <div id="test-output"></div>
     <script type="text/javascript">
-
-        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
+        document.addEventListener("DOMContentLoaded", function()
         {
-
-            var fileName = "MEI/grace-notes/" + myMEI;
-
-            var vrvToolkit = new verovio.toolkit();
-            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
-
-            var xhr = new XMLHttpRequest();
-
-            xhr.onload = function(args)
-            {
- 
-            var svg = vrvToolkit.renderData(xhr.responseText, "");
-            document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
-
-            if (last == "True")
-                {
-                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
-                }
-
-        
-            }
-      
-            xhr.open("GET", fileName);
-            xhr.send();
-        }
-
-        pictureExample(
-            "grace-notes.mei", 
-            "Grace notes", 
-            "Examples of grace notes",
-            "<img src='sibs/grace-notes/grace-notes.png' alt='grace notes'/>"
-            );
-
-        pictureExample(
-            "artic-on-grace-notes.mei", 
-            "Articulations on grace notes", 
-            "Should display various articulations on the grace notes",
-            "<img src='sibs/grace-notes/artic-on-grace-notes.png' alt='artic on grace notes'/>"
-            );
-
-        pictureExample(
-            "more-articulation.mei", 
-            "More articulation", 
-            "Should show more articulation examples on grace notes",
-            "<img src='sibs/grace-notes/more-articulation.png' alt='more articulation'/>"
-            );
-
-        pictureExample(
-            "dynamic-placement.mei", 
-            "Dynamic placement", 
-            "Should show different options for dynamic placement with grace notes",
-            "<img src='sibs/grace-notes/dynamic-placement.png' alt='dynamic placement'/>"
-            );
-
-        pictureExample(
-            "fixed-slurs.mei", 
-            "Slurs", 
-            "Should show slurs with grace notes",
-            "<img src='sibs/grace-notes/fixed-slurs.png' alt='slurs'/>"
-            );
-
-        pictureExample(
-            "slur-placement.mei", 
-            "Slur placement", 
-            "Should show slurs with grace notes",
-            "<img src='sibs/grace-notes/slur-placement.png' alt='slur placement'/>"
-            );
-
-        pictureExample(
-            "over-bar.mei", 
-            "Over the bar", 
-            "Should show grace notes over the bar",
-            "<img src='sibs/grace-notes/over-bar.png' alt='over bar'/>"
-            );
-
-        pictureExample(
-            "two-parts-aligned.mei", 
-            "Two parts aligned", 
-            "Grace notes in two parts should be rhythmically aligned",
-            "<img src='sibs/grace-notes/two-parts-aligned.png' alt='two parts aligned'/>"
-            );
-
-        pictureExample(
-            "two-voice-grace-notes.mei", 
-            "Two voice grace notes", 
-            "Grace notes in two layers should be rhythmically aligned",
-            "<img src='sibs/grace-notes/two-voice-grace-notes.png' alt='two voices'/>",
-            "True"
-            );
-
-
-
+            runTests("MEI-test-set:grace-notes");
+        });
     </script>
-    </div>
-
-
 </body>
 </html>

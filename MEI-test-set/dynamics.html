@@ -2,110 +2,16 @@
 <html>
 <head>
     <title>Dynamics</title>
-    <script src="http://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+    <script src="/verovio-toolkit.js" defer></script>
+    <script src="/testing.js" defer></script>
 </head>
 <body>
-
-<h2>MEI-test-set - Dynamics</h2>
-    <div id="output">
+    <div id="test-output"></div>
     <script type="text/javascript">
-
-        function pictureExample(myMEI, myTitle, myTest, myOrig, last)
+        document.addEventListener("DOMContentLoaded", function()
         {
-
-            var fileName = "MEI/dynamics/" + myMEI;
-
-            var vrvToolkit = new verovio.toolkit();
-            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
-
-            var xhr = new XMLHttpRequest();
-
-            xhr.onload = function(args)
-            {
- 
-                var svg = vrvToolkit.renderData(xhr.responseText, "");
-                document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myTitle + "</h3>" + myMEI + "<p>"+ myTest + "</p>" + svg + "<p>Original:</p>" + myOrig + "<hr/>";
-
-                if (last == "True")
-                {
-                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
-                }
-
-        
-            }
-      
-            xhr.open("GET", fileName);
-            xhr.send();
-        }
-
-        pictureExample(
-            "dynamics-1.mei", 
-            "Dynamics", 
-            "Should show various different dynamics",
-            "<img src='sibs/dynamics/dynamics.png' alt='dynamics'/>"
-
-            );
-
-        pictureExample(
-            "forte.mei", 
-            "Dynamics 2", 
-            "Should show more possibilities for dynamics",
-            "<img src='sibs/dynamics/dynamics-2.png' alt='dynamics 2'/>"
-            );
-
-        pictureExample(
-            "poco-molto.mei", 
-            "Poco and molto", 
-            "Should show dynamics using the words poco and molto as variations of those",
-            "<img src='sibs/dynamics/poco-and-molto.png' alt='poco molto'/>"
-            );
-
-        pictureExample(
-            "subito.mei",
-            "Subito", 
-            "Should show the use of the word subito in dynamics",
-            "<img src='sibs/dynamics/subito.png' alt='subito'/>"
-            );
-
-        pictureExample(
-            "long-cresc.mei", 
-            "Long crescendo", 
-            "Should show a long crescendo on one note",
-            "<img src='sibs/dynamics/long-cresc.png' alt='long cresc'/>"
-            );
-
-        pictureExample(
-            "cresc-new-line.mei", 
-            "Crescendo new line", 
-            "Should show the correct placement of a crescendo over a new line",
-            "<img src='sibs/dynamics/cresc-new-line.png' alt='cresc new line'/>"
-            );
-
-        pictureExample(
-            "dynamic-placement.mei", 
-            "Dynamic placement", 
-            "Should show the correct placement for dynamics in two parts, when there are other markings in the way",
-            "<img src='sibs/dynamics/dynamic-placement.png' alt='dynamic placement'/>"
-            );
-
-        pictureExample(
-            "with-text.mei", 
-            "With text", 
-            "Should show correct dynamic placement when there is text present",
-            "<img src='sibs/dynamics/with-text.png' alt='with text'/>"
-            );
-
-        pictureExample(
-            "two-part-with-text.mei", 
-            "Two parts with text", 
-            "Should show correct dynamic placement in two parts, when there is text present",
-            "<img src='sibs/dynamics/two-parts-with-text.png' alt='two parts with text'/>",
-            "True"
-            );
-
+            runTests("MEI-test-set:dynamics");
+        });
     </script>
-    </div>
-
-
 </body>
 </html>
