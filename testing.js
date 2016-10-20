@@ -122,7 +122,7 @@ runTests = function(path)
 
                     var filenameElement = document.createElement("p");
                     var filenameLinkElement = document.createElement("a");
-                    filenameLinkElement.setAttribute('href', "/" + testLocation[0] + "/MEI/" + testLocation[1] + "/" + keys[i]);
+                    filenameLinkElement.setAttribute('href', "../" + testLocation[0] + "/MEI/" + testLocation[1] + "/" + keys[i]);
                     filenameElement.appendChild(filenameLinkElement);
 
                     var filenameText = document.createTextNode(keys[i]);
