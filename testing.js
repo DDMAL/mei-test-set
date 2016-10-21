@@ -167,6 +167,7 @@ runTests = function(path)
                 }
 
                 var testLocation = path.split(":");
+                fetchTest.overrideMimeType("application/xml");
                 fetchTest.open("GET", "../" + testLocation[0] + "/MEI/" + testLocation[1] + "/" + keys[i]);
                 fetchTest.send();
             })(i);
@@ -175,6 +176,7 @@ runTests = function(path)
 
     // fetch the tests.
     var tests = new XMLHttpRequest();
+    tests.overrideMimeType("application/json");
     tests.onload = function(args)
     {
         var data = JSON.parse(tests.responseText);
