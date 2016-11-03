@@ -122,7 +122,8 @@ runTests = function(path)
                     var testHeaderLink = document.createElement('a');
                     var testHeaderLinkText = document.createTextNode(' link');
                     testHeaderLink.appendChild(testHeaderLinkText);
-                    testHeaderLink.setAttribute('href', window.location + "#" + keys[i]);
+                    // make sure to remove any previous hash params before appending a new one.
+                    testHeaderLink.setAttribute('href', window.location.href.replace(location.hash, "") + "#" + keys[i]);
                     testHeaderLink.setAttribute('style', 'font-size:0.6em');
                     testHeader.appendChild(testHeaderText);
                     testHeader.appendChild(testHeaderLink);
