@@ -116,8 +116,16 @@ runTests = function(path)
 
                     var testDiv = document.createElement('div');
                     var testHeader = document.createElement('h2');
+                    testHeader.id = keys[i];
                     var testHeaderText = document.createTextNode(data[keys[i]][2]);
+
+                    var testHeaderLink = document.createElement('a');
+                    var testHeaderLinkText = document.createTextNode(' link');
+                    testHeaderLink.appendChild(testHeaderLinkText);
+                    testHeaderLink.setAttribute('href', window.location + "#" + keys[i]);
+                    testHeaderLink.setAttribute('style', 'font-size:0.6em');
                     testHeader.appendChild(testHeaderText);
+                    testHeader.appendChild(testHeaderLink);
                     testDiv.appendChild(testHeader);
 
                     var filenameElement = document.createElement("p");
