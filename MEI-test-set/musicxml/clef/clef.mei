@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title />
+            </titleStmt>
+            <pubStmt>
+                <date>2016-11-18 09:56:05</date>
+            </pubStmt>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Transcoded from Humdrum with Verovio version 0.9.13-dev-aa3d1cc</p>
+            </projectDesc>
+        </encodingDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef xml:id="scoredef-0000000422854199">
+                        <staffGrp xml:id="m-0000000594676226" symbol="brace" barthru="true">
+                            <staffDef xml:id="staffdef-0000000334437244" clef.shape="G" clef.line="2" key.sig="0" meter.count="2" meter.unit="4" n="1" lines="5" />
+                            <staffDef xml:id="staffdef-0000001231838638" clef.shape="F" clef.line="4" key.sig="0" meter.count="2" meter.unit="4" n="2" lines="5" />
+                        </staffGrp>
+                    </scoreDef>
+                    <section xml:id="section-0000000093437569">
+                        <measure xml:id="measure-L1" n="0">
+                            <staff xml:id="staff-0000001898428861" n="1">
+                                <layer xml:id="layer-L1F3" n="1">
+                                    <mRest xml:id="mrest-0000000387094556" />
+                                </layer>
+                            </staff>
+                            <staff xml:id="staff-0000001729323348" n="2">
+                                <layer xml:id="layer-L1F2" n="1">
+                                    <note xml:id="note-L7F2" dur="2" accid="f" oct="2" pname="e" />
+                                </layer>
+                            </staff>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>

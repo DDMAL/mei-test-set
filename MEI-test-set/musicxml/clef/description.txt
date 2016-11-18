@@ -1,0 +1,14 @@
+Usually clefs for both staves in a part are encoded in a single
+attribute element at the start of a part.  However, it is also
+possible to find the clef for each staff in the part encoded in
+separate attribute elements.  This example shows a case where
+the attributes for the second staff are placed in the middle
+of the measure element before the start of the data for the
+second staff.
+
+Files:
+
+clef.xml	== Example case of non-contiguous attributes.
+clef.mei	== Conversion to MEI.
+clef-alt.xml	== More common encoding of attributes for part.
+
