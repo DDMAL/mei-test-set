@@ -10,5 +10,6 @@ Files:
 
 clef.xml	== Example case of non-contiguous attributes.
 clef.mei	== Conversion to MEI.
+clef.png        == Graphical notation being represented (from verovio)
 clef-alt.xml	== More common encoding of attributes for part.
 
