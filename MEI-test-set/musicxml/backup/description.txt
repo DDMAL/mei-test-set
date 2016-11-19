@@ -1,0 +1,14 @@
+This is a sample case of a backup element which goes backwards
+past the start of a measure.  The second measure has a
+duration of 1.5 quarter notes, but the backup to place the 
+bottom staff notes moves backwards 2 quarter notes.  In such
+cases, the backup duration should be truncated to the beginning
+of the measure in which is occurs.
+
+Files:
+
+backup.xml	== Example case of non-contiguous attributes.
+backup.mei	== Conversion to MEI.
+backup.png      == Graphical notation being represented (from verovio).
+backup-alt.xml	== Corrected backup duration.
+

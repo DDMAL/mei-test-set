@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title />
+            </titleStmt>
+            <pubStmt>
+                <date>2016-11-18 22:38:21</date>
+            </pubStmt>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Transcoded from Humdrum with Verovio version 0.9.13-dev-ef57353</p>
+            </projectDesc>
+        </encodingDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef xml:id="scoredef-0000000041533368">
+                        <staffGrp xml:id="m-0000001953103913" symbol="brace" barthru="true">
+                            <staffDef xml:id="staffdef-0000001529921396" clef.shape="G" clef.line="2" meter.count="2" meter.unit="4" n="1" lines="5" />
+                            <staffDef xml:id="staffdef-0000001298560515" clef.shape="F" clef.line="4" meter.count="2" meter.unit="4" n="2" lines="5" />
+                        </staffGrp>
+                    </scoreDef>
+                    <section xml:id="section-0000000774932703">
+                        <measure xml:id="measure-L1" n="0">
+                            <staff xml:id="staff-0000000686684799" n="1">
+                                <layer xml:id="layer-L1F3" n="1">
+                                    <rest xml:id="rest-L6F3" dur="4" />
+                                </layer>
+                            </staff>
+                            <staff xml:id="staff-0000000534297815" n="2">
+                                <layer xml:id="layer-L1F2" n="1">
+                                    <note xml:id="note-L6F2" dur="4" oct="2" pname="a" accid.ges="n" />
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure xml:id="measure-L7">
+                            <staff xml:id="staff-L7F3" n="1">
+                                <layer xml:id="layer-L7F3" n="1">
+                                    <beam xml:id="beam-0000001650460684">
+                                        <note xml:id="note-L8F3" dur="8" oct="4" pname="b" accid.ges="n" />
+                                        <note xml:id="note-L9F3" dur="8" oct="4" pname="c" accid.ges="n" />
+                                    </beam>
+                                    <note xml:id="note-L10F3" dur="8" oct="4" pname="d" accid.ges="n" />
+                                </layer>
+                            </staff>
+                            <staff xml:id="staff-L7F2" n="2">
+                                <layer xml:id="layer-L7F2" n="1">
+                                    <beam xml:id="beam-0000000154788907">
+                                        <note xml:id="note-L8F2" dur="8" oct="2" pname="e" accid.ges="n" />
+                                        <note xml:id="note-L9F2" dur="8" oct="2" pname="f" accid.ges="n" />
+                                    </beam>
+                                    <note xml:id="note-L10F2" dur="8" oct="1" pname="g" accid.ges="n" />
+                                </layer>
+                            </staff>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>
