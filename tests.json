@@ -54,7 +54,8 @@
             "stem-directions-2.mei": [false, false, "Stem Directions 2"],
             "stem-directions.mei": [false, false, "Stem Directions"],
             "stems-through-bar.mei": [false, false, "Stems through bar"],
-            "two-stem-directions.mei": [false, false, "Two Stem Directions"]
+            "two-stem-directions.mei": [false, false, "Two Stem Directions"],
+            "continuebeam-after-rest.mei": [false, false, "Continue Beam after Rest (#58)"]
         },
         "chords": {
             "chord-test.mei": [false, false, "Chords"],
