@@ -1,75 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vexflow - dynamics</title>
-    <script src="http://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+    <title>Dynamics</title>
+    <script src="../verovio-toolkit.js" defer></script>
+    <script src="../testing.js" defer></script>
 </head>
 <body>
-
-<h2>Vexflow - dynamics</h2>
-    <div id="output">
+    <div id="test-output"></div>
     <script type="text/javascript">
-
-        function pictureExample(myMEI, last)
+        document.addEventListener("DOMContentLoaded", function()
         {
-
-            var fileName = "MEI/" + myMEI;
-
-            var vrvToolkit = new verovio.toolkit();
-            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
-
-            var xhr = new XMLHttpRequest();
-
-            xhr.onload = function(args)
-            {
- 
-                var svg = vrvToolkit.renderData(xhr.responseText, "");
-                document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
-
-                if (last == "True")
-                {
-                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
-                }
-
-            }
-      
-            xhr.open("GET", fileName);
-            xhr.send();
-        }
-
-        pictureExample(
-            "Demo.Hairpins.Ravel.M1-4.mei"
-            );
-
-        pictureExample(
-            "Demo.Hairpins.Ravel.M2.mei"
-            );
-
-        pictureExample(
-            "TC.dir.01.mei"
-            );
-
-        pictureExample(
-            "TC.dir.02.mei"
-            );
-
-        pictureExample(
-            "TC.dir.03.mei"
-            );
-
-        pictureExample(
-            "TC.Dynamics.mei"
-            );
-
-        pictureExample(
-            "TC.Hairpins.mei",
-            "True"
-            );
-
-
+            runTests("vexflow:dynamics", false);
+        });
     </script>
-    </div>
-
-
 </body>
 </html>

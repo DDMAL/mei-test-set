@@ -1,52 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kirnberger - Fuge In E Flat Major</title>
-    <script src="http://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+    <title></title>
+    <script src="../verovio-toolkit.js" defer></script>
+    <script src="../testing.js" defer></script>
 </head>
 <body>
-
-<h2>Kirnberger - Fuge In E Flat Major</h2>
-    <div id="output">
+    <div id="test-output"></div>
     <script type="text/javascript">
-
-        var fileName = "MEI/Kirnberger_FugeInEFlatMajor.mei";
-
-        var vrvToolkit = new verovio.toolkit();
-        vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
-
-        var xhr = new XMLHttpRequest();
-
-        xhr.onload = function(args)
+        document.addEventListener("DOMContentLoaded", function()
         {
-
-            vrvToolkit.loadData(xhr.responseText);
-            var n = vrvToolkit.getPageCount();
-
-            for (var x = 1; x <= n; x++)
-            {
-                var svg = vrvToolkit.renderPage(x, "");
-                document.getElementById("output").innerHTML += "<a name='page=" + x + "'/>" + svg + "<hr/>";
-
-                if (x == n)
-                {
-                    document.getElementById("output").innerHTML += "<hr noshade/><center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
-                }
-            }
-
-             
-        }
-
-            xhr.open("GET", fileName);
-            xhr.send();
-
-
-
-
-
+            runTests("complete-examples:Kirnberger_FugeInEFlatMajor", false, true);
+        });
     </script>
-    </div>
-
-
 </body>
 </html>

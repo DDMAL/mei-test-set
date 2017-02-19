@@ -45,7 +45,8 @@
             "repeated-articulation.mei": [false, false, "Repeated Articulation"],
             "stacc-up-and-down.mei": [false, false, "Staccato up and down"],
             "staccato-simile.mei": [false, false, "Staccato Simile"],
-            "two-parts-articulation.mei": [false, false, "Two Parts Articulation"]
+            "two-parts-articulation.mei": [false, false, "Two Parts Articulation"],
+            "fermatas.mei": [false, false, "Fermatas (sibmei#66)"]
         },
         "beams-and-stems": {
             "beam-placement-2.mei": [false, false, "Beam Placement 2"],
@@ -55,7 +56,8 @@
             "stem-directions.mei": [false, false, "Stem Directions"],
             "stems-through-bar.mei": [false, false, "Stems through bar"],
             "two-stem-directions.mei": [false, false, "Two Stem Directions"],
-            "continuebeam-after-rest.mei": [false, false, "Continue Beam after Rest (#58)"]
+            "continuebeam-after-rest.mei": [false, false, "Continue Beam after Rest (sibmei#58)"],
+            "nested-beams.mei": [false, false, "Nested Beams (sibmei#67)"]
         },
         "chords": {
             "chord-test.mei": [false, false, "Chords"],
@@ -252,7 +254,326 @@
             "tuplets-articulation.mei": [false, false, "Tuplets with Articulation"],
             "tuplets-two-parts.mei": [false, false, "Tuplets with Two Parts"],
             "tuplets.mei": [false, false, "Tuplets"],
-            "tuplets-2.mei": [false, false, "Tuplets 2"]
+            "tuplets-2.mei": [false, false, "Tuplets 2"],
+            "nested-tuplets.mei": [false, false, "Nested Tuplets (sibmei#68)"]
+        }
+    },
+    "vexflow": {
+        "canonical": {
+            "TC.CanonicalMEI.01.mei": [false, false, "Canonical 01"],
+            "TC.CanonicalMEI.02.mei": [false, false, "Canonical 02"]
+        },
+        "clefs-keys": {
+            "TC.KeySpec.01.mei": [false, false, "KeySpec 01"],
+            "TC.KeySpec.02.mei": [false, false, "KeySpec 02"],
+            "TC.KeySpec.03.mei": [false, false, "KeySpec 03"],
+            "TC.KeySpec.04.mei": [false, false, "KeySpec 04"],
+            "TC.VexClef.01.mei": [false, false, "VexClef 01"],
+            "TC.VexClef.02.mei": [false, false, "VexClef 02"],
+            "TC.VexClef.03.mei": [false, false, "VexClef 03"],
+            "TC.VexClef.04.mei": [false, false, "VexClef 04"],
+            "TC.VexClef.05.mei": [false, false, "VexClef 05"],
+            "TC.VexClef.06.mei": [false, false, "VexClef 06"],
+            "TC.VexClef.07.mei": [false, false, "VexClef 07"]
+        },
+        "demos": {
+            "Bartok-WeddingSong-altered.mei": [false, false, "Bartok Wedding Song (altered)"],
+            "Bartok-WeddingSong.mei": [false, false, "Bartok Wedding Song"],
+            "Demo.BachCPrelude.mei": [false, false, "Bach C Prelude"],
+            "TC.Prokofiev.mei": [false, false, "Prokofiev"],
+            "TC.Prokofiev.pref.mei": [false, false, "Prokofiev (pref)"]
+        },
+        "dynamics": {
+            "Demo.Hairpins.Ravel.M1-4.mei": [false, false, "Demo Hairpins Ravel M1-4"],
+            "Demo.Hairpins.Ravel.M2.mei": [false, false, "Demo Hairpins Ravel M2"],
+            "TC.dir.01.mei": [false, false, "Dir 01"],
+            "TC.dir.02.mei": [false, false, "Dir 02"],
+            "TC.dir.03.mei": [false, false, "Dir 03"],
+            "TC.Dynamics.mei": [false, false, "Dynamics"],
+            "TC.Hairpins.mei": [false, false, "Hairpins"]
+        },
+        "layout": {
+            "TC.PageLayout.mei": [false, false, "Page Layout"],
+            "TC.PageLayoutAutoWidths.mei": [false, false, "Page Layout Auto Widths"],
+            "TC.SystemBreak.01.mei": [false, false, "System Break 01"],
+            "TC.SystemBreak.02.mei": [false, false, "System Break 02"],
+            "TC.SystemBreak.03.mei": [false, false, "System Break 03"],
+            "TC.SystemBreak.mei": [false, false, "System Break"]
+        },
+        "others": {
+            "Demo.StaffDefChanges.mei": [false, false, "Staff Def Changes"],
+            "TC.BarLines.mei": [false, false, "Barlines"],
+            "TC.Beams.mei": [false, false, "Beams"],
+            "TC.Fermatas.mei": [false, false, "Fermatas"],
+            "TC.Hyphens.mei": [false, false, "Hyphens"],
+            "TC.Hyphens.Verses.mei": [false, false, "Hyphens - Verses"],
+            "TC.id2tstamp.mei": [false, false, "ID to tstamp"],
+            "TC.MeterChange.mei": [false, false, "Meter Change"],
+            "TC.MissingAttribute.mei": [false, false, "Missing Attribute"],
+            "TC.One-measure.mei": [false, false, "One Measure"],
+            "TC.Space.mei": [false, false, "Space"],
+            "TC.tstamp2id.mei": [false, false, "tstamp to ID"],
+            "TC.Tuplets.mei": [false, false, "Tuplets"],
+            "TC.Variants.mei": [false, false, "Variants"]
+        },
+        "ties-slurs": {
+            "TC.Slurs.Bezier.mei": [false, false, "Bezier Slurs"],
+            "TC.Slurs.mei": [false, false, "Slurs"],
+            "TC.Slurs.TStamps.mei": [false, false, "Slurs with tstamps"],
+            "TC.Slurs.TStamps.NoIDs.mei": [false, false, "Slurs with tstamps, no IDs"],
+            "TC.Ties.02.mei": [false, false, "Ties 02"],
+            "TC.Ties.mei": [false, false, "Ties"],
+            "TC.Ties.Staves.mei": [false, false, "Ties Staves"],
+            "TC.Ties.TStamps.mei": [false, false, "Tstamps"],
+            "VF.Stave.Tempo.mei": [false, false, "Stave Tempo"]
+        },
+        "staves": {
+            "Demo.StaveConnectors.mei": [false, false, "Stave Connectors"],
+            "MultiStaveSystemBreak.mei": [false, false, "Multi-Stave System Breaks"],
+            "TC.MultiStave.01.mei": [false, false, "Multi-Stave 01"],
+            "TC.MultiStave.02.mei": [false, false, "Multi-Stave 02"],
+            "TC.MultiStave.03.mei": [false, false, "Multi-Stave 03"],
+            "TC.MultiStave.04.mei": [false, false, "Multi-Stave 04"],
+            "TC.MultiStave.05.mei": [false, false, "Multi-Stave 05"],
+            "TC.PlainStaff.mei": [false, false, "Plain Staff"],
+            "TC.Slice.mei": [false, false, "Slice"],
+            "TC.StaffChange.01.mei": [false, false, "Staff Change 01"],
+            "TC.StaffChange.02.mei": [false, false, "Staff Change 02"],
+            "TC.StaffChange.03.mei": [false, false, "Staff Change 03"],
+            "TC.StaffChange.04.mei": [false, false, "Staff Change 04"],
+            "TC.StaveVoices.01.mei": [false, false, "Staff Voices 01"],
+            "TC.StaveVoices.02.mei": [false, false, "Staff Voices 02"],
+            "TC.StaveVoices.03.mei": [false, false, "Staff Voices 03"]
+        }
+    },
+    "complete-examples": {
+        "Aguado_Walzer_G-major": {
+            "Aguado_Walzer_G-major.mei": [false, false, "Aguado Walzer G major"]
+        },
+        "Ahle_Jesu_meines_Herzens_Freud": {
+            "Ahle_Jesu_meines_Herzens_Freud.mei": [false, false, "Ahle Jesu meines Herzens Freud"]
+        },
+        "Altenburg_concerto_C_major": {
+            "Altenburg_concerto_C_major.mei": [false, false, "Altenburg Concerto in C major"]
+        },
+        "Altenburg_Ein_feste_Burg": {
+            "Altenburg_Ein_feste_Burg.mei": [false, false, "Altenburg Ein feste Burg"]
+        },
+        "Altenburg_Macht_auf_die_Tor": {
+            "Altenburg_Macht_auf_die_Tor.mei": [false, false, "Altenburg Macht auf die Tor"]
+        },
+        "Bach_BrandenburgConcert_No.4_I": {
+            "Bach_BrandenburgConcert_No.4_I.mei": [false, false, "Bach Brandenburg Concerto No. 4 I"]
+        },
+        "Bach_BrandenburgConcert_No.4_II": {
+            "Bach_BrandenburgConcert_No.4_II.mei": [false, false, "Bach Brandenburg Concerto No. 4 II"]
+        },
+        "Bach_Ein_festeBurg": {
+            "Bach_Ein_festeBurg.mei": [false, false, "Bach Ein feste Burg"]
+        },
+        "Bach_Herzliebster_Jesu": {
+            "Bach_Herzliebster_Jesu.mei": [false, false, "Bach Herzliebster Jesu"]
+        },
+        "Bach_Hilf_Herr_Jesu": {
+            "Bach_Hilf_Herr_Jesu.mei": [false, false, "Bach Hilf Herr Jesu"]
+        },
+        "Bach_Musikalisches_Opfer_Trio": {
+            "Bach_Musikalisches_Opfer_Trio.mei": [false, false, "Bach Musikalisches Opfer Trio"]
+        },
+        "Bach_Wie_bist_du_Seele": {
+            "Bach_Wie_bist_du_Seele.mei": [false, false, "Bach Wie bist du Seele"]
+        },
+        "Bach-J-C_Fughette_Gmaj": {
+            "Bach-J-C_Fughette_Gmaj.mei": [false, false, "Bach Fughette Gmaj"]
+        },
+        "Bach-J-C_Fughette_No2": {
+            "Bach-J-C_Fughette_No2.mei": [false, false, "Bach Fughette No. 2"]
+        },
+        "Beethoven_Hymn_to_joy": {
+            "Beethoven_Hymn_to_joy.mei": [false, false, "Beethoven Hymn to Joy"]
+        },
+        "Beethoven_op.18": {
+            "Beethoven_op.18.mei": [false, false, "Beethoven Op. 18"]
+        },
+        "Beethoven_Song_Op98": {
+            "Beethoven_Song_Op98.mei": [false, false, "Beethoven Song Op. 98"]
+        },
+        "Berlioz_Symphony_op25": {
+            "Berlioz_Symphony_op25.mei": [false, false, "Berlioz Symphony Op. 25 (Childhood of Christ)"]
+        },
+        "Borodin_StringTrio_g": {
+            "Borodin_StringTrio_g.mei": [false, false, "Borodin String Trio in G"]
+        },
+        "Brahms_StringQuartet_Op51_No1": {
+            "Brahms_StringQuartet_Op51_No1.mei": [false, false, "Brahms String Quartet Op. 51 No. 1"]
+        },
+        "Brahms_WieMelodienZiehtEsMir": {
+            "Brahms_WieMelodienZiehtEsMir.mei": [false, false, "Brahms Wie Melodien Zieht Es Mir"]
+        },
+        "Chopin_Etude_op.10_no.9": {
+            "Chopin_Etude_op.10_no.9.mei": [false, false, "Chopin Etude Op. 10 No. 9"]
+        },
+        "Chopin_Mazurka": {
+            "Chopin_Mazurka.mei": [false, false, "Chopin Mazurka"]
+        },
+        "Czerny_op603_6": {
+            "Czerny_op603_6.mei": [false, false, "Czerny Op. 603 No. 6"]
+        },
+        "Czerny_StringQuartet_d": {
+            "Czerny_StringQuartet_d.mei": [false, false, "Czerny String Quartet in D"]
+        },
+        "Debussy_Golliwogg'sCakewalk": {
+            "Debussy_Golliwogg'sCakewalk.mei": [false, false, "Debussy Golliwogg's Cakewalk"]
+        },
+        "Debussy_Mandoline": {
+            "Debussy_Mandoline.mei": [false, false, "Debussy Mandoline"]
+        },
+        "Echigo-Jishi": {
+            "Echigo-Jishi.mei": [false, false, "Rokuzaemon 越後獅子 (Echigo Jishi)"]
+        },
+        "Gluck_CheFaroSenzaEuridice": {
+            "Gluck_CheFaroSenzaEuridice.mei": [false, false, "Gluck Che Faro Senza Euridice"]
+        },
+        "Grieg_op.43_butterfly": {
+            "Grieg_op.43_butterfly.mei": [false, false, "Grieg Op. 43 'Butterfly'"]
+        },
+        "Grieg_op.43_little_bird": {
+            "Grieg_op.43_little_bird.mei": [false, false, "Grieg Op. 43 'Little Bird'"]
+        },
+        "Handel_Arie": {
+            "Handel_Arie.mei": [false, false, "Handel Lascia ch'io pianga (arr. from Rinaldo, HWV7)"]
+        },
+        "Handel_concerto_grosso": {
+            "Handel_concerto_grosso.mei": [false, false, "Handel Concerto Grosso"]
+        },
+        "Handel_Messias": {
+            "Handel_Messias.mei": [false, false, "Handle Hallelujah Chorus (from Messiah)"]
+        },
+        "Haydn_StringQuartet_Op1_No1": {
+            "Haydn_StringQuartet_Op1_No1.mei": [false, false, "Haydn String Quartet Op. 1 No. 1"]
+        },
+        "Hopkins_GatherRoundTheChristmasTree": {
+            "Hopkins_GatherRoundTheChristmasTree.mei": [false, false, "Hopkins Gather 'Round the Christmas Tree"]
+        },
+        "Hummel_Concerto_for_trumpet": {
+            "Hummel_Concerto_for_trumpet.mei": [false, false, "Hummel Concerto for Trumpet"]
+        },
+        "Hummel_op.67_No.11": {
+            "Hummel_op.67_No.11.mei": [false, false, "Hummel Op. 67 No. 11"]
+        },
+        "Ives_TheCage": {
+            "Ives_TheCage.mei": [false, false, "Ives 'The Cage'"]
+        },
+        "Joplin_Elite_Syncopations": {
+            "Joplin_Elite_Syncopations.mei": [false, false, "Joplin Elist Syncopations"]
+        },
+        "Joplin_Maple_leaf_Rag": {
+            "Joplin_Maple_leaf_Rag.mei": [false, false, "Joplin Maple Leaf Rag"]
+        },
+        "JSB_BWV1047_1": {
+            "JSB_BWV1047_1.mei": [false, false, "Bach BWV1047 No. 1"]
+        },
+        "JSB_BWV1047_2": {
+            "JSB_BWV1047_2.mei": [false, false, "Bach BWV1047 No. 2"]
+        },
+        "JSB_BWV1047_3": {
+            "JSB_BWV1047_3.mei": [false, false, "Bach BWV1047 No. 3"]
+        },
+        "Kirnberger_FugeInEFlatMajor": {
+            "Kirnberger_FugeInEFlatMajor.mei": [false, false, "Kirnberger Fugue in E Flat Major"]
+        },
+        "Krebs_Trio_Eb_2": {
+            "Krebs_Trio_Eb_2.mei": [false, false, "Krebs Trio E-flat"]
+        },
+        "Krebs_Trio_in_c": {
+            "Krebs_Trio_in_c.mei": [false, false, "Krebs Trio in C"]
+        },
+        "Liszt_Four_little_pieces": {
+            "Liszt_Four_little_pieces.mei": [false, false, "Liszt Four Little Pieces"]
+        },
+        "Lully_LaDescenteDeMars": {
+            "Lully_LaDescenteDeMars.mei": [false, false, "Lully La Descente De Mars"]
+        },
+        "Mahler_Song": {
+            "Mahler_Song.mei": [false, false, "Mahler Die zwei blauen Augen"]
+        },
+        "Marney_BreakThouTheBreadOfLife": {
+            "Marney_BreakThouTheBreadOfLife.mei": [false, false, "Marney Break Thou the Bread of Life"]
+        },
+        "McFerrin_Don't_worry": {
+            "McFerrin_Don't_worry.mei": [false, false, "McFerrin Don't Worry (Be Happy)"]
+        },
+        "Mozart_DasVeilchen": {
+            "Mozart_DasVeilchen.mei": [false, false, "Mozart Das Veilchen"]
+        },
+        "Mozart_Fuge_G_minor": {
+            "Mozart Mozart_Fuge_G_minor.mei": [false, false, "Mozart Fuge in G minor"]
+        },
+        "Mozart_Quintett_2013": {
+            "Mozart_Quintett_2013.mei": [false, false, "Mozart Quintett (Alternate Encoding)"]
+        },
+        "Mozart_Quintett": {
+            "Mozart_Quintett.mei": [false, false, "Mozart Quintett"]
+        },
+        "Pachelbel_Canon_in_D": {
+            "Pachelbel_Canon_in_D.mei": [false, false, "Pachelbel Canon in D"]
+        },
+        "Parker-Gillespie_ShawNuff": {
+            "Parker-Gillespie_ShawNuff.mei": [false, false, "Parker / Gillespie 'Shaw Nuff'"]
+        },
+        "Ponchielli_LarrivoDelRe": {
+            "Ponchielli_LarrivoDelRe.mei": [false, false, "Ponchielli L'Arrivo Del Re"]
+        },
+        "Praetorius_PuerNobisNascitur": {
+            "Praetorius_PuerNobisNascitur.mei": [false, false, "Praetorius Puer Nobis Nascitur"]
+        },
+        "Ravel_Le_tombeau": {
+            "Ravel_Le_tombeau.mei": [false, false, "Ravel Le Tombeau"]
+        },
+        "Rimsky-Korsakov_StringQuartet_B": {
+            "Rimsky-Korsakov_StringQuartet_B.mei": [false, false, "Rismky-Korsakov String Quartet B"]
+        },
+        "Saint-Saens_LeCarnevalDesAnimmaux": {
+            "Saint-Saens_LeCarnevalDesAnimmaux.mei": [false, false, "Saint Saens Le Carneval Des Animmaux"]
+        },
+        "Scarlatti_Sonata_in_C_major": {
+            "Scarlatti_Sonata_in_C_major.mei": [false, false, "Scarlatti Sonata in C Major"]
+        },
+        "Schubert_Erlkönig": {
+            "Schubert_Erlkönig.mei": [false, false, "Schubert Erlkönig"]
+        },
+        "Schubert_Lindenbaum": {
+            "Schubert Schubert_Lindenbaum.mei": [false, false, "Schubert Lindenbaum"]
+        },
+        "Schumann_Landmann": {
+            "Schumann_Landmann.mei": [false, false, "Schumann Landmann"]
+        },
+        "Schumann_Op.41": {
+            "Schumann_Op.41.mei": [false, false, "Schumann Op. 41"]
+        },
+        "Schumann_Song_Op48-1": {
+            "Schumann_Song_Op48-1.mei": [false, false, "Schumann Song Op. 48 1"]
+        },
+        "Schutz_DomineDeus": {
+            "Schutz_DomineDeus.mei": [false, false, "Schutz Domine Deus"]
+        },
+        "Schutz_Jubilate_Deo": {
+            "Schutz_Jubilate_Deo.mei": [false, false, "Schutz Jubilate Deo"]
+        },
+        "Telemann_Concert": {
+            "Telemann Concerto.mei": [false, false, "Telemann Concerto"]
+        },
+        "Telemann_Suite": {
+            "Telemann_Suite.mei": [false, false, "Telemann Suite"]
+        },
+        "Vivaldi_Op8_No.2": {
+            "Vivaldi_Op8_No.2.mei": [false, false, "Vivalid Op. 8 No. 2"]
+        },
+        "Weber_Arie": {
+            "Weber_Arie.mei": [false, false, "Weber Arie"]
+        },
+        "Webern_VariationsforPiano": {
+            "Webern_VariationsforPiano.mei": [false, false, "Webern Variations for Piano"]
         }
     }
 }

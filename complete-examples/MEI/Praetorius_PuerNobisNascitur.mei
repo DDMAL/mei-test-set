@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Puer nobis nascitur</title>
-            <title type="subtitle">for Choir, Brass and Timpani</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">for Choir, Brass and Timpani</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator"
-                         dbkey="118741713"
+                         codedval="118741713"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">Michael Praetorius</persName>
                <persName role="encoder">Maja Hartwig</persName>
@@ -21,16 +19,16 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
-               <addrLine>32756 <geogName dbkey="7004442"
+               <addrLine>32756 <geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>
                </addrLine>
                <addrLine>
-                  <geogName dbkey="7000084"
+                  <geogName codedval="7000084"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Germany</geogName>
                </addrLine>
@@ -49,33 +47,33 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -87,14 +85,14 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="electronic">
+            <source>
                <identifier type="URI">http://icking-music-archive.org/scores/praetorius/musaesioniae/rondeau_brass-xml.zip</identifier>
                <titleStmt>
                   <title>Puer nobis nascitur</title>
-                  <title type="subtitle">for Choir, Brass and Timpani</title>
+                  <title type="subordinate">for Choir, Brass and Timpani</title>
                   <respStmt>
                      <persName role="composer"
-                               dbkey="118741713"
+                               codedval="118741713"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">Michael Praetorius</persName>
                      <persName role="arranger">Michel Rondeau</persName>
@@ -102,14 +100,14 @@
                </titleStmt>
                <pubStmt>
                   <respStmt>
-                     <name>Werner Icking Music Archive</name>
+                     <name role="publisher">Werner Icking Music Archive</name>
                   </respStmt>
                   <availability>
                      <useRestrict>© 2010 - Gatineau,Qc.Ca.</useRestrict>
                   </availability>
                </pubStmt>
             </source>
-            <source n="2" label="print">
+            <source>
                <identifier type="URI">http://conquest.imslp.info/files/imglnks/usimg/b/b5/IMSLP189637-WIMA.a1fc-PraeXLIVSco.pdf</identifier>
                <titleStmt>
                   <title>Puer nobis nascitur</title>
@@ -130,7 +128,7 @@
                <title>Puer nobis nascitur</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="118741713"
+                            codedval="118741713"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Michael Praetorius</persName>
                </respStmt>
@@ -144,22 +142,19 @@
                </incipText>
                <incipCode form="parsons">*uuudduduuduuuduu</incipCode>
             </incip>
-            <history>
-               <creation>Year of composition<date notbefore="1571" notafter="1621"/>
-               </creation>
-            </history>
+           <creation>Year of composition<date notbefore="1571" notafter="1621"/></creation>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="bb">Trumpet in C 1</instrVoice>
-                  <instrVoice code="bb">Trumpet in C 2</instrVoice>
-                  <instrVoice code="bd">Trombone</instrVoice>
-                  <instrVoice code="bd">Bass Trombone</instrVoice>
-                  <instrVoice code="pa">Timpani</instrVoice>
-                  <instrVoice code="va">Soprano</instrVoice>
-                  <instrVoice code="vc">Alto</instrVoice>
-                  <instrVoice code="vd">Tenor</instrVoice>
-                  <instrVoice code="vf">Bass</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="bb">Trumpet in C 1</perfRes>
+                  <perfRes codedval="bb">Trumpet in C 2</perfRes>
+                  <perfRes codedval="bd">Trombone</perfRes>
+                  <perfRes codedval="bd">Bass Trombone</perfRes>
+                  <perfRes codedval="pa">Timpani</perfRes>
+                  <perfRes codedval="va">Soprano</perfRes>
+                  <perfRes codedval="vc">Alto</perfRes>
+                  <perfRes codedval="vd">Tenor</perfRes>
+                  <perfRes codedval="vf">Bass</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -238,6 +233,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-05-30"/>
+         </change>
+         <change n="8">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -1023,7 +1026,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s">
+>
                               <verse n="1">
                                  <syl>sci-</syl>
                               </verse>
@@ -3284,7 +3287,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s">
+>
                               <verse n="1">
                                  <syl>si-</syl>
                               </verse>
@@ -3863,8 +3866,8 @@
                            startid="#d5130e8966"
                            endid="#d5130e9024"
                            staff="1"
-                           rend="dashed"
-                           tstamp2="0m+4"/>
+                           tstamp2="0m+4"
+                           lform="dashed"/>
                      <slur tstamp="1"
                            curvedir="above"
                            startid="#d5130e9051"
@@ -3876,8 +3879,8 @@
                            startid="#d5130e9051"
                            endid="#d5130e9111"
                            staff="2"
-                           rend="dashed"
-                           tstamp2="0m+4"/>
+                           tstamp2="0m+4"
+                           lform="dashed"/>
                      <slur tstamp="1"
                            curvedir="above"
                            startid="#d5130e9138"
@@ -3889,8 +3892,8 @@
                            startid="#d5130e9138"
                            endid="#d5130e9198"
                            staff="3"
-                           rend="dashed"
-                           tstamp2="0m+4"/>
+                           tstamp2="0m+4"
+                           lform="dashed"/>
                      <slur tstamp="1"
                            curvedir="above"
                            startid="#d5130e9225"
@@ -3902,8 +3905,8 @@
                            startid="#d5130e9225"
                            endid="#d5130e9269"
                            staff="4"
-                           rend="dashed"
-                           tstamp2="0m+4"/>
+                           tstamp2="0m+4"
+                           lform="dashed"/>
                      <!-- added dashed slurs -->
                   </measure>
                </section>
@@ -4472,28 +4475,28 @@
                      </staff>
                      <slur tstamp="1"
                            curvedir="above"
-                           rend="dashed"
                            startid="#d5130e10029"
                            endid="#d5130e10055"
-                           tstamp2="0m+2"/>
+                           tstamp2="0m+2"
+                           lform="dashed"/>
                      <slur tstamp="1"
                            curvedir="above"
-                           rend="dashed"
                            startid="#d5130e10150"
                            endid="#d5130e10178"
-                           tstamp2="0m+2"/>
+                           tstamp2="0m+2"
+                           lform="dashed"/>
                      <slur tstamp="1"
                            curvedir="above"
-                           rend="dashed"
                            startid="#d5130e10275"
                            endid="#d5130e10301"
-                           tstamp2="0m+2"/>
+                           tstamp2="0m+2"
+                           lform="dashed"/>
                      <slur tstamp="1"
                            curvedir="above"
-                           rend="dashed"
                            startid="#d5130e10396"
                            endid="#d5130e10424"
-                           tstamp2="0m+2"/>
+                           tstamp2="0m+2"
+                           lform="dashed"/>
                      <!-- added @rend -->
                   </measure>
                   <measure n="19" xml:id="d5130e10517">
@@ -5880,7 +5883,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s">
+>
                               <verse n="1">
                                  <syl>di-</syl>
                               </verse>

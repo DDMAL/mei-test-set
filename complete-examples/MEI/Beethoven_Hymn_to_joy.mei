@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Hymn to joy</title>
-            <title type="subtitle">for Solo Baryton, Choir &amp; Wind Ensemble</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">for Solo Baryton, Choir &amp; Wind Ensemble</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
-               <persName role="creatorr">Ludwig van Beethoven</persName>
+               <persName role="creator">Ludwig van Beethoven</persName>
                <persName role="encoder">Maja Hartwig</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115198" authURI="//d-nb.info/gnd" authority="GND">
+               <corpName role="publisher" codedval="5115198" authURI="//d-nb.info/gnd" authority="GND">
                   Musikwissenschaftliches Seminar </corpName>
             </respStmt>
             <address>
@@ -39,7 +37,7 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd/2007744-0"
                          authority="Deutsche Nationalbibliothek">German Research
                   Foundation<address>
@@ -50,7 +48,7 @@
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
                   Humanities<address>
@@ -74,12 +72,16 @@
                   <respStmt>
                      <persName role="composer"
                                authURI="http://d-nb.info/gnd/"
-                               dbkey="118508288"
+                               codedval="118508288"
                                authority="Deutsche Nationalbibliothek">Ludwig van Beethoven</persName>
                      <persName role="arranger">Michel Rondeau</persName>
                      <persName role="translator">Henry van Dyke</persName>
                   </respStmt>
                </titleStmt>
+               <langUsage>
+                  <language>German</language>
+                  <language>English</language>
+               </langUsage>
                <contents>
                   <contentItem>I. Allegro ma non troppo, un poco maestoso</contentItem>
                   <contentItem>II.Scherzo: Molto vivace - Presto</contentItem>
@@ -87,12 +89,8 @@
                   <contentItem>IV. Presto; Allegro molto assai (Alla marcia); Andante maestoso;
                      Allegro energico, sempre ben marcato.</contentItem>
                </contents>
-               <langUsage>
-                  <language>German</language>
-                  <language>English</language>
-               </langUsage>
             </source>
-            <source n="2" xml:id="MusicXML_Beethoven_op125" label="electronic">
+            <source>
                <identifier type="URI">http://petrucci.mus.auth.gr/imglnks/usimg/6/6a/IMSLP213308-WIMA.2d71-HymJoy-xml.zip</identifier>
                <titleStmt>
                   <title>Hymn to joy</title>
@@ -117,7 +115,7 @@
                <respStmt>
                   <persName role="composer"
                             authURI="http://d-nb.info/gnd/"
-                            dbkey="118508288"
+                            codedval="118508288"
                             authority="Deutsche Nationalbibliothek">Ludwig van Beethoven</persName>
                   <persName role="dedicatee">König Friedrich Wilhelm III. von Preußen</persName>
                   <persName role="librettist">Friedrich Schiller</persName>
@@ -162,37 +160,35 @@
                   </section>
                </score>
             </incip>
-            <history>
-               <creation>Creation of the arrangement<date notbefore="2008" notafter="2010"/>
-               </creation>
-            </history>
+           <creation>Creation of the arrangement<date notbefore="2008" notafter="2010"/>
+           </creation>
             <perfMedium>
-               <instrumentation>
-                  <instrVoiceGrp>
-                     <instrVoice code="va">Sopran</instrVoice>
-                     <instrVoice code="vc">Alt</instrVoice>
-                     <instrVoice code="vd">Tenor</instrVoice>
-                     <instrVoice code="vf">Bass</instrVoice>
-                  </instrVoiceGrp>
-                  <instrVoiceGrp>
-                     <instrVoice code="we">piccolo</instrVoice>
-                     <instrVoice code="wa">2 flutes</instrVoice>
-                     <instrVoice code="wb">2 oboes</instrVoice>
-                     <instrVoice code="wc">2 clarinets</instrVoice>
-                     <instrVoice code="wd">2 bassoon</instrVoice>
-                     <instrVoice code="wd">contrabassoon</instrVoice>
-                     <instrVoice code="bc">4 horns</instrVoice>
-                     <instrVoice code="bb">2 trumpets</instrVoice>
-                     <instrVoice code="bd">3 trombones</instrVoice>
-                     <instrVoice code="pa">timpani</instrVoice>
-                     <instrVoice code="pz">cymbals</instrVoice>
-                     <instrVoice code="pz">triangle</instrVoice>
-                     <instrVoice code="pd">bass drum</instrVoice>
-                  </instrVoiceGrp>
-                  <instrVoiceGrp>
-                     <instrVoice code="oc">string orchestra</instrVoice>
-                  </instrVoiceGrp>
-               </instrumentation>
+               <perfResList>
+                  <perfResList>
+                     <perfRes codedval="va">Sopran</perfRes>
+                     <perfRes codedval="vc">Alt</perfRes>
+                     <perfRes codedval="vd">Tenor</perfRes>
+                     <perfRes codedval="vf">Bass</perfRes>
+                  </perfResList>
+                  <perfResList>
+                     <perfRes codedval="we">piccolo</perfRes>
+                     <perfRes codedval="wa">2 flutes</perfRes>
+                     <perfRes codedval="wb">2 oboes</perfRes>
+                     <perfRes codedval="wc">2 clarinets</perfRes>
+                     <perfRes codedval="wd">2 bassoon</perfRes>
+                     <perfRes codedval="wd">contrabassoon</perfRes>
+                     <perfRes codedval="bc">4 horns</perfRes>
+                     <perfRes codedval="bb">2 trumpets</perfRes>
+                     <perfRes codedval="bd">3 trombones</perfRes>
+                     <perfRes codedval="pa">timpani</perfRes>
+                     <perfRes codedval="pz">cymbals</perfRes>
+                     <perfRes codedval="pz">triangle</perfRes>
+                     <perfRes codedval="pd">bass drum</perfRes>
+                  </perfResList>
+                  <perfResList>
+                     <perfRes codedval="oc">string orchestra</perfRes>
+                  </perfResList>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -241,14 +237,26 @@
             </changeDesc>
             <date isodate="2014-06-02"/>
          </change>
+         <change n="3">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
+         </change>
       </revisionDesc>
    </meiHead>
    <music>
       <body>
          <mdiv>
             <score>
-               <scoreDef meter.count="4" meter.unit="4" key.sig="2s" mm="120">
-                  <staffGrp n="1" symbol="line">
+               <scoreDef meter.count="4"
+                         meter.unit="4"
+                         key.sig="2s"
+                         mm="120"
+                         system.leftline="true">
+                  <staffGrp n="1">
                      <staffGrp barthru="true" symbol="bracket">
                         <staffDef n="1"
                                   label="Soprano"
@@ -18919,7 +18927,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                         </layer>
                      </staff>
@@ -19488,7 +19495,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                            <rest xml:id="d1e63404" dur="4"/>
                            <rest xml:id="d1e63412" dur="4"/>
@@ -19497,7 +19503,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                         </layer>
                      </staff>
@@ -20026,7 +20031,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                            <rest xml:id="d1e65268" dur="4"/>
                            <rest xml:id="d1e65276" dur="4"/>
@@ -20035,7 +20039,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                         </layer>
                      </staff>
@@ -20625,7 +20628,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                            <rest xml:id="d1e67193" dur="4"/>
                            <rest xml:id="d1e67201" dur="4"/>
@@ -20634,7 +20636,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                         </layer>
                      </staff>
@@ -21179,7 +21180,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                            <rest xml:id="d1e69101" dur="4"/>
                            <note xml:id="d1e69109"
@@ -21187,7 +21187,6 @@
                                  oct="5"
                                  dur="4"
                                  stem.dir="down"
-                                 instr="#P24-X3"
                                  pnum="39"/>
                            <rest xml:id="d1e69124" dur="4"/>
                         </layer>
@@ -23528,8 +23527,9 @@
                                  oct="5"
                                  dur="2"
                                  stem.dir="down"
-                                 headshape="circlex"
-                                 instr="#P24-X15"
+                                 head.shape="x"
+                                 head.fill="solid"
+                                 head.mod="circle"
                                  pnum="50"/>
                            <rest xml:id="d1e77970" dur="2"/>
                         </layer>
@@ -23836,8 +23836,9 @@
                                  oct="5"
                                  dur="2"
                                  stem.dir="down"
-                                 headshape="circlex"
-                                 instr="#P24-X15"
+                                 head.shape="x"
+                                 head.fill="solid"
+                                 head.mod="circle"
                                  pnum="50"/>
                         </layer>
                      </staff>

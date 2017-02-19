@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei"
      xml:id="_20090211164803615"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -15,7 +13,7 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115198" authURI="//d-nb.info/gnd" authority="GND"> Musikwissenschaftliches Seminar </corpName>
+               <corpName role="publisher" codedval="5115198" authURI="//d-nb.info/gnd" authority="GND"> Musikwissenschaftliches Seminar </corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
@@ -35,7 +33,7 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd/2007744-0"
                          authority="Deutsche Nationalbibliothek">German Research
                   Foundation<address>
@@ -46,7 +44,7 @@
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
                   Humanities<address>
@@ -62,7 +60,7 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="print">
+            <source>
                <identifier type="URI">http://imslp.org/wiki/Clarinet_Quintet_in_A_major,_K.581_%28Mozart,_Wolfgang_Amadeus%29</identifier>
                <titleStmt>
                   <title>Quintet for Clarinet and Strings, K. 581,<lb/>3. Menuetto (Excerpt from Second Trio)</title>
@@ -70,7 +68,7 @@
                      <persName role="composer"
                                authority="GND"
                                authURI="http://d-nb.info/gnd/"
-                               dbkey="118584596">Wolfgang Amadeus Mozart</persName>
+                               codedval="118584596">Wolfgang Amadeus Mozart</persName>
                      <persName role="dedicatee">Anton Stadler</persName>
                   </respStmt>
                </titleStmt>
@@ -103,18 +101,15 @@
                   *uududdduuddddududdu
                </incipCode>
             </incip>
-            <history>
-               <creation>Year of composition: <date>1789</date>
-               </creation>
-            </history>
-            <perfMedium>
-               <instrumentation>
-                  <instrVoice code="wc">Clarinet</instrVoice>
-                  <instrVoice code="sa">Violin I</instrVoice>
-                  <instrVoice code="sa">Violin II</instrVoice>
-                  <instrVoice code="sb">Viola</instrVoice>
-                  <instrVoice code="sc">Violoncello</instrVoice>
-               </instrumentation>
+           <creation>Year of composition: <date>1789</date></creation>
+           <perfMedium>
+               <perfResList>
+                  <perfRes codedval="wc">Clarinet</perfRes>
+                  <perfRes codedval="sa">Violin I</perfRes>
+                  <perfRes codedval="sa">Violin II</perfRes>
+                  <perfRes codedval="sb">Viola</perfRes>
+                  <perfRes codedval="sc">Violoncello</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -174,6 +169,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-06-02"/>
+         </change>
+         <change n="5">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -625,8 +628,7 @@
                                  oct="5"
                                  dur="4"
                                  dur.ges="6p"
-                                 stem.dir="down"
-                                 accid.ges="s"/>
+                                 stem.dir="down"/>
                            <note xml:id="d1e1009"
                                  pname="e"
                                  oct="5"
@@ -891,8 +893,7 @@
                                     oct="4"
                                     dur="8"
                                     dur.ges="4p"
-                                    stem.dir="down"
-                                    accid.ges="s"/>
+                                    stem.dir="down"/>
                            </beam>
                         </layer>
                      </staff>
@@ -1005,8 +1006,7 @@
                                     oct="4"
                                     dur="8"
                                     dur.ges="4p"
-                                    stem.dir="down"
-                                    accid.ges="s"/>
+                                    stem.dir="down"/>
                            </beam>
                         </layer>
                      </staff>
@@ -1378,8 +1378,7 @@
                                  oct="3"
                                  dur="4"
                                  dur.ges="8p"
-                                 stem.dir="up"
-                                 accid.ges="s"/>
+                                 stem.dir="up"/>
                         </layer>
                      </staff>
                      <staff n="4">

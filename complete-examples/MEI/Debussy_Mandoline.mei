@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Mandoline</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator">Claude Debussy</persName>
                <persName role="encoder">Maja Hartwig</persName>
@@ -17,16 +15,16 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
-               <addrLine>32756 <geogName dbkey="7004442"
+               <addrLine>32756 <geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>
                </addrLine>
                <addrLine>
-                  <geogName dbkey="7000084"
+                  <geogName codedval="7000084"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Germany</geogName>
                </addrLine>
@@ -41,33 +39,33 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -79,25 +77,25 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="print" xml:id="IMSLP_Debussy_Mandoline">
+            <source>
                <identifier type="workNumber">L 29</identifier>
                <identifier type="URI">http://conquest.imslp.info/files/imglnks/usimg/8/85/IMSLP14823-Debussy_-_Mandoline__voice_and_piano_.pdf</identifier>
                <titleStmt>
                   <title>Mandoline</title>
                   <respStmt>
                      <persName role="composer"
-                               dbkey="118524186"
+                               codedval="118524186"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">Claude Debussy</persName>
                      <persName role="lyricist"
-                               dbkey="118804219"
+                               codedval="118804219"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">Paul Verlaine</persName>
                   </respStmt>
                </titleStmt>
                <pubStmt>
                   <respStmt n="1">
-                     <corpName>Durand &amp; Fils</corpName>
+                     <corpName role="publisher">Durand &amp; Fils</corpName>
                   </respStmt>
                   <pubPlace>Paris</pubPlace>
                   <date>1905</date>
@@ -112,7 +110,7 @@
                   <plateNum>D. &amp; F. 6688</plateNum>
                </physDesc>
             </source>
-            <source n="2" xml:id="MusicXML_Schumann_op48_1" label="electronic">
+            <source>
                <identifier type="URI">http://www.musicxml.com/de/music-in-musicxml/example-set/</identifier>
                <titleStmt>
                   <title>Mandoline</title>
@@ -136,7 +134,7 @@
                <title type="uniform">Mandoline</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="118524186"
+                            codedval="118524186"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Claude Debussy</persName>
                   <persName role="librettist">Paul Verlaine</persName>
@@ -236,11 +234,11 @@
                   </section>
                </score>
             </incip>
-            <history>
-               <creation>
-                  <geogName>Wien</geogName>
-                  <date isodate="1882-11-15">15. November 1882</date>
-               </creation>
+           <creation>
+             <geogName>Wien</geogName>
+             <date isodate="1882-11-15">15. November 1882</date>
+           </creation>
+           <history>
                <eventList>
                   <event>
                      <p>First Publication<date>1890</date>
@@ -252,10 +250,10 @@
                <language>French</language>
             </langUsage>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice>Voice</instrVoice>
-                  <instrVoice>Piano</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes>Voice</perfRes>
+                  <perfRes>Piano</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -277,7 +275,8 @@
                   </term>
                </termList>
                <classCode authority="OCLC"
-                          authURI="http://www.oclc.org/dewey/resources/summaries/default.htm#700"/>
+                          authURI="http://www.oclc.org/dewey/resources/summaries/default.htm#700"
+                          xml:id="OCLC"/>
                <classCode xml:id="OSWD"
                           authURI="#BSZ"
                           authority="http://www.bsz-bw.de/cgi-bin/oswd-suche.pl"/>
@@ -335,6 +334,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-06-02"/>
+         </change>
+         <change n="7">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -1482,9 +1489,8 @@
                      </staff>
                      <dynam tstamp="1" place="above" staff="1">p</dynam>
                      <slur tstamp="1"
+                           tstamp2="3m+1"
                            curvedir="above"
-                           startid="#d1e4602"
-                           endid="#..."
                            staff="1"/>
                      <dir tstamp="4" place="above" staff="1">
                         <rend fontsize="9" fontstyle="italic">dim.</rend>

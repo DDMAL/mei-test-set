@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Wie Melodien Zieht Es Mir</title>
-            <title type="subtitle">Op. 105, No. 1</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">Op. 105, No. 1</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator"
                          authURI="http://d-nb.info/gnd/"
-                         dbkey="118514253"
+                         codedval="118514253"
                          authority="GND">Johannes Brahms</persName>
                <persName role="encoder">Perry Roland</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115198" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar </corpName>
+               <corpName role="publisher" codedval="5115198" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar </corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
@@ -41,7 +39,7 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd/2007744-0"
                          authority="Deutsche Nationalbibliothek">German Research
                   Foundation<address>
@@ -52,7 +50,7 @@
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
                   Humanities<address>
@@ -68,7 +66,7 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" xml:id="IMSLP_Brahms_op105_1">
+            <source>
                <identifier type="opusNumber">op. 105</identifier>
                <identifier type="URI" label="print">http://petrucci.mus.auth.gr/imglnks/usimg/a/a8/IMSLP246584-PMLP52896-Brahms_-_Op._105_No._1.pdf</identifier>
                <titleStmt>
@@ -77,7 +75,7 @@
                   <respStmt>
                      <persName role="composer"
                                authURI="http://d-nb.info/gnd/"
-                               dbkey="118514253"
+                               codedval="118514253"
                                authority="GND">Johannes Brahms</persName>
                      <persName role="arranger">Klaus Groth</persName>
                      <persName role="editor">Max Friedlaender</persName>
@@ -85,7 +83,7 @@
                </titleStmt>
                <pubStmt>
                   <respStmt>
-                     <corpName>Edition Peters</corpName>
+                     <corpName role="publisher">Edition Peters</corpName>
                   </respStmt>
                   <pubPlace>Leipzig</pubPlace>
                </pubStmt>
@@ -93,7 +91,7 @@
                   <plateNum>9312</plateNum>
                </physDesc>
             </source>
-            <source n="2" xml:id="MusicXML_Brahms_op105_1" label="electronic">
+            <source>
                <identifier type="URI">http://www.musicxml.com/de/music-in-musicxml/example-set/</identifier>
                <titleStmt>
                   <title>Wie Melodien zieht es mir</title>
@@ -274,10 +272,10 @@
                   </section>
                </score>
             </incip>
-            <history>
-               <creation>
-                  <date notbefore="1886" notafter="1888">1886-1888</date>
-               </creation>
+           <creation>
+             <date notbefore="1886" notafter="1888">1886-1888</date>
+           </creation>
+           <history>
                <eventList>
                   <event>
                      <p>First performance<date isodate="1887-02-11"/> in
@@ -290,10 +288,10 @@
                <language>German</language>
             </langUsage>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="vu">Voice</instrVoice>
-                  <instrVoice code="ka">Piano</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="vu">Voice</perfRes>
+                  <perfRes codedval="ka">Piano</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -348,6 +346,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-06-02"/>
+         </change>
+         <change n="4">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -667,11 +673,6 @@
                            </note>
                         </layer>
                      </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <space dur="1"/>
-                        </layer>
-                     </staff>
                      <staff n="3">
                         <layer n="1">
                            <beam>
@@ -773,11 +774,6 @@
                                  <syl>den</syl>
                               </verse>
                            </note>
-                        </layer>
-                     </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <space dur="1"/>
                         </layer>
                      </staff>
                      <staff n="3">
@@ -885,7 +881,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <space xml:id="d1e1325" dur.ges="2"/>
+                           <space xml:id="d1e1325" dur.ges="4p"/>
                            <clef shape="G" line="2"/>
                            <rest xml:id="d1e1373" dur="8"/>
                            <chord xml:id="d150e1" dur="8" dur.ges="1p" stem.dir="up">
@@ -1702,8 +1698,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <space dur="2"/>
-                           <space dur="4"/>
+                           <space dur.ges="6p"/>
                            <rest xml:id="d1e3734" dur="8" vo="2"/>
                            <note xml:id="d1e3749"
                                  pname="g"
@@ -1791,8 +1786,8 @@
                                     stem.dir="up"
                                     accid.ges="s"/>
                            </beam>
-                           <space xml:id="d1e3833" dur="8"/>
-                           <space xml:id="d1e3844" dur="4"/>
+                           <rest xml:id="d1e3833" dur="8"/>
+                           <rest xml:id="d1e3844" dur="4"/>
                         </layer>
                      </staff>
                      <slur tstamp="1"
@@ -2177,11 +2172,6 @@
                            </note>
                         </layer>
                      </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <space dur="1"/>
-                        </layer>
-                     </staff>
                      <staff n="3">
                         <layer n="1">
                            <beam>
@@ -2297,16 +2287,6 @@
                            </note>
                         </layer>
                      </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <space dur="4"/>
-                           <space dur="8"/>
-                           <rest dur="8"/>
-                           <space dur="4"/>
-                           <space dur="8"/>
-                           <rest dur="8"/>
-                        </layer>
-                     </staff>
                      <staff n="3">
                         <layer n="1">
                            <beam>
@@ -2327,17 +2307,17 @@
                                        pname="b"
                                        accid="f"
                                        oct="3"
-                                       accid.ges="f"
+
                                        staff="2"/>
                                  <note xml:id="d1e5128"
                                        pname="f"
                                        accid="n"
                                        oct="3"
-                                       accid.ges="n"
+
                                        staff="2"/>
                               </chord>
                            </beam>
-                           <space dur="8"/>
+                           <rest dur="8"/>
                            <beam>
                               <note xml:id="d1e5275"
                                     pname="d"
@@ -2360,7 +2340,7 @@
                                  </note>
                               </chord>
                            </beam>
-                           <space dur="8"/>
+                           <rest dur="8"/>
                         </layer>
                      </staff>
                   </measure>

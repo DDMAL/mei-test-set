@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Ein feste Burg ist unser Gott</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator">Michael Altenburg</persName>
                <persName role="encoder">Maja Hartwig</persName>
@@ -17,16 +15,16 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
-               <addrLine>32756 <geogName dbkey="7004442"
+               <addrLine>32756 <geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>
                </addrLine>
                <addrLine>
-                  <geogName dbkey="7000084"
+                  <geogName codedval="7000084"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Germany</geogName>
                </addrLine>
@@ -45,33 +43,33 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -83,13 +81,13 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="print" xml:id="Hausmusik_Altenburg_EinFesteBurg">
+            <source>
                <identifier type="URI">http://www.hausmusik.ch/notenregal/a/altenburg_michael(1584-1640)/ein%20feste%20burg/ein%20feste%20burg.pdf</identifier>
                <titleStmt>
                   <title>Ein feste Burg ist unser Gott</title>
                   <respStmt>
                      <persName role="composer"
-                               dbkey="11864839X"
+                               codedval="11864839X"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">Michael Altenburg</persName>
                   </respStmt>
@@ -97,18 +95,16 @@
                <pubStmt>
                   <date isodate="2011-05-12"/>
                   <respStmt>
-                     <corpName>Verein zur Förderung der Hausmusik</corpName>
+                     <corpName role="publisher">Verein zur Förderung der Hausmusik</corpName>
                   </respStmt>
                </pubStmt>
             </source>
-            <source n="2"
-                    xml:id="Hausmusik_Altenburg_EinFesteBurg_MusicXML"
-                    label="electronic">
+            <source>
                <identifier type="URI">http://www.hausmusik.ch/notenregal/a/altenburg_michael(1584-1640)/ein%20feste%20burg/ein%20feste%20burg.xml</identifier>
                <pubStmt>
                   <date isodate="2011-05-12"/>
                   <respStmt>
-                     <corpName>Verein zur Förderung der Hausmusik</corpName>
+                     <corpName role="publisher">Verein zur Förderung der Hausmusik</corpName>
                   </respStmt>
                </pubStmt>
             </source>
@@ -127,7 +123,7 @@
                <title>Ein feste Burg ist unser Gott</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="11864839X"
+                            codedval="11864839X"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Michael Altenburg</persName>
                </respStmt>
@@ -259,15 +255,15 @@
                </score>
             </incip>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="bb">Trompete 1</instrVoice>
-                  <instrVoice code="bb">Trompete 2</instrVoice>
-                  <instrVoice code="bb">Trompete 3</instrVoice>
-                  <instrVoice code="bb">Trompete 4</instrVoice>
-                  <instrVoice code="bd">Posaune 1</instrVoice>
-                  <instrVoice code="bd">Posaune 2</instrVoice>
-                  <instrVoice code="bd">Posaune 3</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="bb">Trompete 1</perfRes>
+                  <perfRes codedval="bb">Trompete 2</perfRes>
+                  <perfRes codedval="bb">Trompete 3</perfRes>
+                  <perfRes codedval="bb">Trompete 4</perfRes>
+                  <perfRes codedval="bd">Posaune 1</perfRes>
+                  <perfRes codedval="bd">Posaune 2</perfRes>
+                  <perfRes codedval="bd">Posaune 3</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -343,6 +339,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl</p>
             </changeDesc>
             <date isodate="2013-09-10"/>
+         </change>
+         <change n="8">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -993,7 +997,7 @@
                                  accid="s"
                                  oct="5"
                                  dur="4"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="4">
@@ -1779,7 +1783,7 @@
                                  accid="s"
                                  oct="4"
                                  dur="4"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="3">
@@ -1799,7 +1803,7 @@
                                  accid="s"
                                  oct="3"
                                  dur="4"
-                                 accid.ges="s">
+>
                               <verse n="1">
                                  <syl>se</syl>
                               </verse>
@@ -1841,7 +1845,7 @@
                                     accid="s"
                                     oct="4"
                                     dur="8"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <note xml:id="d16531e7299" pname="g" oct="4" dur="2"/>
                         </layer>
@@ -2298,12 +2302,12 @@
                                        pname="f"
                                        accid="s"
                                        oct="4"
-                                       accid.ges="s"/>
+/>
                                  <note xml:id="d16531e9422"
                                        pname="f"
                                        accid="s"
                                        oct="5"
-                                       accid.ges="s"/>
+/>
                               </chord>
                               <chord xml:id="d17315e1" dur="8">
                                  <note xml:id="d16531e9443" pname="g" oct="4"/>
@@ -2491,12 +2495,12 @@
                                     pname="g"
                                     accid="s"
                                     oct="4"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d16531e10321"
                                     pname="g"
                                     accid="s"
                                     oct="5"
-                                    accid.ges="s"/>
+/>
                            </chord>
                            <chord xml:id="d17413e1" dur="2">
                               <note xml:id="d16531e10340" pname="a" oct="4"/>
@@ -2527,7 +2531,7 @@
                                  accid="s"
                                  oct="4"
                                  dur="2"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="6">
@@ -2659,7 +2663,7 @@
                                  accid="s"
                                  oct="3"
                                  dur="4"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d16531e11102" pname="d" oct="3" dur="4"/>
                            <note xml:id="d16531e11114" pname="a" oct="2" dur="4"/>
                         </layer>
@@ -2799,12 +2803,12 @@
                                     pname="g"
                                     accid="s"
                                     oct="4"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d16531e11767"
                                     pname="g"
                                     accid="s"
                                     oct="5"
-                                    accid.ges="s"/>
+/>
                            </chord>
                         </layer>
                      </staff>
@@ -2833,7 +2837,7 @@
                                  accid="s"
                                  oct="2"
                                  dur="4"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d16531e11884" pname="a" oct="2" dur="4"/>
                            <note xml:id="d16531e11896" pname="e" oct="3" dur="4"/>
                         </layer>
@@ -3096,7 +3100,7 @@
                                  accid="f"
                                  oct="2"
                                  dur="4"
-                                 accid.ges="f"/>
+/>
                            <note xml:id="d16531e13182" pname="c" oct="3" dur="4"/>
                            <note xml:id="d16531e13194" pname="g" oct="2" dur="2"/>
                         </layer>
@@ -3184,7 +3188,6 @@
                         </layer>
                      </staff>
                   </measure>
-                  <sb/>
                </section>
             </score>
          </mdiv>

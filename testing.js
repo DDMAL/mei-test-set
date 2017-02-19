@@ -2,9 +2,13 @@
     Given a colon-delimited path (e.g., "MEI-Test-Set:accidentals"),
     looks up the data in the tests.json file and renders them with Verovio.
 
-    Assumes the MEI files are in a folder called "MEI". 
+    Assumes the MEI files are in a folder called "MEI".
+
+    path: The path in the tests.json file
+    withSibeliusComparison: boolean. If true, will look for an image to show a comparison
+    flatSourceDirectory: boolean. If true, will not look in a sub-directory for the MEI files
 */
-runTests = function(path)
+runTests = function(path, withSibeliusComparison, flatSourceDirectory)
 {
     function _selectTests(path, data)
     {
@@ -58,12 +62,11 @@ runTests = function(path)
 
     function _parseMEIDataForDisplay (data)
     {
-        // @TODO Parse the MEI file so we can display the sibmei version.
         var domparser = new window.DOMParser();
         var meiXML = domparser.parseFromString(data, "application/xml");
         var appInfo = meiXML.querySelector("[*|id=sibmei]");
 
-        if (appInfo !== null && sibmeiVersion !== null)
+        if (appInfo !== null)
         {
             var sibmeiVersion = appInfo.getAttribute('version');
             return "Sibelius MEI Plugin Version: " + sibmeiVersion;
@@ -72,11 +75,19 @@ runTests = function(path)
         return null;
     }
 
+    function _parseMEIForRightsStatement (data)
+    {
+        var domparser = new window.DOMParser();
+        var meiXML = domparser.parseFromString(data, "application/xml");
+        var rightsStatement = meiXML.querySelector("useRestrict");
+        return rightsStatement.textContent;
+    }
+
     function _runTests (path, data)
     {
         var keys = Object.keys(data);
         var vrvToolkit = new verovio.toolkit();
-        var vrvOptions = {scale: 50, adjustPageHeight: 1}
+        var vrvOptions = {scale: 50, adjustPageHeight: 1, font: "Bravura"}
         vrvToolkit.setOptions(vrvOptions);
 
         var outputDiv = document.getElementById('test-output');
@@ -85,7 +96,7 @@ runTests = function(path)
         var verovioVersionP = document.createElement("p");
         verovioVersionP.appendChild(verovioVersionText);
         outputDiv.appendChild(verovioVersionP);
-        
+
         var verovioOptionsText = document.createTextNode("Options: ");
         outputDiv.appendChild(verovioOptionsText);
 
@@ -112,6 +123,8 @@ runTests = function(path)
                 fetchTest.onload = function(args)
                 {
                     var response = fetchTest.responseText;
+                    console.debug('Rendering: ' + keys[i]);
+
                     var svg = vrvToolkit.renderData(response, {});
 
                     var testDiv = document.createElement('div');
@@ -128,6 +141,16 @@ runTests = function(path)
                     testHeader.appendChild(testHeaderText);
                     testHeader.appendChild(testHeaderLink);
                     testDiv.appendChild(testHeader);
+
+                    var rightsStatement = _parseMEIForRightsStatement(response);
+
+                    if (rightsStatement !== null)
+                    {
+                        var rsElement = document.createElement("p");
+                        var rsText = document.createTextNode(rightsStatement);
+                        rsElement.appendChild(rsText);
+                        testDiv.appendChild(rsElement);
+                    }
 
                     var filenameElement = document.createElement("p");
                     var filenameLinkElement = document.createElement("a");
@@ -148,8 +171,9 @@ runTests = function(path)
 
                     testDiv.appendChild(filenameElement);
 
-                    var statusList = _styleTestStatus(data[keys[i]][0], data[keys[i]][1]);
-                    testDiv.appendChild(statusList);
+                    // Commented out because it's not ready to be used yet.
+                    // var statusList = _styleTestStatus(data[keys[i]][0], data[keys[i]][1]);
+                    // testDiv.appendChild(statusList);
 
                     var notationDiv = document.createElement('div');
                     var notationHeading = document.createElement('h3');
@@ -157,27 +181,40 @@ runTests = function(path)
                     notationHeading.appendChild(notationHeadingText);
                     testDiv.appendChild(notationHeading);
 
+                    // draw the Verovio content to the notation div.
                     notationDiv.innerHTML = svg;
                     testDiv.appendChild(notationDiv);
 
-                    var shouldBeHeading = document.createElement('h3');
-                    var shouldBeHeadingText = document.createTextNode('Sibelius Original');
-                    shouldBeHeading.appendChild(shouldBeHeadingText);
-                    testDiv.appendChild(shouldBeHeading);
-                    var shouldBeImg = document.createElement("img");
-                    var basename = keys[i].split(".")[0];
-                    var imgname = basename + ".png";
-                    shouldBeImg.setAttribute('src', '../' + testLocation[0] + "/imgs/" + testLocation[1] + "/" + imgname);
-                    testDiv.appendChild(shouldBeImg);
-                    outputDiv.appendChild(testDiv);
+                    // If we're comparing it against a Sibelius original.
+                    if (withSibeliusComparison)
+                    {
+                        var shouldBeHeading = document.createElement('h3');
+                        var shouldBeHeadingText = document.createTextNode('Sibelius Original');
+                        shouldBeHeading.appendChild(shouldBeHeadingText);
+                        testDiv.appendChild(shouldBeHeading);
+                        var shouldBeImg = document.createElement("img");
+                        var basename = keys[i].split(".")[0];
+                        var imgname = basename + ".png";
+                        shouldBeImg.setAttribute('src', '../' + testLocation[0] + "/imgs/" + testLocation[1] + "/" + imgname);
+                        testDiv.appendChild(shouldBeImg);
+                    }
 
+                    outputDiv.appendChild(testDiv);
                     var hrElement = document.createElement("hr");
                     outputDiv.appendChild(hrElement);
                 }
 
                 var testLocation = path.split(":");
                 fetchTest.overrideMimeType("application/xml");
-                fetchTest.open("GET", "../" + testLocation[0] + "/MEI/" + testLocation[1] + "/" + keys[i]);
+                if (flatSourceDirectory)
+                {
+                    fetchTest.open("GET", "../" + testLocation[0] + "/MEI/" + keys[i]);
+                }
+                else
+                {
+                    fetchTest.open("GET", "../" + testLocation[0] + "/MEI/" + testLocation[1] + "/" + keys[i]);
+                }
+
                 fetchTest.send();
             })(i);
         }

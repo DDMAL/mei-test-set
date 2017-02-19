@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Gather round the Christmas Tree</title>
-            <title type="subtitle">for Brass and Timpani</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">for Brass and Timpani</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator"
-                         dbkey="13701158X"
+                         codedval="13701158X"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">John Henry Hopkins</persName>
                <persName role="encoder">Maja Hartwig</persName>
@@ -21,16 +19,16 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
-               <addrLine>32756 <geogName dbkey="7004442"
+               <addrLine>32756 <geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>
                </addrLine>
                <addrLine>
-                  <geogName dbkey="7000084"
+                  <geogName codedval="7000084"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Germany</geogName>
                </addrLine>
@@ -49,35 +47,35 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research
                   Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
                   Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -89,14 +87,14 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="electronic">
+            <source>
                <identifier type="URI">http://icking-music-archive.org/scores/rondeau/GaRo/GaRo-xml.zip</identifier>
                <titleStmt>
                   <title>Gather round the Christmas Tree</title>
-                  <title type="subtitle">for Brass and Timpani</title>
+                  <title type="subordinate">for Brass and Timpani</title>
                   <respStmt>
                      <persName role="composer"
-                               dbkey="13701158X"
+                               codedval="13701158X"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">John Henry Hopkins</persName>
                      <persName role="arranger">Michel Rondeau</persName>
@@ -104,14 +102,14 @@
                </titleStmt>
                <pubStmt>
                   <respStmt>
-                     <name>Werner Icking Music Archive</name>
+                     <name role="publisher">Werner Icking Music Archive</name>
                   </respStmt>
                   <availability>
                      <useRestrict>© 2010 - Gatineau,Qc.Ca,</useRestrict>
                   </availability>
                </pubStmt>
             </source>
-            <source n="2" label="electronic">
+            <source>
                <identifier type="URI">http://javanese.imslp.info/files/imglnks/usimg/0/06/IMSLP177715-WIMA.8ccf-GaRoSco.pdf</identifier>
                <titleStmt>
                   <title>Gather round the Christmas Tree</title>
@@ -132,7 +130,7 @@
                <title>Gather round the Christmas Tree</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="13701158X"
+                            codedval="13701158X"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">John Henry Hopkins</persName>
                </respStmt>
@@ -239,19 +237,15 @@
                   </section>
                </score>
             </incip>
-            <history>
-               <creation>
-                  <date notbefore="1820" notafter="1891"/>
-               </creation>
-            </history>
+            <creation><date notbefore="1820" notafter="1891"/></creation>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="bb">Trumpet in C 1</instrVoice>
-                  <instrVoice code="bb">Trumpet in C 2</instrVoice>
-                  <instrVoice code="bd">Trombone</instrVoice>
-                  <instrVoice code="bd">Bass Trombone</instrVoice>
-                  <instrVoice code="pa">Timpani</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="bb">Trumpet in C 1</perfRes>
+                  <perfRes codedval="bb">Trumpet in C 2</perfRes>
+                  <perfRes codedval="bd">Trombone</perfRes>
+                  <perfRes codedval="bd">Bass Trombone</perfRes>
+                  <perfRes codedval="pa">Timpani</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -333,6 +327,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-05-30"/>
+         </change>
+         <change n="7">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -954,7 +956,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d1e2474"
@@ -2143,7 +2145,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d1e7931"

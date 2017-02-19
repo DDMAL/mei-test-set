@@ -1,6 +1,6 @@
-The files in the MEI-test-set directory are licensed under the Creative Commons 4.0 CC-BY. 
+The files in the MEI-test-set directory are licensed under the Creative Commons 4.0 CC-BY.
 
-Contributors: Marina Borsodi-Benson, Andrew Horwitz, Andrew Hankinson
+Contributors: Marina Borsodi-Benson, Andrew Horwitz, Andrew Hankinson, Thomas Weber
 
 Creative Commons Attribution 4.0 International Public License
 

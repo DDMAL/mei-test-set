@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Vier kleine Klavierstücke, No.1</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator"
                          authURI="http://d-nb.info/gnd"
                          authority="DNB"
-                         dbkey="118573527">Franz Liszt</persName>
+                         codedval="118573527">Franz Liszt</persName>
                <persName role="encoder">Perry Roland</persName>
                <persName role="encoder">Maja Hartwig</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName n="1" xml:id="corpName1">University of Virginia Library Charlottesville
+               <corpName role="publisher" n="1" xml:id="corpName1">University of Virginia Library Charlottesville
                   <address>
                      <addrLine>1215 Lee Street</addrLine>
                      <addrLine>VA 22908<geogName>Charlottesville</geogName>
@@ -28,17 +26,17 @@
                      </addrLine>
                   </address>
                </corpName>
-               <corpName n="2"
+               <corpName role="publisher" n="2"
                          xml:id="corpName2"
-                         dbkey="5115204-6"
+                         codedval="5115204-6"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">Musikwissenschaftliches Seminar
                   <address>
                      <addrLine>Gartenstrasse 20</addrLine>
-                     <addrLine>32756 <geogName dbkey="7004442"
+                     <addrLine>32756 <geogName codedval="7004442"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Detmold</geogName>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
@@ -58,35 +56,35 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research
                   Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
                   Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -98,7 +96,7 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" xml:id="Four_Pieces_No1" label="print">
+            <source>
                <identifier type="URI">http://conquest.imslp.info/files/imglnks/usimg/f/f0/IMSLP31787-PMLP72283-Liszt_Musikalische_Werke_2_Band_10_Vier_kleine_Klavierstuecke.pdf</identifier>
                <titleStmt>
                   <title xml:lang="ger">Vier kleine Klavierstücke</title>
@@ -109,13 +107,13 @@
                      <persName role="composer"
                                authURI="http://d-nb.info/gnd"
                                authority="DNB"
-                               dbkey="118573527">Franz Liszt</persName>
+                               codedval="118573527">Franz Liszt</persName>
                      <persName role="editor">José Vianna da Motta</persName>
                   </respStmt>
                </titleStmt>
                <pubStmt>
                   <respStmt>
-                     <corpName>Verlag von Breitkopf und Härtel</corpName>
+                     <corpName role="publisher">Verlag von Breitkopf und Härtel</corpName>
                   </respStmt>
                   <pubPlace>Leipzig</pubPlace>
                   <date>[1865]</date>
@@ -161,7 +159,7 @@
                   <persName role="composer"
                             authURI="http://d-nb.info/gnd"
                             authority="DNB"
-                            dbkey="118573527">Franz Liszt</persName>
+                            codedval="118573527">Franz Liszt</persName>
                   <persName role="dedicatee">Baroness Olga von
                      Meyendorff<date>1836-1926</date>
                   </persName>
@@ -245,9 +243,9 @@
                </eventList>
             </history>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="ka">Piano</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="ka">Piano</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -298,6 +296,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-05-30"/>
+         </change>
+         <change n="4">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>

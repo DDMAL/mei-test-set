@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Préludes op. 67, No. 11</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator"
                          authority="GND"
                          authURI=" http://d-nb.info/gnd/"
-                         dbkey="118554751">Johann Nepomuk Hummel</persName>
+                         codedval="118554751">Johann Nepomuk Hummel</persName>
                <persName role="encoder">Perry Roland</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115198" authURI="//d-nb.info/gndGND" authority="GND">
+               <corpName role="publisher" codedval="5115198" authURI="//d-nb.info/gndGND" authority="GND">
 						Musikwissenschaftliches Seminar </corpName>
             </respStmt>
             <address>
@@ -41,7 +39,7 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd/2007744-0"
                          authority="Deutsche Nationalbibliothek">German Research
 						Foundation<address>
@@ -52,7 +50,7 @@
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
 						Humanities<address>
@@ -68,7 +66,7 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="print">
+            <source>
                <identifier type="URI">http://javanese.imslp.info/files/imglnks/usimg/5/51/IMSLP67737-PMLP136781-Hummel_Sonaten_und_Klavierstuecke_Universal_UE93_Op_68_scan.pdf</identifier>
                <identifier type="referenceNumber">op. 67</identifier>
                <titleStmt>
@@ -77,7 +75,7 @@
                      <persName role="composer"
                                authority="GND"
                                authURI="http://d-nb.info/gnd/"
-                               dbkey="118554751">Johann Nepomuk
+                               codedval="118554751">Johann Nepomuk
 								Hummel</persName>
                      <persName role="editor">Charles-Wilfried Bérlot</persName>
                   </respStmt>
@@ -92,7 +90,7 @@
                   <plateNum>U.E. 93.</plateNum>
                </physDesc>
                <seriesStmt>
-                  <title authURI="http://d-nb.info/" dbkey="354246208" authority="GND">Sonaten
+                  <title authURI="http://d-nb.info/" codedval="354246208" authority="GND">Sonaten
 							und Klavier-Stücke von J.N. Hummel<num>Vol. 3</num>
                   </title>
                </seriesStmt>
@@ -123,7 +121,7 @@
                   <persName role="composer"
                             authority="GND"
                             authURI="http://d-nb.info/gnd/"
-                            dbkey="118554751">Johann Nepomuk Hummel</persName>
+                            codedval="118554751">Johann Nepomuk Hummel</persName>
                </respStmt>
             </titleStmt>
             <key pname="b" mode="major">B major</key>
@@ -206,21 +204,21 @@
                                dir="down"
                                place="below"
                                tstamp="1"
-                               style="altpedstar"/>
+                               form="altpedstar"/>
                         <pedal staff="2"
                                dir="down"
                                place="below"
                                tstamp="3"
-                               style="pedstar"/>
+                               form="pedstar"/>
                         <dir tstamp="1" staff="1" place="below"> armonioso </dir>
                      </measure>
                   </section>
                </score>
             </incip>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice n="1" code="ka">Piano</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes n="1" codedval="ka">Piano</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -289,6 +287,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-05-30"/>
+         </change>
+         <change n="6">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -510,12 +516,12 @@
                             dir="down"
                             place="below"
                             tstamp="1"
-                            style="altpedstar"/>
+                            form="altpedstar"/>
                      <pedal staff="2"
                             dir="down"
                             place="below"
                             tstamp="3"
-                            style="pedstar"/>
+                            form="pedstar"/>
                      <dir tstamp="1" staff="1" place="below">
                         <rend fontstyle="italic">armonioso</rend>
                      </dir>
@@ -725,12 +731,12 @@
                             dir="down"
                             place="below"
                             tstamp="1"
-                            style="pedstar"/>
+                            form="pedstar"/>
                      <pedal staff="2"
                             dir="down"
                             place="below"
                             tstamp="3"
-                            style="pedstar"/>
+                            form="pedstar"/>
                      <tie staff="2" startid="#d1e949" endid="#d1e1029"/>
                      <tie staff="2" startid="#d1e970" endid="#d1e1047"/>
                      <tie staff="2" startid="#d1e1112" endid="#d1e1198"/>
@@ -1710,16 +1716,16 @@
                      <dynam tstamp="6" place="below" staff="2">f</dynam>
                      <dynam tstamp="6.5" place="below" staff="1">sf</dynam>
                      <dynam tstamp="9" place="above" staff="2">p</dynam>
-                     <pedal staff="2" dir="down" style="pedstar" tstamp="1"/>
-                     <pedal staff="2" dir="up" style="pedstar" tstamp="3.875"/>
-                     <pedal staff="2" dir="down" style="pedstar" tstamp="6"/>
-                     <pedal staff="2" dir="up" style="pedstar" tstamp="7.875"/>
-                     <phrase staff="2 1" startid="#d1e3454" endid="#d1e3315" bulge="25"/>
+                     <pedal staff="2" dir="down" tstamp="1" form="pedstar"/>
+                     <pedal staff="2" dir="up" tstamp="3.875" form="pedstar"/>
+                     <pedal staff="2" dir="down" tstamp="6" form="pedstar"/>
+                     <pedal staff="2" dir="up" tstamp="7.875" form="pedstar"/>
+                     <phrase staff="2 1" startid="#d1e3454" endid="#d1e3315" bulge="25 50%"/>
                      <phrase staff="1 2"
                              startid="#n1"
                              endid="#n2"
                              curvedir="below"
-                             bulge="-8"/>
+                             bulge="-8 50%"/>
                   </measure>
                   <measure n="7" xml:id="d1e3698" right="end">
                      <staff n="1">

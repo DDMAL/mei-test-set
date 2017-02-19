@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Suite I</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator">Domenico Scarlatti</persName>
                <persName role="encoder">Maja Hartwig</persName>
@@ -17,16 +15,16 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
-               <addrLine>32756 <geogName dbkey="7004442"
+               <addrLine>32756 <geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>
                </addrLine>
                <addrLine>
-                  <geogName dbkey="7000084"
+                  <geogName codedval="7000084"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Germany</geogName>
                </addrLine>
@@ -43,33 +41,33 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -81,7 +79,7 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="print">
+            <source>
                <identifier type="URI"/>
                <titleStmt>
                   <title>Sonata 1</title>
@@ -89,18 +87,18 @@
                   <title type="uniform">Sonaten, Tasteninstr., K 514</title>
                   <respStmt>
                      <persName role="composer"
-                               dbkey="118804952"
+                               codedval="118804952"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">Domenico Scarlatti</persName>
                   </respStmt>
                </titleStmt>
             </source>
-            <source n="2" label="electronic">
+            <source>
                <identifier type="URI">http://kern.ccarh.org/cgi-bin/ksdata?l=users/craig/classical/scarlatti/longo&amp;file=L001K514.krn&amp;f=xml</identifier>
                <pubStmt>
                   <date isodate="2011-10-13"/>
                   <respStmt>
-                     <corpName>CCARH, Stanford University</corpName>
+                     <corpName role="publisher">CCARH, Stanford University</corpName>
                   </respStmt>
                   <address>
                      <addrLine>Center for Computer Research in Music and Acoustics</addrLine>
@@ -126,7 +124,7 @@
                <title type="uniform">Sonaten, Tasteninstr., K 514</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="118804952"
+                            codedval="118804952"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Domenico Scarlatti</persName>
                </respStmt>
@@ -179,15 +177,11 @@
                   </section>
                </score>
             </incip>
-            <history>
-               <creation>
-                  <date notbefore="1685" notafter="1757"/>
-               </creation>
-            </history>
+            <creation><date notbefore="1685" notafter="1757"/></creation>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="ka">Piano</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="ka">Piano</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -265,6 +259,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-05-30"/>
+         </change>
+         <change n="7">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -789,7 +791,7 @@
                                     oct="6"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d1e1967" pname="g" oct="6" dur="16" stem.dir="down"/>
@@ -842,7 +844,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d1e2278" pname="e" oct="5" dur="16" stem.dir="down"/>
                            </beam>
                         </layer>
@@ -879,7 +881,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d1e2403" pname="g" oct="5" dur="16" stem.dir="down"/>
                            </beam>
                            <note xml:id="d1e2421"
@@ -972,7 +974,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e2749" pname="g" oct="3"/>
-                              <note xml:id="d1e2766" pname="f" accid="s" oct="4" accid.ges="s"/>
+                              <note xml:id="d1e2766" pname="f" accid="s" oct="4"/>
                            </chord>
                            <chord xml:id="d249e1" dur="4" stem.dir="down">
                               <artic artic="stacc" place="above"/>
@@ -1047,7 +1049,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e3098" pname="g" oct="3"/>
-                              <note xml:id="d1e3115" pname="f" accid="s" oct="4" accid.ges="s"/>
+                              <note xml:id="d1e3115" pname="f" accid="s" oct="4"/>
                            </chord>
                            <chord xml:id="d303e1" dur="4" stem.dir="down">
                               <artic artic="stacc" place="above"/>
@@ -1182,7 +1184,7 @@
                                  oct="5"
                                  dur="2"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                         <layer n="2">
                            <chord xml:id="d371e1" dur="4" stem.dir="down">
@@ -1257,7 +1259,7 @@
                                  oct="5"
                                  dur="2"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                         <layer n="2">
                            <chord xml:id="d413e1" dur="4" stem.dir="down">
@@ -1517,7 +1519,7 @@
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e5293" pname="g" oct="3"/>
                               <note xml:id="d1e5310" pname="a" oct="3"/>
-                              <note xml:id="d1e5328" pname="c" accid="s" oct="4" accid.ges="s"/>
+                              <note xml:id="d1e5328" pname="c" accid="s" oct="4"/>
                            </chord>
                            <rest xml:id="d1e5350" dur="2"/>
                         </layer>
@@ -1611,7 +1613,7 @@
                            <chord xml:id="d636e1" dur="2" stem.dir="down">
                               <note xml:id="d1e5704" pname="a" oct="3"/>
                               <note xml:id="d1e5718" pname="b" oct="3"/>
-                              <note xml:id="d1e5733" pname="d" accid="s" oct="4" accid.ges="s"/>
+                              <note xml:id="d1e5733" pname="d" accid="s" oct="4"/>
                            </chord>
                            <rest xml:id="d1e5752" dur="2"/>
                            <!--<clefchange shape="G" line="2"/>-->
@@ -1920,7 +1922,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e7236" pname="g" oct="3"/>
-                              <note xml:id="d1e7253" pname="f" accid="s" oct="4" accid.ges="s"/>
+                              <note xml:id="d1e7253" pname="f" accid="s" oct="4"/>
                            </chord>
                            <chord xml:id="d839e1" dur="4" stem.dir="up">
                               <artic artic="stacc" place="above"/>
@@ -1964,7 +1966,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e7478" pname="g" oct="3"/>
-                              <note xml:id="d1e7495" pname="f" accid="s" oct="4" accid.ges="s"/>
+                              <note xml:id="d1e7495" pname="f" accid="s" oct="4"/>
                            </chord>
                            <chord xml:id="d868e1" dur="4" stem.dir="up">
                               <artic artic="stacc" place="above"/>
@@ -2008,7 +2010,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e7720" pname="g" oct="3"/>
-                              <note xml:id="d1e7737" pname="f" accid="s" oct="4" accid.ges="s"/>
+                              <note xml:id="d1e7737" pname="f" accid="s" oct="4"/>
                            </chord>
                            <chord xml:id="d897e1" dur="4" stem.dir="up">
                               <artic artic="stacc" place="above"/>
@@ -2191,7 +2193,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d1e8608" pname="d" oct="6" dur="16" stem.dir="down"/>
                               <note xml:id="d1e8624" pname="c" oct="6" dur="16" stem.dir="down"/>
                            </beam>
@@ -2314,7 +2316,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e9192" pname="c" oct="4"/>
-                              <note xml:id="d1e9209" pname="b" accid="f" oct="4" accid.ges="f"/>
+                              <note xml:id="d1e9209" pname="b" accid="f" oct="4"/>
                            </chord>
                            <chord xml:id="d1025e1" dur="4" stem.dir="up">
                               <artic artic="stacc" place="above"/>
@@ -2387,7 +2389,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e9527" pname="c" oct="4"/>
-                              <note xml:id="d1e9544" pname="b" accid="f" oct="4" accid.ges="f"/>
+                              <note xml:id="d1e9544" pname="b" accid="f" oct="4"/>
                            </chord>
                            <chord xml:id="d1079e1" dur="4" stem.dir="up">
                               <artic artic="stacc" place="above"/>
@@ -2521,7 +2523,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e10169" pname="c" oct="5" syl="p"/>
-                              <note xml:id="d1e10191" pname="b" accid="f" oct="5" accid.ges="f"/>
+                              <note xml:id="d1e10191" pname="b" accid="f" oct="5"/>
                            </chord>
                            <chord xml:id="d1159e1" dur="4" stem.dir="down">
                               <artic artic="stacc" place="above"/>
@@ -2601,7 +2603,7 @@
                               <artic artic="stacc" place="above"/>
                               <artic artic="stacc" place="above"/>
                               <note xml:id="d1e10517" pname="c" oct="5"/>
-                              <note xml:id="d1e10534" pname="b" accid="f" oct="5" accid.ges="f"/>
+                              <note xml:id="d1e10534" pname="b" accid="f" oct="5"/>
                            </chord>
                            <chord xml:id="d1205e1" dur="4" stem.dir="down">
                               <artic artic="stacc" place="above"/>

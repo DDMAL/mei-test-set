@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="2013">
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Herzliebster Jesu, was hast du verbrochen</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator"
                          authority="GND"
                          authURI="http://d-nb.info/gnd"
-                         dbkey="11850553X">Johann Sebastian Bach</persName>
+                         codedval="11850553X">Johann Sebastian Bach</persName>
                <persName role="encoder">Perry Roland</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar &lt;<geogName dbkey="7004442"
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar &lt;<geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>&gt;</corpName>
             </respStmt>
@@ -40,7 +38,7 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd/2007744-0"
                          authority="Deutsche Nationalbibliothek">German Research Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
@@ -50,7 +48,7 @@
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
@@ -65,7 +63,7 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="electronic">
+            <source>
                <identifier type="URI">http://www.jsbchorales.net/bwv.shtml</identifier>
                <titleStmt>
                   <title>
@@ -77,12 +75,12 @@
                      <persName role="composer"
                                authority="GND"
                                authURI="http://d-nb.info/gnd"
-                               dbkey="11850553X">Johann Sebastian Bach</persName>
+                               codedval="11850553X">Johann Sebastian Bach</persName>
                      <persName role="librettist">Picander, pseud. Christian Friedrich Henrici</persName>
                   </respStmt>
                </titleStmt>
             </source>
-            <source n="2" label="print">
+            <source>
                <identifier type="URI">http://www.jsbchorales.net/down/pdf/024446.pdf</identifier>
                <identifier>Herzliebster Jesu, was hast du verbrochen</identifier>
             </source>
@@ -109,7 +107,7 @@
                   <persName role="composer"
                             authority="GND"
                             authURI="http://d-nb.info/gnd"
-                            dbkey="11850553X">Johann Sebastian Bach</persName>
+                            codedval="11850553X">Johann Sebastian Bach</persName>
                </respStmt>
             </titleStmt>
             <meter count="4" unit="4" sym="common"/>
@@ -172,10 +170,10 @@
                   </section>
                </score>
             </incip>
-            <history>
-               <creation>
-                  <date notbefore="1727" notafter="1729"/>
-               </creation>
+           <creation>
+             <date notbefore="1727" notafter="1729"/>
+           </creation>
+           <history>              
                <eventList>
                   <event>
                      <p>First performance<date isodate="1727-04-11"/>
@@ -189,12 +187,12 @@
                </eventList>
             </history>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="va">Soprano</instrVoice>
-                  <instrVoice code="vc">Alto</instrVoice>
-                  <instrVoice code="vd">Tenor</instrVoice>
-                  <instrVoice code="vf">Bass</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="va">Soprano</perfRes>
+                  <perfRes codedval="vc">Alto</perfRes>
+                  <perfRes codedval="vd">Tenor</perfRes>
+                  <perfRes codedval="vf">Bass</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -241,6 +239,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-05-30"/>
+         </change>
+         <change n="4">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -760,6 +766,7 @@
                      </staff>
                      <staff n="3">
                         <layer n="1">
+                           <clef line="4" shape="F"/>
                            <note xml:id="d1e1525" pname="d" oct="4" dur="4" dur.ges="2p"/>
                            <note xml:id="d1e1537"
                                  pname="c"
@@ -768,8 +775,8 @@
                                  dur.ges="2p"
                                  accid.ges="s"/>
                            <note xml:id="d1e1551"
-                                 pname="a"
-                                 oct="3"
+                                 pname="d"
+                                 oct="4"
                                  dur="4"
                                  fermata="above"
                                  dur.ges="2p"/>
@@ -967,8 +974,6 @@
                                     dur="8"
                                     dur.ges="1p"
                                     accid="n"/>
-                            </beam>
-                            <beam>
                               <note xml:id="d1e2120" pname="b" oct="3" dur="8" dur.ges="1p"/>
                               <note xml:id="d1e2134" pname="a" oct="3" dur="8" dur.ges="1p"/>
                            </beam>
@@ -980,8 +985,6 @@
                                     dur="8"
                                     dur.ges="1p"
                                     accid.ges="s"/>
-                           </beam>
-                           <beam>
                               <note xml:id="d1e2178" pname="e" oct="3" dur="8" dur.ges="1p"/>
                               <note xml:id="d1e2192"
                                     pname="d"

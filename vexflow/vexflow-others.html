@@ -1,106 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vexflow - Extras</title>
-    <script src="http://www.verovio.org/javascript/develop/verovio-toolkit.js"></script>
+    <title>Others</title>
+    <script src="../verovio-toolkit.js" defer></script>
+    <script src="../testing.js" defer></script>
 </head>
 <body>
-
-<h2>Vexflow - Extras</h2>
-    <div id="output">
+    <div id="test-output"></div>
     <script type="text/javascript">
-
-        function pictureExample(myMEI, last)
+        document.addEventListener("DOMContentLoaded", function()
         {
-
-            var fileName = "MEI/" + myMEI;
-
-            var vrvToolkit = new verovio.toolkit();
-            vrvToolkit.setOptions(JSON.stringify({scale: 40, adjustPageHeight: 1}));
-
-            var xhr = new XMLHttpRequest();
-
-            xhr.onload = function(args)
-            {
- 
-                var svg = vrvToolkit.renderData(xhr.responseText, "");
-                document.getElementById("output").innerHTML += "<a name='" + myMEI + "'/>" + "<h3>" + myMEI + "</h3>" + svg + "<hr/>";
-
-                if (last == "True")
-                {
-                    document.getElementById("output").innerHTML += "<center>rendered with Verovio version " + vrvToolkit.getVersion() + "</center>";
-                }
-
-            }
-      
-            xhr.open("GET", fileName);
-            xhr.send();
-        }
-
-
-        pictureExample(
-            "Demo.StaffDefChanges.mei"
-            );
-
-        pictureExample(
-            "TC.BarLines.mei"
-            );
-
-        pictureExample(
-            "TC.Beams.mei"
-            );
-
-        pictureExample(
-            "TC.Fermatas.mei"
-            );
-
-        pictureExample(
-            "TC.Hyphens.mei"
-            );
-
-        pictureExample(
-            "TC.Hyphens.Verses.mei"
-            );
-
-        pictureExample(
-            "TC.id2tstamp.mei"
-            );
-
-        pictureExample(
-            "TC.MeterChange.mei"
-            );
-
-        pictureExample(
-            "TC.MissingAttribute.mei"
-            );
-
-        pictureExample(
-            "TC.One-measure.mei"
-            );
-
-        pictureExample(
-            "TC.Space.mei"
-            );
-
-        pictureExample(
-            "TC.tstamp2id.mei"
-            );
-
-        pictureExample(
-            "TC.Tuplets.mei"
-            );
-
-        pictureExample(
-            "TC.Variants.mei",
-            "True"
-            );
-
-
-
-
+            runTests("vexflow:others", false);
+        });
     </script>
-    </div>
-
-
 </body>
 </html>

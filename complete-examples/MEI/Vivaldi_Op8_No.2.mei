@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Violin Concerto in G minor</title>
             <title type="work">RV 315</title>
-            <title type="subtitle">op. 8, no. 2</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">op. 8, no. 2</title>
+            <title type="subordinate">an electronic transcription</title>
             <title type="alternative">The Four Seasons, Summer</title>
             <title type="popular">L'Estate</title>
             <respStmt>
                <persName role="creator"
-                         dbkey="118627287"
+                         codedval="118627287"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">Antonio Vivaldi</persName>
                <persName role="encoder">Maja Hartwig</persName>
@@ -24,16 +22,16 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
-               <addrLine>32756 <geogName dbkey="7004442"
+               <addrLine>32756 <geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>
                </addrLine>
                <addrLine>
-                  <geogName dbkey="7000084"
+                  <geogName codedval="7000084"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Germany</geogName>
                </addrLine>
@@ -52,35 +50,35 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research
             Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
             Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -92,17 +90,17 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="print">
+            <source>
                <identifier type="URI">http://conquest.imslp.info/files/imglnks/usimg/8/84/IMSLP11098-SummerScore_Vivaldi.pdf</identifier>
                <titleStmt>
                   <title>Violin Concerto in G minor, Allegro non molto</title>
                   <title type="work">RV 315</title>
-                  <title type="subtitle">op. 8, no. 2</title>
+                  <title type="subordinate">op. 8, no. 2</title>
                   <title type="uniform">Il cimento dell'armonia e dell'inventione &lt;Konzert RV 315, 1.
               Satz&gt;</title>
                   <respStmt>
                      <persName role="composer"
-                               dbkey="118627287"
+                               codedval="118627287"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">Antonio Vivaldi</persName>
                   </respStmt>
@@ -143,7 +141,7 @@
                              authority="http://www.bsz-bw.de/cgi-bin/oswd-suche.pl"/>
                </classification>
             </source>
-            <source n="2" label="electronic">
+            <source>
                <identifier type="URI">http://kern.ccarh.org/cgi-bin/ksdata?location=ccarh/vivaldi/op8/all&amp;file=op8n02a.krn&amp;format=info</identifier>
                <titleStmt>
                   <title>Violin Concerto in G minor, Allegro non molto</title>
@@ -151,7 +149,7 @@
                <pubStmt>
                   <date isodate="2011-05-12"/>
                   <respStmt>
-                     <corpName>Stanford Center for Computer Research in Music and Acoustics
+                    <corpName role="publisher">Stanford Center for Computer Research in Music and Acoustics
                 (CCRMA)</corpName>
                   </respStmt>
                   <address>
@@ -178,12 +176,12 @@
             <titleStmt>
                <title>Violin Concerto in G minor, Allegro non molto</title>
                <title type="work">RV 315</title>
-               <title type="subtitle">op. 8, no. 2</title>
+               <title type="subordinate">op. 8, no. 2</title>
                <title type="uniform">Il cimento dell'armonia e dell'inventione &lt;Konzert RV 315, 1.
             Satz&gt;</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="118627287"
+                            codedval="118627287"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Antonio Vivaldi</persName>
                </respStmt>
@@ -194,31 +192,27 @@
             <incip>
                <incipCode form="parsons">*ddduuuduuuddduddd</incipCode>
             </incip>
-            <history>
-               <creation>
-                  <date>1723</date>
-               </creation>
-            </history>
+            <creation><date>1723</date></creation>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice n="1" code="sa">Violino Principale</instrVoice>
-                  <instrVoice n="2" code="sa">Violino Primo</instrVoice>
-                  <instrVoice n="3" code="sa">Violino Secondo</instrVoice>
-                  <instrVoice n="4" code="sb">Alto Viola</instrVoice>
-                  <instrVoice n="5" code="sc">Organo e Violoncello</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes n="1" codedval="sa">Violino Principale</perfRes>
+                  <perfRes n="2" codedval="sa">Violino Primo</perfRes>
+                  <perfRes n="3" codedval="sa">Violino Secondo</perfRes>
+                  <perfRes n="4" codedval="sb">Alto Viola</perfRes>
+                  <perfRes n="5" codedval="sc">Organo e Violoncello</perfRes>
+               </perfResList>
             </perfMedium>
          </work>
          <work n="2" xml:id="movement2">
             <titleStmt>
                <title>Violin Concerto in G minor, Adagio</title>
                <title type="work">RV 315</title>
-               <title type="subtitle">op. 8, no. 2</title>
+               <title type="subordinate">op. 8, no. 2</title>
                <title type="uniform">Il cimento dell'armonia e dell'inventione &lt;Konzert RV 315, 2.
             Satz&gt;</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="118627287"
+                            codedval="118627287"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Antonio Vivaldi</persName>
                </respStmt>
@@ -229,31 +223,27 @@
             <incip>
                <incipCode label="Violino_Principale" form="parsons">*rudududd</incipCode>
             </incip>
-            <history>
-               <creation>
-                  <date>1723</date>
-               </creation>
-            </history>
+            <creation><date>1723</date></creation>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice n="1" code="sa">Violino Principale</instrVoice>
-                  <instrVoice n="2" code="sa">Violino Primo</instrVoice>
-                  <instrVoice n="3" code="sa">Violino Secondo</instrVoice>
-                  <instrVoice n="4" code="sb">Alto Viola</instrVoice>
-                  <instrVoice n="5" code="sc">Organo e Violoncello</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes n="1" codedval="sa">Violino Principale</perfRes>
+                  <perfRes n="2" codedval="sa">Violino Primo</perfRes>
+                  <perfRes n="3" codedval="sa">Violino Secondo</perfRes>
+                  <perfRes n="4" codedval="sb">Alto Viola</perfRes>
+                  <perfRes n="5" codedval="sc">Organo e Violoncello</perfRes>
+               </perfResList>
             </perfMedium>
          </work>
          <work n="3" xml:id="movement3">
             <titleStmt>
                <title>Violin Concerto in G minor, Presto</title>
                <title type="work">RV 315</title>
-               <title type="subtitle">op. 8, no. 2</title>
+               <title type="subordinate">op. 8, no. 2</title>
                <title type="uniform">Il cimento dell'armonia e dell'inventione &lt;Konzert RV 315, 3.
             Satz&gt;</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="118627287"
+                            codedval="118627287"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Antonio Vivaldi</persName>
                </respStmt>
@@ -264,19 +254,15 @@
             <incip>
                <incipCode form="parsons"> *drrrrrrrrrrurrrrrrrrrrrurrrrrrrrrrr </incipCode>
             </incip>
-            <history>
-               <creation>
-                  <date>1723</date>
-               </creation>
-            </history>
+            <creation><date>1723</date></creation>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice n="1" code="sa">Violino Principale</instrVoice>
-                  <instrVoice n="2" code="sa">Violino Primo</instrVoice>
-                  <instrVoice n="3" code="sa">Violino Secondo</instrVoice>
-                  <instrVoice n="4" code="sb">Alto Viola</instrVoice>
-                  <instrVoice n="5" code="sc">Organo e Violoncello</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes n="1" codedval="sa">Violino Principale</perfRes>
+                  <perfRes n="2" codedval="sa">Violino Primo</perfRes>
+                  <perfRes n="3" codedval="sa">Violino Secondo</perfRes>
+                  <perfRes n="4" codedval="sb">Alto Viola</perfRes>
+                  <perfRes n="5" codedval="sc">Organo e Violoncello</perfRes>
+               </perfResList>
             </perfMedium>
          </work>
       </workDesc>
@@ -324,6 +310,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-06-02"/>
+         </change>
+         <change n="6">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -414,7 +408,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -506,7 +500,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -525,7 +519,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -630,7 +624,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e783"
                                     pname="f"
                                     oct="4"
@@ -718,7 +712,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e1015"
                                     pname="g"
                                     oct="4"
@@ -886,7 +880,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -898,7 +892,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d475474e1431" dur="8"/>
                         </layer>
                      </staff>
@@ -953,7 +947,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d475474e1556" dur="8"/>
                         </layer>
                      </staff>
@@ -1213,7 +1207,7 @@
                                  dots="1"
                                  fermata="above"
                                  stem.dir="up"
-                                 accid.ges="s"
+
                                  syl="7 #"/>
                         </layer>
                      </staff>
@@ -1227,7 +1221,7 @@
                                  dots="1"
                                  fermata="above"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="3">
@@ -1328,7 +1322,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e2354"
                                     pname="e"
                                     oct="5"
@@ -1359,7 +1353,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e2414"
                                     pname="e"
                                     oct="5"
@@ -1383,7 +1377,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e2469"
                                     pname="e"
                                     oct="5"
@@ -1475,7 +1469,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e2658"
                                     pname="e"
                                     oct="4"
@@ -1608,7 +1602,7 @@
                                     oct="3"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e2929"
                                     pname="e"
                                     oct="3"
@@ -1683,7 +1677,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -1697,7 +1691,7 @@
                                  dots="1"
                                  tie="i"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="5">
@@ -1737,7 +1731,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e3183"
                                     pname="e"
                                     oct="5"
@@ -1761,7 +1755,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e3238"
                                     pname="e"
                                     oct="5"
@@ -1803,7 +1797,7 @@
                                  dots="1"
                                  tie="t"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="5">
@@ -1889,7 +1883,7 @@
                                     oct="3"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e3497"
                                     pname="e"
                                     oct="3"
@@ -1959,7 +1953,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e3604"
                                     pname="e"
                                     oct="4"
@@ -2195,7 +2189,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"
+
                                     syl="b6"/>
                               <note xml:id="d475474e4166"
                                     pname="b"
@@ -2221,7 +2215,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e4233"
                                     pname="b"
                                     oct="5"
@@ -2414,7 +2408,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d475474e4731"
                                     pname="g"
@@ -2439,7 +2433,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e4796"
                                     pname="g"
                                     oct="5"
@@ -2486,7 +2480,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e4922"
                                     pname="f"
                                     oct="4"
@@ -2736,7 +2730,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"
+
                                     syl="b6"/>
                               <note xml:id="d475474e5526"
                                     pname="b"
@@ -2762,7 +2756,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e5593"
                                     pname="b"
                                     oct="4"
@@ -2955,7 +2949,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d475474e6091"
                                     pname="g"
@@ -2980,7 +2974,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e6156"
                                     pname="g"
                                     oct="4"
@@ -3027,7 +3021,7 @@
                                     oct="3"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e6282"
                                     pname="f"
                                     oct="3"
@@ -3539,7 +3533,7 @@
                                     oct="3"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e7744"
                                     pname="g"
                                     oct="3"
@@ -3686,7 +3680,7 @@
                                  oct="3"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d475474e8163" dur="8"/>
                            <rest xml:id="d475474e8171" dur="16"/>
                            <note xml:id="d475474e8179"
@@ -3829,7 +3823,7 @@
                                  oct="3"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <beam>
                               <note xml:id="d475474e8585"
                                     pname="f"
@@ -4367,7 +4361,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e10112"
                                     pname="d"
                                     oct="6"
@@ -4459,7 +4453,7 @@
                                  oct="3"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d475474e10365" dur="8"/>
                            <rest xml:id="d475474e10373" dur="16"/>
                            <note xml:id="d475474e10381"
@@ -5113,7 +5107,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e12290"
                                     pname="d"
                                     oct="6"
@@ -5186,7 +5180,7 @@
                                  oct="3"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d475474e12503" dur="8"/>
                            <rest xml:id="d475474e12511" dur="16"/>
                            <note xml:id="d475474e12519"
@@ -5696,7 +5690,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e14015"
                                     pname="d"
                                     oct="5"
@@ -5781,7 +5775,7 @@
                                  oct="3"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -6731,7 +6725,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e17230"
                                     pname="f"
                                     oct="5"
@@ -6836,7 +6830,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e17546"
                                     pname="f"
                                     oct="5"
@@ -6968,7 +6962,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e17952"
                                     pname="a"
                                     oct="4"
@@ -7031,7 +7025,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e18140"
                                     pname="d"
                                     oct="4"
@@ -7279,7 +7273,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -7379,7 +7373,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -7534,7 +7528,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"
+
                                     syl="b6"/>
                               <note xml:id="d475474e19523"
                                     pname="b"
@@ -7560,7 +7554,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e19590"
                                     pname="b"
                                     oct="5"
@@ -7753,7 +7747,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e20083"
                                     pname="g"
                                     oct="5"
@@ -7778,7 +7772,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e20153"
                                     pname="g"
                                     oct="5"
@@ -7825,7 +7819,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e20279"
                                     pname="f"
                                     oct="4"
@@ -8169,7 +8163,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e21017"
                                     pname="g"
                                     oct="4"
@@ -8251,7 +8245,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e21190"
                                     pname="g"
                                     oct="4"
@@ -8333,7 +8327,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e21364"
                                     pname="g"
                                     oct="4"
@@ -8417,7 +8411,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e21541"
                                     pname="g"
                                     oct="4"
@@ -8499,7 +8493,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e21714"
                                     pname="g"
                                     oct="4"
@@ -9606,7 +9600,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e24678"
                                     pname="g"
                                     oct="5"
@@ -10041,7 +10035,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e25934"
                                     pname="g"
                                     oct="5"
@@ -10432,7 +10426,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e27005"
                                     pname="c"
                                     oct="4"
@@ -11667,7 +11661,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -11811,7 +11805,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e30984"
                                     pname="b"
                                     accid="n"
@@ -11885,7 +11879,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e31234"
                                     pname="b"
                                     accid="n"
@@ -11927,7 +11921,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e31363"
                                     pname="f"
                                     oct="5"
@@ -12108,7 +12102,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e31955"
                                     pname="a"
                                     oct="4"
@@ -12181,7 +12175,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e32203"
                                     pname="a"
                                     oct="4"
@@ -12383,7 +12377,7 @@
                                     oct="6"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e32849"
                                     pname="a"
                                     oct="5"
@@ -12457,7 +12451,7 @@
                                     oct="6"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e33099"
                                     pname="a"
                                     oct="5"
@@ -15061,7 +15055,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e41711"
                                     pname="e"
                                     oct="5"
@@ -15143,7 +15137,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e41981"
                                     pname="a"
                                     oct="3"
@@ -15181,7 +15175,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e42094"
                                     pname="a"
                                     oct="2"
@@ -16230,7 +16224,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e45569"
                                     pname="e"
                                     oct="5"
@@ -16312,7 +16306,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e45839"
                                     pname="a"
                                     oct="3"
@@ -16350,7 +16344,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e45952"
                                     pname="a"
                                     oct="2"
@@ -16959,7 +16953,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e47964"
                                     pname="e"
                                     oct="5"
@@ -17037,7 +17031,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e48222"
                                     pname="e"
                                     oct="5"
@@ -17109,7 +17103,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e48458"
                                     pname="a"
                                     oct="4"
@@ -17196,7 +17190,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e48748"
                                     pname="a"
                                     oct="3"
@@ -17234,7 +17228,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e48861"
                                     pname="a"
                                     oct="2"
@@ -17319,7 +17313,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -17437,7 +17431,7 @@
                                     oct="4"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e49358"
                                     pname="a"
                                     oct="3"
@@ -17794,7 +17788,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d475474e50279"
                                     pname="d"
@@ -17820,7 +17814,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e50346"
                                     pname="d"
                                     oct="5"
@@ -18038,7 +18032,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -18052,7 +18046,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"
+
                                     syl="n6 4+"/>
                               <note xml:id="d475474e50908"
                                     pname="e"
@@ -18078,7 +18072,7 @@
                                     dur="8"
                                     tie="i"
                                     stem.dir="down"
-                                    accid.ges="f"
+
                                     syl="b6"/>
                            </beam>
                         </layer>
@@ -18181,7 +18175,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -18220,7 +18214,7 @@
                                     dur="8"
                                     tie="i"
                                     stem.dir="down"
-                                    accid.ges="f"
+
                                     syl="b6"/>
                            </beam>
                         </layer>
@@ -18268,7 +18262,7 @@
                                     dur="16"
                                     tie="t"
                                     stem.dir="down"
-                                    accid.ges="f"
+
                                     syl="b7 5"/>
                               <note xml:id="d475474e51416"
                                     pname="g"
@@ -18292,7 +18286,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e51494"
                                     pname="c"
                                     oct="5"
@@ -18356,7 +18350,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e51653"
                                     pname="d"
                                     accid="n"
@@ -18398,7 +18392,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="f"/>
+/>
                         </layer>
                      </staff>
                      <tie tstamp="1.625"
@@ -18472,7 +18466,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -18503,7 +18497,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e52002"
                                     pname="g"
                                     oct="5"
@@ -18562,14 +18556,14 @@
                                     oct="6"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e52119"
                                     pname="f"
                                     accid="s"
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e52141"
                                     pname="g"
                                     oct="5"
@@ -18614,7 +18608,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -18628,7 +18622,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="s"
+
                                  syl="6\ 4+"/>
                         </layer>
                      </staff>
@@ -18681,7 +18675,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e52390"
                                     pname="f"
                                     accid="n"
@@ -18727,7 +18721,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -18741,7 +18735,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="s"
+
                                  syl="n6 4+"/>
                         </layer>
                      </staff>
@@ -18793,7 +18787,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e52639"
                                     pname="e"
                                     oct="5"
@@ -18838,7 +18832,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -18919,7 +18913,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -18986,7 +18980,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="up"
-                                 accid.ges="f"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -19065,7 +19059,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="f"
+
                                     syl="b7 5"/>
                               <note xml:id="d475474e53248"
                                     pname="g"
@@ -19172,7 +19166,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="f"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -19197,7 +19191,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e53564"
                                     pname="g"
                                     oct="5"
@@ -19214,7 +19208,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -19243,7 +19237,7 @@
                                  dots="1"
                                  tie="i"
                                  stem.dir="down"
-                                 accid.ges="f"/>
+/>
                         </layer>
                      </staff>
                      <tie tstamp="1"
@@ -19279,7 +19273,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e53760"
                                     pname="g"
                                     oct="5"
@@ -19318,7 +19312,7 @@
                                  dots="1"
                                  tie="t"
                                  stem.dir="down"
-                                 accid.ges="f"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -19345,7 +19339,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e53918"
                                     pname="g"
                                     oct="5"
@@ -19401,7 +19395,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="f"
+
                                  syl="b6 b"/>
                         </layer>
                      </staff>
@@ -19515,7 +19509,7 @@
                                  dots="1"
                                  tie="i"
                                  stem.dir="down"
-                                 accid.ges="s"
+
                                  syl="6 4 2+"/>
                         </layer>
                      </staff>
@@ -19563,7 +19557,7 @@
                                     dur="8"
                                     tie="t"
                                     stem.dir="down"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d475474e54373"
                                     pname="g"
@@ -19735,7 +19729,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e54727"
                                     pname="b"
                                     oct="5"
@@ -19759,7 +19753,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -19826,7 +19820,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -19932,7 +19926,7 @@
                                  oct="5"
                                  dur="8"
                                  stem.dir="down"
-                                 accid.ges="f"/>
+/>
                         </layer>
                      </staff>
                      <staff n="2">
@@ -19988,7 +19982,7 @@
                                     oct="5"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -20038,7 +20032,7 @@
                                  oct="5"
                                  dur="8"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="2">
@@ -20139,7 +20133,7 @@
                                  oct="5"
                                  dur="8"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="2">
@@ -20192,7 +20186,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d475474e55645"
@@ -20238,7 +20232,7 @@
                                     oct="3"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e55756"
                                     pname="d"
                                     oct="3"
@@ -20281,7 +20275,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e55865"
                                     pname="g"
                                     oct="5"
@@ -20844,7 +20838,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e57696"
                                     pname="f"
                                     oct="4"
@@ -21363,7 +21357,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e59394"
                                     pname="d"
                                     oct="4"
@@ -21440,7 +21434,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e59648"
                                     pname="f"
                                     oct="4"
@@ -22023,7 +22017,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e61574"
                                     pname="f"
                                     oct="4"
@@ -22542,7 +22536,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e63272"
                                     pname="d"
                                     oct="4"
@@ -23049,7 +23043,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -23124,7 +23118,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -23176,7 +23170,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d475474e65361"
@@ -23294,7 +23288,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d475474e65709"
                                     pname="f"
@@ -23372,7 +23366,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e65965"
                                     pname="f"
                                     oct="4"
@@ -23465,7 +23459,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d475474e66283"
@@ -23781,7 +23775,7 @@
                                     oct="5"
                                     dur="32"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d475474e67318"
                                     pname="f"
                                     accid="n"
@@ -24451,7 +24445,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e69496"
                                     pname="c"
                                     oct="4"
@@ -24792,7 +24786,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d475474e70599"
                                     pname="d"
@@ -24869,7 +24863,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d475474e70853"
                                     pname="d"
                                     oct="4"
@@ -24961,7 +24955,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d475474e71169"
@@ -25111,7 +25105,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d475474e71642"
@@ -25188,7 +25182,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d475474e71898"
@@ -25265,7 +25259,7 @@
                                     oct="4"
                                     dur="32"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d475474e72154"
@@ -27239,7 +27233,7 @@
                                     dur="16"
                                     dots="1"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e647"
                                     pname="f"
                                     oct="4"
@@ -28969,7 +28963,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="f"/>
+/>
                            <note xml:id="d480963e5560"
                                  pname="f"
                                  oct="5"
@@ -29329,7 +29323,7 @@
                                     dur="8"
                                     dots="1"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e6539"
                                     pname="e"
                                     accid="n"
@@ -29419,7 +29413,7 @@
                                     dur="16"
                                     dots="1"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e6789"
                                     pname="c"
                                     oct="4"
@@ -29512,7 +29506,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="f"/>
+/>
                            <note xml:id="d480963e7037"
                                  pname="g"
                                  oct="5"
@@ -29560,7 +29554,7 @@
                                     dur="16"
                                     dots="1"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d480963e7169"
                                     pname="e"
                                     oct="4"
@@ -29676,7 +29670,7 @@
                                  dur="4"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d480963e7484"
                                  pname="d"
                                  oct="5"
@@ -29800,7 +29794,7 @@
                                     dur="16"
                                     dots="1"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e7837"
                                     pname="f"
                                     oct="4"
@@ -29881,7 +29875,7 @@
                                     dur="8"
                                     dots="1"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e8045"
                                     pname="g"
                                     oct="5"
@@ -29965,7 +29959,7 @@
                                     dur="16"
                                     dots="1"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e8279"
                                     pname="f"
                                     oct="4"
@@ -30001,7 +29995,7 @@
                                     dur="16"
                                     dots="1"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e8385"
                                     pname="c"
                                     oct="4"
@@ -30733,7 +30727,7 @@
                                     dur="8"
                                     dots="1"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e10492"
                                     pname="g"
                                     oct="5"
@@ -30752,7 +30746,7 @@
                                     dur="16"
                                     dots="1"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e10534"
                                     pname="f"
                                     oct="4"
@@ -30820,7 +30814,7 @@
                                  oct="4"
                                  dur="8"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="3">
@@ -30863,7 +30857,7 @@
                                     dur="16"
                                     dots="1"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d480963e10853"
                                     pname="c"
                                     oct="4"
@@ -34243,7 +34237,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e8530"
                                     pname="e"
                                     accid="n"
@@ -34314,7 +34308,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e8748"
                                     pname="e"
                                     accid="n"
@@ -34542,7 +34536,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e9434"
                                     pname="e"
                                     accid="n"
@@ -36072,7 +36066,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e14030"
                                     pname="e"
                                     accid="n"
@@ -36148,7 +36142,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e14260"
                                     pname="e"
                                     accid="n"
@@ -36578,7 +36572,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e15554"
                                     pname="f"
                                     oct="5"
@@ -36767,7 +36761,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e16126"
                                     pname="e"
                                     accid="n"
@@ -36854,7 +36848,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e16390"
                                     pname="e"
                                     accid="n"
@@ -37284,7 +37278,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e17707"
                                     pname="f"
                                     oct="5"
@@ -37829,7 +37823,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e19387"
                                     pname="g"
                                     oct="5"
@@ -37887,7 +37881,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e19562"
                                     pname="g"
                                     oct="5"
@@ -37916,7 +37910,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e19643"
                                     pname="g"
                                     oct="4"
@@ -37969,7 +37963,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d481647e19798" dur="4"/>
                            <rest xml:id="d481647e19806" dur="16"/>
                            <beam>
@@ -38103,7 +38097,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e20220"
                                     pname="g"
                                     oct="5"
@@ -38157,7 +38151,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e20385"
                                     pname="g"
                                     oct="5"
@@ -38182,7 +38176,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e20456"
                                     pname="g"
                                     oct="4"
@@ -38253,7 +38247,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -38357,14 +38351,14 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e20992"
                                     pname="f"
                                     accid="s"
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e21014"
                                     pname="g"
                                     oct="5"
@@ -38413,14 +38407,14 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e21161"
                                     pname="f"
                                     accid="s"
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e21183"
                                     pname="g"
                                     oct="5"
@@ -38479,14 +38473,14 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e21366"
                                     pname="f"
                                     accid="s"
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <note xml:id="d481647e21388"
                                  pname="g"
@@ -38624,7 +38618,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e21802"
@@ -38678,7 +38672,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e21967"
@@ -38721,7 +38715,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e22094"
                                     pname="g"
                                     oct="4"
@@ -38774,7 +38768,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d481647e22249" dur="4"/>
                            <rest xml:id="d481647e22257" dur="16"/>
                            <beam>
@@ -38890,7 +38884,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e22614"
@@ -38944,7 +38938,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e22779"
@@ -38987,7 +38981,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e22906"
                                     pname="g"
                                     oct="4"
@@ -39058,7 +39052,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -39173,7 +39167,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e23480"
                                     pname="g"
                                     oct="5"
@@ -39227,7 +39221,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e23645"
                                     pname="g"
                                     oct="5"
@@ -39252,7 +39246,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e23716"
                                     pname="g"
                                     oct="4"
@@ -39323,7 +39317,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -39427,14 +39421,14 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e24252"
                                     pname="f"
                                     accid="s"
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e24274"
                                     pname="g"
                                     oct="5"
@@ -39483,14 +39477,14 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e24421"
                                     pname="f"
                                     accid="s"
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e24443"
                                     pname="g"
                                     oct="5"
@@ -39549,14 +39543,14 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e24626"
                                     pname="f"
                                     accid="s"
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <note xml:id="d481647e24648"
                                  pname="g"
@@ -39694,7 +39688,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e25062"
@@ -39748,7 +39742,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e25227"
@@ -39791,7 +39785,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e25354"
                                     pname="g"
                                     oct="4"
@@ -39844,7 +39838,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d481647e25509" dur="4"/>
                            <rest xml:id="d481647e25517" dur="16"/>
                            <beam>
@@ -41926,7 +41920,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e31798"
                                     pname="g"
                                     oct="4"
@@ -42003,7 +41997,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e32030"
                                     pname="g"
                                     oct="4"
@@ -42146,7 +42140,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e32464"
                                     pname="e"
                                     accid="n"
@@ -43009,7 +43003,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e35131"
                                     pname="a"
                                     oct="4"
@@ -43086,7 +43080,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e35363"
                                     pname="a"
                                     oct="4"
@@ -43229,7 +43223,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e35797"
                                     pname="e"
                                     accid="n"
@@ -43418,7 +43412,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e36380"
@@ -43493,7 +43487,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e36608"
@@ -43568,7 +43562,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e36836"
@@ -43689,7 +43683,7 @@
                                     oct="6"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -43763,7 +43757,7 @@
                                     oct="6"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -43837,7 +43831,7 @@
                                     oct="6"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -43878,7 +43872,7 @@
                                     oct="6"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e37754"
@@ -44633,7 +44627,7 @@
                                     oct="6"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e39846"
                                     pname="d"
                                     oct="5"
@@ -45108,7 +45102,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -45153,7 +45147,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e41281"
                                     pname="d"
                                     oct="4"
@@ -45294,7 +45288,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e41695"
                                     pname="d"
                                     oct="4"
@@ -45344,7 +45338,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d481647e41818"
                                     pname="d"
@@ -45598,7 +45592,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d481647e42536"
                                     pname="d"
@@ -46090,7 +46084,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                            <note xml:id="d481647e43911"
                                  pname="e"
@@ -46489,7 +46483,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                         </layer>
                      </staff>
@@ -46739,7 +46733,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e45742"
                                     pname="d"
                                     oct="3"
@@ -46962,7 +46956,7 @@
                                     oct="2"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e46357"
                                     pname="a"
                                     oct="2"
@@ -47081,7 +47075,7 @@
                                     oct="3"
                                     dur="8"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e46685"
                                     pname="a"
                                     oct="3"
@@ -47140,7 +47134,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e46854"
                                     pname="g"
                                     oct="3"
@@ -47158,7 +47152,7 @@
                                     oct="2"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e46895"
                                     pname="a"
                                     oct="3"
@@ -47665,7 +47659,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e48332"
                                     pname="b"
                                     accid="n"
@@ -47725,7 +47719,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e48511"
                                     pname="b"
                                     accid="n"
@@ -47794,7 +47788,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e48724"
                                     pname="b"
                                     accid="n"
@@ -47862,14 +47856,14 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e48922"
                                     pname="a"
                                     accid="f"
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e48944"
@@ -47932,7 +47926,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e49128"
                                     pname="b"
                                     accid="n"
@@ -47987,7 +47981,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e49295"
                                     pname="b"
                                     accid="n"
@@ -48052,7 +48046,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e49501"
                                     pname="a"
                                     oct="4"
@@ -48128,7 +48122,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e49738"
@@ -48191,7 +48185,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e49922"
                                     pname="b"
                                     accid="n"
@@ -48246,7 +48240,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e50089"
                                     pname="b"
                                     accid="n"
@@ -48311,7 +48305,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e50295"
                                     pname="a"
                                     oct="4"
@@ -48387,7 +48381,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e50532"
@@ -48442,7 +48436,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e50690"
                                     pname="c"
                                     oct="5"
@@ -48519,7 +48513,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e50922"
                                     pname="c"
                                     oct="5"
@@ -48596,7 +48590,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e51154"
                                     pname="c"
                                     oct="5"
@@ -48962,7 +48956,7 @@
                                     oct="3"
                                     dur="8"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e52230"
                                     pname="a"
                                     oct="3"
@@ -50042,7 +50036,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e55500"
                                     pname="c"
                                     oct="4"
@@ -50114,7 +50108,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e55722"
                                     pname="c"
                                     oct="4"
@@ -50186,7 +50180,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e55944"
                                     pname="c"
                                     oct="4"
@@ -50258,7 +50252,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e56166"
                                     pname="c"
                                     oct="4"
@@ -50330,7 +50324,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e56388"
                                     pname="c"
                                     oct="3"
@@ -51189,7 +51183,7 @@
                                  oct="2"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="f"/>
+/>
                            <rest xml:id="d481647e58846" dur="4"/>
                            <rest xml:id="d481647e58854" dur="4"/>
                         </layer>
@@ -51380,7 +51374,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e59370"
@@ -51617,7 +51611,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e60020"
                                     pname="a"
                                     oct="5"
@@ -51703,7 +51697,7 @@
                                  oct="2"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="f"/>
+/>
                            <rest xml:id="d481647e60260" dur="4"/>
                            <rest xml:id="d481647e60268" dur="4"/>
                         </layer>
@@ -52518,7 +52512,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e62658"
                                     pname="a"
                                     oct="3"
@@ -52813,7 +52807,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e63557"
                                     pname="c"
                                     oct="4"
@@ -52888,7 +52882,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e63788"
                                     pname="c"
                                     oct="4"
@@ -52962,7 +52956,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e64014"
                                     pname="c"
                                     oct="4"
@@ -53036,7 +53030,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e64240"
                                     pname="c"
                                     oct="4"
@@ -53110,7 +53104,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e64466"
                                     pname="c"
                                     oct="3"
@@ -53549,7 +53543,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"
+
                                     syl="6"/>
                               <note xml:id="d481647e65822"
                                     pname="b"
@@ -53630,7 +53624,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e66060"
                                     pname="b"
                                     oct="3"
@@ -53710,7 +53704,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e66298"
                                     pname="b"
                                     oct="3"
@@ -53790,7 +53784,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e66536"
                                     pname="b"
                                     oct="3"
@@ -53870,7 +53864,7 @@
                                     oct="2"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e66774"
                                     pname="b"
                                     oct="2"
@@ -54305,7 +54299,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"
+
                                     syl="6"/>
                               <note xml:id="d481647e68114"
                                     pname="a"
@@ -54386,7 +54380,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e68352"
                                     pname="a"
                                     oct="3"
@@ -54466,7 +54460,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e68590"
                                     pname="a"
                                     oct="3"
@@ -54546,7 +54540,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e68828"
                                     pname="a"
                                     oct="3"
@@ -54626,7 +54620,7 @@
                                     oct="2"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e69066"
                                     pname="a"
                                     oct="2"
@@ -55424,7 +55418,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="7"/>
                               <note xml:id="d481647e71514"
                                     pname="f"
@@ -55508,7 +55502,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e71758"
                                     pname="f"
                                     oct="4"
@@ -55591,7 +55585,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e72002"
                                     pname="f"
                                     oct="4"
@@ -55674,7 +55668,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e72246"
                                     pname="f"
                                     oct="4"
@@ -55757,7 +55751,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e72490"
                                     pname="f"
                                     oct="3"
@@ -56921,7 +56915,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"
+
                                     syl="6"/>
                               <note xml:id="d481647e76077"
                                     pname="e"
@@ -57002,7 +56996,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e76315"
                                     pname="e"
                                     oct="4"
@@ -57082,7 +57076,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e76553"
                                     pname="e"
                                     oct="4"
@@ -57162,7 +57156,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e76791"
                                     pname="e"
                                     oct="4"
@@ -57242,7 +57236,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e77029"
                                     pname="e"
                                     oct="3"
@@ -57341,7 +57335,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e77322"
                                     pname="d"
                                     oct="4"
@@ -57569,7 +57563,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e77931"
                                     pname="d"
                                     oct="4"
@@ -57789,7 +57783,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e78515"
                                     pname="e"
                                     accid="n"
@@ -57860,7 +57854,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e78733"
                                     pname="e"
                                     accid="n"
@@ -58095,7 +58089,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e79445"
                                     pname="f"
                                     oct="4"
@@ -59618,7 +59612,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e84022"
                                     pname="e"
                                     accid="n"
@@ -59694,7 +59688,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e84252"
                                     pname="e"
                                     accid="n"
@@ -60118,7 +60112,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e85515"
                                     pname="f"
                                     oct="5"
@@ -60320,7 +60314,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="7\ 5"/>
                               <note xml:id="d481647e86133"
                                     pname="g"
@@ -60627,7 +60621,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="7\ 5"/>
                               <note xml:id="d481647e86955"
                                     pname="g"
@@ -60927,7 +60921,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e87783"
@@ -61002,7 +60996,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e88011"
@@ -61077,7 +61071,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e88239"
@@ -61184,7 +61178,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e88550"
                                     pname="e"
                                     accid="n"
@@ -61260,7 +61254,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e88780"
                                     pname="e"
                                     accid="n"
@@ -61336,7 +61330,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e89010"
                                     pname="e"
                                     accid="n"
@@ -61770,7 +61764,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e90300"
                                     pname="e"
                                     accid="n"
@@ -61892,7 +61886,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e90656"
                                     pname="d"
                                     oct="5"
@@ -61923,7 +61917,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e90754"
@@ -61981,7 +61975,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e90893"
                                     pname="d"
                                     oct="4"
@@ -61993,7 +61987,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e90933"
                                     pname="e"
                                     accid="n"
@@ -62091,7 +62085,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="f"/>
+/>
                               <note xml:id="d481647e91204"
                                     pname="d"
                                     oct="5"
@@ -62122,7 +62116,7 @@
                                     oct="5"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                            </beam>
                            <beam>
                               <note xml:id="d481647e91302"
@@ -62425,7 +62419,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e92214"
                                     pname="e"
                                     accid="n"
@@ -62490,7 +62484,7 @@
                                     oct="3"
                                     dur="16"
                                     stem.dir="down"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e92405"
                                     pname="e"
                                     accid="n"
@@ -63260,7 +63254,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d481647e94749"
                                     pname="f"
@@ -63344,7 +63338,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e94993"
                                     pname="f"
                                     oct="4"
@@ -64377,7 +64371,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"
+
                                     syl="#"/>
                               <note xml:id="d481647e98150"
                                     pname="f"
@@ -64461,7 +64455,7 @@
                                     oct="4"
                                     dur="16"
                                     stem.dir="up"
-                                    accid.ges="s"/>
+/>
                               <note xml:id="d481647e98394"
                                     pname="f"
                                     oct="4"

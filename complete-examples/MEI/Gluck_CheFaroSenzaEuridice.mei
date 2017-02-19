@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Che farò senza Euridice</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator"
-                         dbkey="118539841"
+                         codedval="118539841"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">Christoph Willibald Gluck</persName>
                <persName role="encoder">Maja Hartwig</persName>
@@ -20,16 +18,16 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
-               <addrLine>32756 <geogName dbkey="7004442"
+               <addrLine>32756 <geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>
                </addrLine>
                <addrLine>
-                  <geogName dbkey="7000084"
+                  <geogName codedval="7000084"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Germany</geogName>
                </addrLine>
@@ -48,35 +46,35 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research
 						Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
 						Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -88,13 +86,13 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="print">
+            <source>
                <identifier type="URI">http://petrucci.mus.auth.gr/imglnks/usimg/6/66/IMSLP221917-WIMA.5df2-GluCheSco.pdf</identifier>
                <titleStmt>
                   <title>Che farò senza Euridice</title>
                   <respStmt>
                      <persName role="composer"
-                               dbkey="118539841"
+                               codedval="118539841"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">Christoph Willibald
 								Gluck</persName>
@@ -105,7 +103,7 @@
                   </respStmt>
                </titleStmt>
             </source>
-            <source n="2" label="electronic">
+            <source>
                <identifier type="URI">http://icking-music-archive.org/scores/haendel/H56/HanHal-xml.zip</identifier>
                <titleStmt>
                   <title>Che farò senza Euridice?</title>
@@ -113,7 +111,7 @@
                <pubStmt>
                   <date isodate="2011-10-11"/>
                   <respStmt>
-                     <name>Werner Icking Music Archive</name>
+                     <name role="publisher">Werner Icking Music Archive</name>
                   </respStmt>
                   <availability>
                      <useRestrict>© 2010 - Gatineau,Qc.Ca.</useRestrict>
@@ -138,7 +136,7 @@
                <title>Che farò senza Euridice?</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="118539841"
+                            codedval="118539841"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Christoph Willibald Gluck</persName>
                </respStmt>
@@ -244,10 +242,10 @@
                   </section>
                </score>
             </incip>
-            <history>
-               <creation>Year of
-							composition<date>1762</date>revised<date>1774</date>
-               </creation>
+           <creation>Year of
+             composition<date>1762</date>revised<date>1774</date>
+           </creation>
+           <history>
                <eventList>
                   <event>
                      <p>First performance<date isodate="1762-10-05"/>in<geogName>Vienna</geogName>
@@ -259,14 +257,14 @@
                <language>Italian</language>
             </langUsage>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="va">Soprano</instrVoice>
-                  <instrVoice code="sa">Violin I</instrVoice>
-                  <instrVoice code="sa">Violin II</instrVoice>
-                  <instrVoice code="sb">Viola</instrVoice>
-                  <instrVoice code="kc">Harpsichord</instrVoice>
-                  <instrVoice code="sc">Violoncello</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="va">Soprano</perfRes>
+                  <perfRes codedval="sa">Violin I</perfRes>
+                  <perfRes codedval="sa">Violin II</perfRes>
+                  <perfRes codedval="sb">Viola</perfRes>
+                  <perfRes codedval="kc">Harpsichord</perfRes>
+                  <perfRes codedval="sc">Violoncello</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -361,6 +359,23 @@
             </changeDesc>
             <date isodate="2014-05-30"/>
          </change>
+         <change n="8">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
+         </change>
+         <change n="9">
+            <respStmt>
+              <persName>Klaus Rettinghaus</persName>
+            </respStmt>
+            <changeDesc>
+               <p>Fixed scoreDef</p>
+            </changeDesc>
+            <date isodate="2016-07-31"/>
+         </change>
       </revisionDesc>
    </meiHead>
    <music>
@@ -419,21 +434,19 @@
                                   clef.shape="C"
                                   key.sig="0"
                                   key.mode="major"/>
-                        <staffGrp symbol="brace">
+                        <staffGrp symbol="brace" label="Harpsichord" label.abbr="Hpschd.">
                            <staffDef n="5"
                                      xml:id="P5"
-                                     label="Harpsichord"
-                                     label.abbr="Hpschd."
                                      lines="5"
-                                     clef.line="3"
+                                     clef.line="2"
                                      clef.shape="G"
                                      key.sig="0"
                                      key.mode="major"/>
                            <staffDef n="6"
                                      xml:id="P6"
                                      lines="5"
-                                     clef.line="5"
-                                     clef.shape="G"
+                                     clef.line="4"
+                                     clef.shape="F"
                                      key.sig="0"
                                      key.mode="major"/>
                         </staffGrp>
@@ -450,7 +463,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure n="0" xml:id="m0" type="upbeat">
+                  <measure n="0" xml:id="m0" metcon="false" type="upbeat">
                      <staff n="1">
                         <layer n="1">
                            <rest dur="4"/>
@@ -482,11 +495,6 @@
                      <staff n="6">
                         <layer n="1">
                            <rest xml:id="m0_s6_e1" dur="4"/>
-                        </layer>
-                     </staff>
-                     <staff n="7">
-                        <layer n="1">
-                           <rest dur="4"/>
                         </layer>
                      </staff>
                      <slur startid="#m0_s2_e1" endid="#m0_s2_e2" curvedir="above"/>
@@ -1074,7 +1082,7 @@
                      </staff>
                      <staff n="5">
                         <layer n="1">
-                          <chord xml:id="m6_s5_e1" dur="2" stem.dir="up" dots="1">
+                           <chord xml:id="m6_s5_e1" dur="2" stem.dir="up" dots="1">
                               <note xml:id="m6_s5_e2" pname="b" oct="4"/>
                               <note xml:id="m6_s5_e3" pname="g" oct="4"/>
                               <note xml:id="m6_s5_e4" pname="d" oct="4"/>
@@ -1378,7 +1386,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <note xml:id="m9_e2_e1"
+                           <note xml:id="m9_s2_e1"
                                  pname="g"
                                  oct="5"
                                  dur="8"
@@ -1711,7 +1719,7 @@
                         </layer>
                      </staff>
                      <staff n="2">
-                        <layer next="1">
+                        <layer>
                            <note xml:id="m11_s2_e1"
                                  pname="c"
                                  oct="6"

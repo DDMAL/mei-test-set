@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.googlecode.com/svn/tags/MEI2013_v2.1.1/schemata/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.music-encoding.org/ns/mei"
-     meiversion="2013">
+     meiversion="3.0.0">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Lascia ch'io pianga</title>
-            <title type="subtitle">(Aria from the Opera Rinaldo-HWV7). Arr. for Contralto and string
+            <title type="subordinate">(Aria from the Opera Rinaldo-HWV7). Arr. for Contralto and string
                ensemble</title>
-            <title type="subtitle">an electronic transcription</title>
+            <title type="subordinate">an electronic transcription</title>
             <respStmt>
                <persName role="creator"
-                         dbkey="118544489"
+                         codedval="118544489"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">Georg Friedrich Haendel</persName>
                <persName role="encoder">Maja Hartwig</persName>
@@ -22,16 +20,16 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <corpName dbkey="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
+               <corpName role="publisher" codedval="5115204-6" authURI="http://d-nb.info/gnd" authority="GND">Musikwissenschaftliches Seminar, Detmold</corpName>
             </respStmt>
             <address>
                <addrLine>Gartenstrasse 20</addrLine>
-               <addrLine>32756 <geogName dbkey="7004442"
+               <addrLine>32756 <geogName codedval="7004442"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Detmold</geogName>
                </addrLine>
                <addrLine>
-                  <geogName dbkey="7000084"
+                  <geogName codedval="7000084"
                             authURI="www.getty.edu/research/tools/vocabularies/tgn"
                             authority="TGN">Germany</geogName>
                </addrLine>
@@ -50,35 +48,35 @@
             <respStmt>
                <corpName role="publisher">MEI Project</corpName>
                <corpName role="funder"
-                         dbkey="2007744-0"
+                         codedval="2007744-0"
                          authURI="http://d-nb.info/gnd"
                          authority="GND">German Research
                   Foundation<address>
                      <addrLine>Kennedyallee 40</addrLine>
                      <addrLine>
-                        <geogName dbkey="7005090"
+                        <geogName codedval="7005090"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Bonn</geogName>
                      </addrLine>
                      <addrLine>
-                        <geogName dbkey="7000084"
+                        <geogName codedval="7000084"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Germany</geogName>
                      </addrLine>
                   </address>
                </corpName>
                <corpName role="funder"
-                         dbkey="18183-3"
+                         codedval="18183-3"
                          authURI="http://d-nb.info/gnd/18183-3"
                          authority="Deutsche Nationalbibliothek">National Endowment for the
                   Humanities<address>
                      <addrLine>1100 Pennsylvania Avenue N.W.</addrLine>
                      <addrLine>
-                        <geogName dbkey="7013962"
+                        <geogName codedval="7013962"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">Washington, DC</geogName> 20004</addrLine>
                      <addrLine>
-                        <geogName dbkey="7012149"
+                        <geogName codedval="7012149"
                                   authURI="www.getty.edu/research/tools/vocabularies/tgn"
                                   authority="TGN">United States</geogName>
                      </addrLine>
@@ -90,15 +88,15 @@
             </identifier>
          </seriesStmt>
          <sourceDesc>
-            <source n="1" label="print">
+            <source>
                <identifier type="URI">http://conquest.imslp.info/files/imglnks/usimg/f/fc/IMSLP222079-WIMA.98e7-HanLasSco.pdf</identifier>
                <titleStmt>
                   <title>Lascia ch'io pianga</title>
-                  <title type="subtitle">(Aria from the Opera Rinaldo-HWV7). Arr. for Contralto and
+                  <title type="subordinate">(Aria from the Opera Rinaldo-HWV7). Arr. for Contralto and
                      string ensemble</title>
                   <respStmt>
                      <persName role="composer"
-                               dbkey="118544489"
+                               codedval="118544489"
                                authURI="http://d-nb.info/gnd"
                                authority="GND">Georg Friedrich Haendel</persName>
                      <persName role="arranger">Michel Rondeau</persName>
@@ -107,7 +105,7 @@
                   </respStmt>
                </titleStmt>
             </source>
-            <source n="2" label="electronic">
+            <source>
                <identifier type="URI">http://icking-music-archive.org/scores/haendel/H7/HanLasD-xml.zip</identifier>
                <titleStmt>
                   <title>Lascia ch'io pianga</title>
@@ -115,7 +113,7 @@
                <pubStmt>
                   <date isodate="2011-10-11"/>
                   <respStmt>
-                     <name>Werner Icking Music Archive</name>
+                     <name role="publisher">Werner Icking Music Archive</name>
                   </respStmt>
                   <availability>
                      <useRestrict>© 2010 - Gatineau,Qc.Ca.</useRestrict>
@@ -138,7 +136,7 @@
                <title>Lascia ch'io pianga</title>
                <respStmt>
                   <persName role="composer"
-                            dbkey="118544489"
+                            codedval="118544489"
                             authURI="http://d-nb.info/gnd"
                             authority="GND">Georg Friedrich Haendel</persName>
                </respStmt>
@@ -204,13 +202,13 @@
                <language>Italian</language>
             </langUsage>
             <perfMedium>
-               <instrumentation>
-                  <instrVoice code="vc">Alto</instrVoice>
-                  <instrVoice code="sa">Violin I</instrVoice>
-                  <instrVoice code="sa">Violin II</instrVoice>
-                  <instrVoice code="sb">Viola</instrVoice>
-                  <instrVoice code="sd">Double Bass</instrVoice>
-               </instrumentation>
+               <perfResList>
+                  <perfRes codedval="vc">Alto</perfRes>
+                  <perfRes codedval="sa">Violin I</perfRes>
+                  <perfRes codedval="sa">Violin II</perfRes>
+                  <perfRes codedval="sb">Viola</perfRes>
+                  <perfRes codedval="sd">Double Bass</perfRes>
+               </perfResList>
             </perfMedium>
             <classification>
                <termList>
@@ -306,6 +304,14 @@
                <p>Converted to MEI 2013 using mei2012To2013.xsl, version 1.0 beta</p>
             </changeDesc>
             <date isodate="2014-05-30"/>
+         </change>
+         <change n="8">
+            <respStmt/>
+            <changeDesc>
+               <p>Converted to version 3.0.0 using mei21To30.xsl, version
+                  1.0 beta</p>
+            </changeDesc>
+            <date isodate="2015-10-15"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -1056,7 +1062,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s">
+>
                               <verse n="1">
                                  <syl>spi-</syl>
                               </verse>
@@ -1083,7 +1089,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e2763"
                                  pname="f"
                                  oct="4"
@@ -1110,7 +1116,7 @@
                                  oct="3"
                                  dur="2"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d1e2873" dur="2"/>
                         </layer>
                      </staff>
@@ -1196,7 +1202,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="4">
@@ -1207,7 +1213,7 @@
                                  oct="3"
                                  dur="2"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e3093"
                                  pname="g"
                                  accid="s"
@@ -1215,7 +1221,7 @@
                                  dur="2"
                                  dots="1"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e3112" pname="e" oct="4" dur="4" stem.dir="down"/>
                         </layer>
                      </staff>
@@ -1247,7 +1253,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e3215" pname="a" oct="4" dur="2" stem.dir="up">
                               <verse n="1">
                                  <syl>ri</syl>
@@ -1270,7 +1276,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e3298" pname="a" oct="4" dur="2" stem.dir="up"/>
                            <rest xml:id="d1e3312" dur="4"/>
                            <note xml:id="d1e3320" pname="d" oct="5" dur="4" stem.dir="down"/>
@@ -1395,7 +1401,7 @@
                                  oct="4"
                                  dur="2"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                      <staff n="4">
@@ -2543,7 +2549,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s">
+>
                               <verse n="1">
                                  <syl>fran-</syl>
                               </verse>
@@ -2554,7 +2560,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e7639"
                                  pname="f"
                                  oct="4"
@@ -2794,7 +2800,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e8199" pname="a" oct="4" dur="2" stem.dir="up">
                               <verse n="1">
                                  <syl>ri</syl>
@@ -2919,7 +2925,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e8486" pname="f" oct="4" dur="1" accid.ges="s"/>
                         </layer>
                      </staff>
@@ -2984,7 +2990,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s">
+>
                               <verse n="1">
                                  <syl>mar_</syl>
                               </verse>
@@ -3057,7 +3063,7 @@
                                  oct="4"
                                  dur="2"
                                  stem.dir="up"
-                                 accid.ges="s">
+>
                               <verse n="1">
                                  <syl>ri</syl>
                               </verse>
@@ -3094,7 +3100,7 @@
                                  oct="3"
                                  dur="2"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                            <rest xml:id="d1e8888" dur="4"/>
                            <note xml:id="d1e8896"
                                  pname="e"
@@ -3102,7 +3108,7 @@
                                  oct="3"
                                  dur="4"
                                  stem.dir="down"
-                                 accid.ges="s"/>
+/>
                         </layer>
                      </staff>
                   </measure>
@@ -3120,7 +3126,7 @@
                                  oct="4"
                                  dur="4"
                                  stem.dir="up"
-                                 accid.ges="s"/>
+/>
                            <note xml:id="d1e8954" pname="g" oct="4" dur="1" accid.ges="s">
                               <verse n="1">
                                  <syl>pie-</syl>
