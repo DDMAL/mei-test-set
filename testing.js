@@ -80,7 +80,11 @@ runTests = function(path, withSibeliusComparison, flatSourceDirectory)
         var domparser = new window.DOMParser();
         var meiXML = domparser.parseFromString(data, "application/xml");
         var rightsStatement = meiXML.querySelector("useRestrict");
-        return rightsStatement.textContent;
+        if (rightsStatement)
+        {
+            return rightsStatement.textContent;
+        }
+        return null;
     }
 
     function _runTests (path, data)
