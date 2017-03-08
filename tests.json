@@ -11,8 +11,6 @@
             "cancellation-repeated-notes.mei": [false, false, "Cancellation of Repeated Accidentals"],
             "cancellation.mei": [false, false, "Cancellation"],
             "grace-notes.mei": [false, false, "Grace Notes"],
-            "key-change.mei": [false, false, "Key Change"],
-            "key-sig.mei": [false, false, "Key Signature"],
             "octave-displacement.mei": [false, false, "Octave Displacement"],
             "placement-other-symbols.mei": [false, false, "Placement of Other Symbols"],
             "quarter-tones.mei": [false, false, "Quarter Tones"],
@@ -24,6 +22,9 @@
             "two-stem-chords.mei": [false, false, "Two Stem Chords"],
             "unconventional-key-sig.mei": [false, false, "Unconventional Key Signature"]
         },
+        "additional-tests": {
+            "beam-test.mei": [false, false, "Beam test"],
+        }
         "arpeggios": {
             "arpeggios.mei": [false, false, "Arpeggios"],
             "broken-arpegg.mei": [false, false, "Broken Arpeggios"],
@@ -137,7 +138,6 @@
             "artic-on-grace-notes.mei": [false, false, "Articulations on Grace Notes"],
             "dynamic-placement.mei": [false, false, "Dynamic Placement"],
             "fixed-slurs.mei": [false, false, "Fixed Slurs"],
-            "grace-note-slurs.mei": [false, false, "Grace Note Slurs"],
             "grace-notes.mei": [false, false, "Grace Notes"],
             "more-articulation.mei": [false, false, "Articulations 2"],
             "over-bar.mei": [false, false, "Over barlines"],
