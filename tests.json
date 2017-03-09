@@ -51,6 +51,7 @@
         "beams-and-stems": {
             "beam-placement-2.mei": [false, false, "Beam Placement 2"],
             "beam-placement.mei": [false, false, "Beam Placement"],
+            "beam-test.mei": [false, false, "Beam test"],
             "over-barlines.mei": [false, false, "Over Barlines"],
             "stem-directions-2.mei": [false, false, "Stem Directions 2"],
             "stem-directions.mei": [false, false, "Stem Directions"],
