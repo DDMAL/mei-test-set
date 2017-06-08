@@ -127,6 +127,9 @@
             "two-part-with-text.mei": [false, false, "Two Part with Text"],
             "with-text.mei": [false, false, "With Text"]
         },
+        "figured-bass": {
+            "figured-bass": [false, false, "Figured Bass"]
+        },
         "gliss": {
             "gliss-precision.mei": [false, false, "Gliss Precision"],
             "glissando.mei": [false, false, "Glissando"],
